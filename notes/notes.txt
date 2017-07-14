@@ -1,6 +1,9 @@
-Meet the Team
+!-- Notes --!
 
+--Todo:
+-Use cookies to keep same page open on refresh
 
+--Meet the Team
 <div class="box">
 <article class="media">
 <div class="media-left">
