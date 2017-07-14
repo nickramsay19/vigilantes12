@@ -1,0 +1,40 @@
+Meet the Team
+
+
+<div class="box">
+<article class="media">
+<div class="media-left">
+<figure class="image is-64x64">
+<img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
+</figure>
+</div>
+<div class="media-content">
+<div class="content">
+<p>
+<strong>Hunter Forbes</strong> <small>@forbesh</small> <small>31m</small>
+<br>
+Hello my name is Hunter Forbes, creator and writer of Vigilantes, for what I lack in dick size I make up for in creativity. This is my website, please enjoy!
+</p>
+</div>
+</div>
+</article>
+</div>
+
+<div class="box">
+<article class="media">
+<div class="media-left">
+<figure class="image is-64x64">
+<img src="http://bulma.io/images/placeholders/128x128.png" alt="Image">
+</figure>
+</div>
+<div class="media-content">
+<div class="content">
+<p>
+<strong>Siena Mitchell</strong> <small>@mitchels</small> <small>31m</small>
+<br>
+Hello my name is Siena Mitchell, I love drawing so much I devoted my future and career to a small hopeless non-profit hero's guild, the toughest part of the job is not the art, its explaining it to my disappointed parents
+</p>
+</div>
+</div>
+</article>
+</div>

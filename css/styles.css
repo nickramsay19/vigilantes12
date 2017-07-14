@@ -1,0 +1,28 @@
+.hero-icon {
+    width: 200px;
+}
+
+.menu-list{
+    padding: 0px;
+    list-style: none;
+    list-style-type: none;
+}
+
+.menu-list li{
+    list-style: none;
+    border-radius: 2px;
+    display: block;
+}
+.menu-list li a{
+    text-decoration: none;
+    transition: none 86ms ease-out;
+}
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.card .content{
+    display: none;
+}
