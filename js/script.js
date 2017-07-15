@@ -1,3 +1,27 @@
+//Timeline
+// DOM element where the Timeline will be attached
+var container = document.getElementById('visualization');
+
+// Create a DataSet (allows two way data-binding)
+var groups = [
+    {id: 1, content: 'Viper Sub-Universe'},
+    {id: 2, content: 'Vigilantes Universe'}
+];
+var items = new vis.DataSet([
+    {id: 1, content: 'Mike Baird passes law restricting environmental protests', start: '2016-03-20', group: 1},
+    {id: 2, content: 'Donald trump wins the american presidential election', start: '2016-11-09', group: 1},
+    {id: 3, content: 'Viper trains with the Longying', start: '2017-03-29', end: '2022-10-26', group: 2},
+    {id: 4, content: 'Nick commits to his legal profession', start: '2022-10-26', end: '2023-12-03', group: 2},
+    {id: 5, content: 'item 5', start: '2022-10-26', end: '2023-12-03'},
+    {id: 6, content: 'item 6', start: '2013-04-27'}
+]);
+
+// Configuration for the Timeline
+var options = {};
+
+// Create a Timeline
+var timeline = new vis.Timeline(container, items, groups, options);
+
 //Page Links
 $(document).ready(function(){
     $(".link-page-home").click(function(){
@@ -192,3 +216,7 @@ function ResetPageSelection(){
     $(".link-page-hunter").removeClass("is-active");
 
 }
+
+//title: 'This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.', content: 'Mike Baird passes law restricting environmental protests'
+
+//Opened the door for global political unrest. Thanks to Australia's close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia's Asian population.
