@@ -4,6 +4,10 @@
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 */
 
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 .navbar-default,
 a {
     -webkit-transition: all .35s;
@@ -194,7 +198,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url(../img/20107015_1922178354734429_1529760693_o.jpg);
+    background-image: url(../img/WsgOY4.jpg);
     color: #fff
 }
 
@@ -207,7 +211,9 @@ header .header-content .header-content-inner h1 {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 30px
+    font-size: 30px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 header .header-content .header-content-inner hr {
@@ -218,7 +224,9 @@ header .header-content .header-content-inner p {
     font-weight: 300;
     color: rgba(255, 255, 255, .7);
     font-size: 16px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width:768px) {
