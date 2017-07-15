@@ -3,10 +3,10 @@ body{
 }
 
 nav{
-    position: -webkit-sticky;  // required for Safari
-    position: sticky;
-    top: 0; // required as well.
+    position: fixed;
 }
+
+.nav { position: fixed !important; top: 0; left: 0; right: 0; }
 
 a {
     text-decoration: none;
