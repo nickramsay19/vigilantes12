@@ -32,6 +32,14 @@ $(document).ready(function(){
         },
         200);
     });
+    $(".link-page-viper-viper").click(function(){
+        ResetPageSelection();
+        setTimeout(function(){
+            $(".link-page-viper-viper").addClass("is-active");
+            $("#page-viper-viper").fadeIn(500, function(){});
+        },
+                   200);
+    });
     $(".link-page-team").click(function(){
         ResetPageSelection();
         setTimeout(function(){
@@ -50,6 +58,7 @@ function ResetPageSelection(){
     $("#page-podcasts").fadeOut(100, function(){});
     $("#page-heroes").fadeOut(100, function(){});
     $("#page-viper").fadeOut(100, function(){});
+    $("#page-viper-viper").fadeOut(100, function(){});
     $("#page-team").fadeOut(100, function(){});
 
     //Clear SideBar Styles
