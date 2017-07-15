@@ -23,6 +23,20 @@ a {
     width: 200px;
 }
 
+.hero-card {
+    background-color: white;
+    color: #363636;
+}
+
+.hero-card:hover{
+    background-color: #363636;
+
+}
+
+.hero-card:hover .card-content .media p{
+    color: white;
+}
+
 .menu-list{
     padding: 0px;
     list-style: none;

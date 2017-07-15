@@ -2,6 +2,10 @@
 
 --Todo:
 -Use cookies to keep same page open on refresh
+-Change the Sidebar color for selected the page
+-Add links to nav bar
+-Change other in nav bar to discover more
+-on refresh
 
 --Meet the Team
 <div class="box">
