@@ -48,6 +48,22 @@ $(document).ready(function(){
         },
         200);
     });
+    $(".link-page-discover").click(function(){
+        ResetPageSelection();
+        setTimeout(function(){
+            $(".link-page-discover").addClass("is-active");
+            $("#page-discover").fadeIn(500, function(){});
+        },
+        200);
+    });
+    $(".link-page-timeline").click(function(){
+        ResetPageSelection();
+        setTimeout(function(){
+            $(".link-page-timeline").addClass("is-active");
+            $("#page-timeline").fadeIn(500, function(){});
+        },
+        200);
+    });
 });
 
 
@@ -60,6 +76,8 @@ function ResetPageSelection(){
     $("#page-viper").fadeOut(100, function(){});
     $("#page-viper-viper").fadeOut(100, function(){});
     $("#page-team").fadeOut(100, function(){});
+    $("#page-discover").fadeOut(100, function(){});
+    $("#page-timeline").fadeOut(100, function(){});
 
     //Clear SideBar Styles
     $(".link-page-home").removeClass("is-active");
@@ -67,4 +85,6 @@ function ResetPageSelection(){
     $(".link-page-heroes").removeClass("is-active");
     $(".link-page-viper").removeClass("is-active");
     $(".link-page-team").removeClass("is-active");
+    $(".link-page-discover").removeClass("is-active");
+    $(".link-page-timeline").removeClass("is-active");
 }

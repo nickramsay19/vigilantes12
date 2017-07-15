@@ -10,6 +10,7 @@
         <!-- CSS -->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="bower_components/bulma/css/bulma.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bulma_theme.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/creative.min.css">
@@ -26,16 +27,16 @@
                 </div>
                 <div class="nav-right nav-menu">
                     <a class="nav-item is-tab  link-page-home is-active">
-                        Home
+                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home
                     </a>
                     <a class="nav-item is-tab link-page-podcasts">
-                        Podcasts
+                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;Podcasts
                     </a>
                     <a class="nav-item is-tab link-page-team">
-                        The Team
+                        <i class="fa fa-users" aria-hidden="true"></i>&nbsp;The Team
                     </a>
-                    <a class="nav-item is-tab" href="https://docs.google.com/document/d/1-4bpu0zVuVLfw92r9-R0TAxHrKBCyHLjKRPQSJP5ZT8/edit?usp=sharing">
-                        Discover More
+                    <a class="nav-item is-tab link-page-discover" href="https://docs.google.com/document/d/1-4bpu0zVuVLfw92r9-R0TAxHrKBCyHLjKRPQSJP5ZT8/edit?usp=sharing">
+                        <i class="fa fa-search" aria-hidden="true"></i>&nbsp;Discover More
                     </a>
                 </div>
             </div>
@@ -68,17 +69,17 @@
                                 General
                             </p>
                             <ul class="menu-list">
-                                <li><a class="link-page-home is-active">Home</a></li>
-                                <li><a class="link-page-podcasts">Podcasts</a></li>
-                                <li><a class="link-page-team">The Team</a></li>
-                                <li><a href="https://docs.google.com/document/d/1-4bpu0zVuVLfw92r9-R0TAxHrKBCyHLjKRPQSJP5ZT8/edit?usp=sharing" id="side-nav-other">Discover More</a></li>
+                                <li><a class="link-page-home is-active"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
+                                <li><a class="link-page-podcasts"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Podcasts</a></li>
+                                <li><a class="link-page-team"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;The Team</a></li>
+                                <li><a class="link-page-discover" id="side-nav-other"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Discover More</a></li>
                             </ul>
                             <p class="menu-label">
                                 Vigilantes
                             </p>
                             <ul class="menu-list">
-                                <li><a class="link-page-heroes">Sub-Universes</a></li>
-                                <li><a>Timeline</a></li>
+                                <li><a class="link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                                <li><a class="link-page-timeline"><i class="fa fa-arrows-h" aria-hidden="true"></i>&nbsp;Timeline</a></li>
                             </ul>
                             <br><br><br><br><br><br><br><br><br><br>
                         </aside>
@@ -443,6 +444,13 @@
                     <div class="column is-three-quarters" id="page-viper" style="display: none;">
                         <div class="content">
                             <h1 class="title">Viper</h1>
+                            <nav class="breadcrumb">
+                                <ul>
+                                    <li><a><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Vigilantes</a></li>
+                                    <li><a><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                                    <li class="is-active"><a>Viper</a></li>
+                                </ul>
+                            </nav>
                             Here is the page for the Viper Sub-universe.<br><br>
 
                             <!-- Row 1 -->
@@ -819,6 +827,26 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Discover More -->
+                    <div class="column is-three-quarters" id="page-discover" style="display: none;">
+                        <div class="content">
+                            <h1 class="title">Discover More</h1>
+                            Links for other sites behind Vigilantes.<br><br>
+
+                            <a href="https://docs.google.com/document/d/1-4bpu0zVuVLfw92r9-R0TAxHrKBCyHLjKRPQSJP5ZT8/edit?usp=sharing"><button class="button is-primary">Google Docs</button></a>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="column is-three-quarters" id="page-timeline" style="display: none;">
+                        <div class="content">
+                            <h1 class="title">Timeline</h1>
+                            Work in progress...<br><br>
+
+
                         </div>
                     </div>
                 </div>
