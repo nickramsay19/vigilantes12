@@ -13,7 +13,7 @@ a {
     color:
 }
 
-#sidebar {
+.img-caption-body{
 
 }
 
@@ -58,6 +58,14 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
 
 .hero-card .content{
     display: none;
+}
+
+.podcast-player{
+    margin-top: 20px;
+}
+
+td{
+    padding: 10px;
 }
 
 
