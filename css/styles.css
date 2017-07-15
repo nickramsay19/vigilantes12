@@ -1,3 +1,24 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+}
+
+a {
+    text-decoration: none;
+    color:
+}
+
+#sidebar {
+    position: -webkit-sticky;  // required for Safari
+    position: sticky;
+    top: 0; // required as well.
+}
+
 .hero-icon {
     width: 200px;
 }
@@ -26,3 +47,5 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
 .card .content{
     display: none;
 }
+
+
