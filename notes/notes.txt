@@ -6,6 +6,7 @@
 -Add links to nav bar
 -Change other in nav bar to discover more
 -on refresh
+--Fix podcast media styling
 
 --Meet the Team
 <div class="box">

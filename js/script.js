@@ -32,6 +32,14 @@ $(document).ready(function(){
         },
         200);
     });
+    $(".link-page-team").click(function(){
+        ResetPageSelection();
+        setTimeout(function(){
+            $(".link-page-team").addClass("is-active");
+            $("#page-team").fadeIn(500, function(){});
+        },
+        200);
+    });
 });
 
 
@@ -42,10 +50,12 @@ function ResetPageSelection(){
     $("#page-podcasts").fadeOut(100, function(){});
     $("#page-heroes").fadeOut(100, function(){});
     $("#page-viper").fadeOut(100, function(){});
+    $("#page-team").fadeOut(100, function(){});
 
     //Clear SideBar Styles
     $(".link-page-home").removeClass("is-active");
     $(".link-page-podcasts").removeClass("is-active");
     $(".link-page-heroes").removeClass("is-active");
     $(".link-page-viper").removeClass("is-active");
+    $(".link-page-team").removeClass("is-active");
 }
