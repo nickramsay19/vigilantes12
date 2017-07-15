@@ -56,7 +56,7 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
     padding: 0;
 }
 
-.card .content{
+.hero-card .content{
     display: none;
 }
 
