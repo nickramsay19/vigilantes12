@@ -21,6 +21,14 @@ a {
 
 }
 
+.breadcrumb ul li{
+    margin-bottom: 32px;
+}
+
+.breadcrumb-nav{
+    height: 60px;
+}
+
 .hero-card {
     background-color: white;
     color: #363636;
