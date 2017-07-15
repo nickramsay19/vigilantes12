@@ -7,4 +7,4 @@
 -Add character icons to replace Sonic and Knuckles
 -Fix Header image "N" clip
 -Upload podcasts
--Timeline
+-Timeline fix groups
