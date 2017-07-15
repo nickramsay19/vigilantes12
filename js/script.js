@@ -153,6 +153,9 @@ function ResetPageSelection(){
     //Hide All Pages
     $("#page-home").fadeOut(100, function(){});
     $("#page-podcasts").fadeOut(100, function(){});
+    $("#page-team").fadeOut(100, function(){});
+    $("#page-discover").fadeOut(100, function(){});
+    $("#page-timeline").fadeOut(100, function(){});
     $("#page-heroes").fadeOut(100, function(){});
     $("#page-viper").fadeOut(100, function(){});
     $("#page-viper-viper").fadeOut(100, function(){});
@@ -166,15 +169,26 @@ function ResetPageSelection(){
     $("#page-tom").fadeOut(100, function(){});
     $("#page-miranda").fadeOut(100, function(){});
     $("#page-hunter").fadeOut(100, function(){});
-    $("#page-team").fadeOut(100, function(){});
-    $("#page-discover").fadeOut(100, function(){});
-    $("#page-timeline").fadeOut(100, function(){});
+
 
     //Clear SideBar Styles
     $(".link-page-home").removeClass("is-active");
-    $(".link-page-podcasts").removeClass("is-active");
-    $(".link-page-heroes").removeClass("is-active");
     $(".link-page-team").removeClass("is-active");
     $(".link-page-discover").removeClass("is-active");
     $(".link-page-timeline").removeClass("is-active");
+    $(".link-page-podcasts").removeClass("is-active");
+    $(".link-page-heroes").removeClass("is-active");
+    $(".link-page-viper").removeClass("is-active");
+    $(".link-page-viper-viper").removeClass("is-active");
+    $(".link-page-viper-jp").removeClass("is-active");
+    $(".link-page-spectre").removeClass("is-active");
+    $(".link-page-mockingbird").removeClass("is-active");
+    $(".link-page-burning").removeClass("is-active");
+    $(".link-page-jack").removeClass("is-active");
+    $(".link-page-dilhan").removeClass("is-active");
+    $(".link-page-hannah").removeClass("is-active");
+    $(".link-page-tom").removeClass("is-active");
+    $(".link-page-miranda").removeClass("is-active");
+    $(".link-page-hunter").removeClass("is-active");
+
 }
