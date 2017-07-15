@@ -14,9 +14,7 @@ a {
 }
 
 #sidebar {
-    position: -webkit-sticky;  // required for Safari
-    position: sticky;
-    top: 0; // required as well.
+
 }
 
 .hero-icon {
