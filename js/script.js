@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#link-page-home").click(function(){
+    $(".link-page-home").click(function(){
         HideAllPages();
         setTimeout(function(){
             $("#page-home").fadeIn(500, function(){});
@@ -7,21 +7,21 @@ $(document).ready(function(){
         200);
 
     });
-    $("#link-page-heroes").click(function(){
+    $(".link-page-heroes").click(function(){
         HideAllPages();
         setTimeout(function(){
             $("#page-heroes").fadeIn(500, function(){});
         },
         200);
     });
-    $("#link-page-podcasts").click(function(){
+    $(".link-page-podcasts").click(function(){
         HideAllPages();
         setTimeout(function(){
             $("#page-podcasts").fadeIn(500, function(){});
         },
         200);
     });
-    $("#link-page-viper").click(function(){
+    $(".link-page-viper").click(function(){
         HideAllPages();
         setTimeout(function(){
             $("#page-viper").fadeIn(500, function(){});
