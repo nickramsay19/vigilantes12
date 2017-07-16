@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -17,30 +22,12 @@ a {
 
 }
 
-.hero-icon {
-
-}
-
 .breadcrumb ul li{
     margin-bottom: 32px;
 }
 
 .breadcrumb-nav{
     height: 60px;
-}
-
-.hero-card {
-    background-color: white;
-    color: #363636;
-}
-
-.hero-card:hover{
-    background-color: #363636;
-
-}
-
-.hero-card:hover .card-content .media p{
-    color: white;
 }
 
 .menu-list{
@@ -59,21 +46,45 @@ a {
     transition: none 86ms ease-out;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
-
-.hero-card .content{
-    display: none;
-}
-
 .podcast-player{
     margin-top: 35px;
 }
 
 td{
     padding: 10px;
+}
+
+/* Hero Card */
+
+.hero-card {
+    background-color: white;
+    color: #363636;
+}
+
+.hero-card:hover{
+    background-color: #363636;
+
+}
+
+.hero-card:hover .card-content .media p{
+    color: white;
+}
+
+.hero-card:hover .card-content .media p{
+    color: white;
+}
+
+.hero-card-title {
+    text-align: center;
+}
+
+.hero-card .content{
+    display: none;
+}
+
+/* Extra */
+.hidden{
+    display: none;
 }
 
 

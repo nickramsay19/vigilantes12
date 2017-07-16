@@ -1,12 +1,9 @@
 //Timeline
-// DOM element where the Timeline will be attached
-var container = document.getElementById('visualization');
-
-// Create a DataSet (allows two way data-binding)
+var container = document.getElementById('visualization'); // DOM element where the Timeline will be attached
 var groups = [
     {id: 1, content: 'Viper Sub-Universe'},
     {id: 2, content: 'Vigilantes Universe'}
-];
+]; // Create Groups
 var items = new vis.DataSet([
     {id: 1, content: 'Mike Baird passes law restricting environmental protests', start: '2016-03-20', group: 1},
     {id: 2, content: 'Donald trump wins the american presidential election', start: '2016-11-09', group: 1},
@@ -14,161 +11,84 @@ var items = new vis.DataSet([
     {id: 4, content: 'Nick commits to his legal profession', start: '2022-10-26', end: '2023-12-03', group: 2},
     {id: 5, content: 'item 5', start: '2022-10-26', end: '2023-12-03'},
     {id: 6, content: 'item 6', start: '2013-04-27'}
-]);
+]); // Create a DataSet (allows two way data-binding)
+var options = {}; // Configuration for the Timeline
+var timeline = new vis.Timeline(container, items, groups, options); // Create a Timeline
 
-// Configuration for the Timeline
-var options = {};
+//Cookies
+if(Cookies.get().hasOwnProperty("page")){
+    SetPage(Cookies.get('page'));
+    document.getElementById('content').scrollIntoView();
+}
 
-// Create a Timeline
-var timeline = new vis.Timeline(container, items, groups, options);
-
-//Page Links
+//JQuery
 $(document).ready(function(){
-    $(".link-page-home").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-home").addClass("is-active");
-            $("#page-home").fadeIn(500, function(){});
-        },
-        200);
+    //Hero Icon Image Change
+    $(".hero-icon img").hover(
+        function(){
+        $(this).attr("src", "img/icon/icon-dark.png");
+    },
+        function(){
+        $(this).attr("src", "img/icon/icon.png");
+    }
+    );
 
+    //Page Links
+    $(".link-page-home").click(function(){
+        SetPage("home");
     });
     $(".link-page-heroes").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-heroes").addClass("is-active");
-            $("#page-heroes").fadeIn(500, function(){});
-        },
-        200);
-    });
-    $(".link-page-podcasts").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-podcasts").addClass("is-active");
-            $("#page-podcasts").fadeIn(500, function(){});
-        },
-        200);
-    });
-    $(".link-page-viper").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-viper").addClass("is-active");
-            $("#page-viper").fadeIn(500, function(){});
-        },
-        200);
-    });
-    $(".link-page-viper-viper").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-viper-viper").addClass("is-active");
-            $("#page-viper-viper").fadeIn(500, function(){});
-        },
-        200);
-    });
-    $(".link-page-viper-jp").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-viper-jp").addClass("is-active");
-            $("#page-viper-jp").fadeIn(500, function(){});
-        },
-        200);
-    });
-    $(".link-page-spectre").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-spectre").addClass("is-active");
-            $("#page-spectre").fadeIn(500, function(){});
-        },
-        200);
-    });
-    $(".link-page-mockingbird").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-mockingbird").addClass("is-active");
-            $("#page-mockingbird").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-burning").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-burning").addClass("is-active");
-            $("#page-burning").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-jack").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-jack").addClass("is-active");
-            $("#page-jack").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-dilhan").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-dilhan").addClass("is-active");
-            $("#page-dilhan").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-hannah").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-hannah").addClass("is-active");
-            $("#page-hannah").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-tom").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-tom").addClass("is-active");
-            $("#page-tom").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-miranda").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-miranda").addClass("is-active");
-            $("#page-miranda").fadeIn(500, function(){});
-        },
-                   200);
-    });
-    $(".link-page-hunter").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-hunter").addClass("is-active");
-            $("#page-hunter").fadeIn(500, function(){});
-        },
-                   200);
+        SetPage("heroes");
     });
     $(".link-page-team").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-team").addClass("is-active");
-            $("#page-team").fadeIn(500, function(){});
-        },
-        200);
+        SetPage("team");
     });
     $(".link-page-discover").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-discover").addClass("is-active");
-            $("#page-discover").fadeIn(500, function(){});
-        },
-        200);
+        SetPage("discove");
     });
     $(".link-page-timeline").click(function(){
-        ResetPageSelection();
-        setTimeout(function(){
-            $(".link-page-timeline").addClass("is-active");
-            $("#page-timeline").fadeIn(500, function(){});
-        },
-        200);
+        SetPage("timeline");
     });
+    $(".link-page-podcasts").click(function(){
+        SetPage("podcasts");
+    });
+    $(".link-page-viper").click(function(){
+        SetPage("viper");
+    });
+    $(".link-page-viper-viper").click(function(){
+        SetPage("viper-viper");
+    });
+    $(".link-page-viper-jp").click(function(){
+        SetPage("viper-jp");
+    });
+    $(".link-page-spectre").click(function(){
+        SetPage("spectre");
+    });
+    $(".link-page-mockingbird").click(function(){
+        SetPage("mockingbird");
+    });
+    $(".link-page-burning").click(function(){
+        SetPage("burning");
+    });
+    $(".link-page-jack").click(function(){
+        SetPage("jack");
+    });
+    $(".link-page-dilhan").click(function(){
+        SetPage("dilhan");
+    });
+    $(".link-page-hannah").click(function(){
+        SetPage("hannah");
+    });
+    $(".link-page-tom").click(function(){
+        SetPage("tom");
+    });
+    $(".link-page-miranda").click(function(){
+        SetPage("miranda");
+    });
+    $(".link-page-hunter").click(function(){
+        SetPage("hunter");
+    });
+
 });
 
 //Reset All Pages & Page Links
@@ -217,6 +137,164 @@ function ResetPageSelection(){
 
 }
 
-//title: 'This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.', content: 'Mike Baird passes law restricting environmental protests'
+function SetPage(PageName){
 
-//Opened the door for global political unrest. Thanks to Australia's close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia's Asian population.
+    ResetPageSelection();
+    setTimeout(function(){
+        $(".link-page-" + PageName).addClass("is-active");
+        $("#page-" + PageName).fadeIn(500, function(){});
+        Cookies.set('page', PageName);
+    }, 200);
+
+    //Redundant
+    /*switch (PageName){
+        case "home":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "podcasts":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "team":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "discover":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "timeline":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "heroes":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "viper":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "viper-viper":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "viper-jp":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "spectre":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "mockingbird":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "burning":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "jack":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "dilhan":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "hannah":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "tom":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "miranda":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+        case "hunter":
+            ResetPageSelection();
+            setTimeout(function(){
+                $(".link-page-" + PageName).addClass("is-active");
+                $("#page-" + PageName).fadeIn(500, function(){});
+                Cookies.set('page', PageName);
+            }, 200);
+            break;
+
+    } */
+}
+
+
+

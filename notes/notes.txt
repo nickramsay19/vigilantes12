@@ -1,10 +1,14 @@
-!-- Notes --!
+!-- Todo --!
 
---Todo:
 -Use cookies to keep same page open on refresh
 -Keep scroll location on refresh
--Add favicon
 -Add character icons to replace Sonic and Knuckles
 -Fix Header image "N" clip
 -Upload podcasts
 -Timeline fix groups
+
+!-- Timeline --!
+
+- This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.
+
+- Opened the door for global political unrest. Thanks to Australia's close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia's Asian population.
