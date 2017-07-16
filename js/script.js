@@ -1,21 +1,4 @@
-//Timeline
-var container = document.getElementById('visualization'); // DOM element where the Timeline will be attached
-var groups = [
-    {id: 1, content: 'Viper Sub-Universe'},
-    {id: 2, content: 'Vigilantes Universe'}
-]; // Create Groups
-var items = new vis.DataSet([
-    {id: 1, content: 'Mike Baird passes law restricting environmental protests', start: '2016-03-20', group: 1},
-    {id: 2, content: 'Donald trump wins the american presidential election', start: '2016-11-09', group: 1},
-    {id: 3, content: 'Viper trains with the Longying', start: '2017-03-29', end: '2022-10-26', group: 2},
-    {id: 4, content: 'Nick commits to his legal profession', start: '2022-10-26', end: '2023-12-03', group: 2},
-    {id: 5, content: 'item 5', start: '2022-10-26', end: '2023-12-03'},
-    {id: 6, content: 'item 6', start: '2013-04-27'}
-]); // Create a DataSet (allows two way data-binding)
-var options = {}; // Configuration for the Timeline
-var timeline = new vis.Timeline(container, items, groups, options); // Create a Timeline
-
-//Cookies
+//Set Page From Session Cookies
 if(Cookies.get().hasOwnProperty("page")){
     SetPage(Cookies.get('page'));
     document.getElementById('content').scrollIntoView();
@@ -23,7 +6,7 @@ if(Cookies.get().hasOwnProperty("page")){
 
 //JQuery
 $(document).ready(function(){
-    //Hero Icon Image Change
+    //Hero Icon Image Change || TEMP: Until Character Card Images Are Made
     $(".hero-icon img").hover(
         function(){
         $(this).attr("src", "img/icon/icon-dark.png");
@@ -33,62 +16,22 @@ $(document).ready(function(){
     }
     );
 
-    //Page Links
-    $(".link-page-home").click(function(){
-        SetPage("home");
-    });
-    $(".link-page-heroes").click(function(){
-        SetPage("heroes");
-    });
-    $(".link-page-team").click(function(){
-        SetPage("team");
-    });
-    $(".link-page-discover").click(function(){
-        SetPage("discover");
-    });
-    $(".link-page-timeline").click(function(){
-        SetPage("timeline");
-    });
-    $(".link-page-podcasts").click(function(){
-        SetPage("podcasts");
-    });
-    $(".link-page-viper").click(function(){
-        SetPage("viper");
-    });
-    $(".link-page-viper-viper").click(function(){
-        SetPage("viper-viper");
-    });
-    $(".link-page-viper-jp").click(function(){
-        SetPage("viper-jp");
-    });
-    $(".link-page-spectre").click(function(){
-        SetPage("spectre");
-    });
-    $(".link-page-mockingbird").click(function(){
-        SetPage("mockingbird");
-    });
-    $(".link-page-burning").click(function(){
-        SetPage("burning");
-    });
-    $(".link-page-jack").click(function(){
-        SetPage("jack");
-    });
-    $(".link-page-dilhan").click(function(){
-        SetPage("dilhan");
-    });
-    $(".link-page-hannah").click(function(){
-        SetPage("hannah");
-    });
-    $(".link-page-tom").click(function(){
-        SetPage("tom");
-    });
-    $(".link-page-miranda").click(function(){
-        SetPage("miranda");
-    });
-    $(".link-page-hunter").click(function(){
-        SetPage("hunter");
-    });
+    //On Link Press
+    $(".link-page").click(function(){
+        var ClassList = $(this).attr('class').split(/\s+/);
+        console.log(ClassList);
 
+        //Loop through each class
+        for (var x = 0; x < ClassList.length; x++) {
+            //Class containing page is found
+            if (ClassList[x].substring(0, 10) === "link-page-") {
+
+                //Set page
+                SetPage(ClassList[x].split("link-page-")[1]);
+                break;
+            }
+        }
+    })
 });
 
 //Reset All Pages & Page Links
@@ -137,6 +80,7 @@ function ResetPageSelection(){
 
 }
 
+//Set Page
 function SetPage(PageName){
 
     ResetPageSelection();
@@ -297,4 +241,58 @@ function SetPage(PageName){
 }
 
 
+//Timeline
+var container = document.getElementById('timeline'); // DOM element where the Timeline will be attached
+var groups = [
+    {id: 1, content: 'Global'},
+    {id: 2, content: 'Viper'},
+    {id: 3, content: 'Silver Spectre'},
+    {id: 4, content: 'Mockingbird'},
+    {id: 5, content: 'Burning Hand'},
 
+]; // Create Groups
+var items = new vis.DataSet([
+    {id: 1, content: 'Environmental Protests Resricted', title:'Mike Baird passes law restricting environmental protests', start: '2016-03-20', group: 1},
+    {id: 2, content: 'Donald Trump Elected', title:'Donald trump wins the american presidential election.', start: '2016-11-09', group: 1},
+    {id: 3, content: 'Viper Longying', title:'Viper trains with the Longying.', start: '2017-03-29', end: '2022-10-26', group: 2},
+    {id: 4, content: 'Law Proffesion', title: 'Nick commits to his law profession.', start: '2022-10-26', end: '2023-12-03', group: 2},
+]); // Create a DataSet (allows two way data-binding)
+var options = {
+    width: '100%',
+    margin: {
+        item: 20
+    },
+    horizontalScroll: true,
+    showTooltips: false
+}; // Configuration for the Timeline
+var timeline = new vis.Timeline(container, items, groups, options); // Create a Timeline
+
+//Timeline Events
+var SelectedItem = 0;
+timeline.on('select', function(properties){
+    if(parseInt(properties.items) > 0){
+        SelectedItem = parseInt(properties.items);
+        var ItemContent = items.get(parseInt(properties.items)).title;
+        $("#timeline-details").text(ItemContent);
+    }
+    else{
+        SelectedItem = 0;
+    }
+});
+timeline.on('itemover', function(properties){
+    var ItemContent = items.get(properties.item).title;
+    $("#timeline-details").text(ItemContent);
+});
+timeline.on('itemout', function(properties){
+    if(SelectedItem > 0){
+        var ItemContent = items.get(SelectedItem).title;
+        $("#timeline-details").text(ItemContent);
+    }
+    else{
+        $("#timeline-details").text("Hover over an event to see extra details here!");
+    }
+
+
+
+
+});

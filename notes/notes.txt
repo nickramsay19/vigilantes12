@@ -1,10 +1,7 @@
 !-- Todo --!
 
--Use cookies to keep same page open on refresh
--Keep scroll location on refresh
 -Add character icons to replace Sonic and Knuckles
 -Fix Header image "N" clip
--Upload podcasts
 -Timeline fix groups
 
 !-- Timeline --!
