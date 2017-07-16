@@ -12,38 +12,6 @@ else{
     document.getElementById('content').scrollIntoView();
 }
 
-//JQuery
-$(document).ready(function(){
-
-    //Hero Icon Image Change || TEMP: Until Character Card Images Are Made
-    $(".hero-card").hover(
-        function(){
-            $(this).find("img").attr("src", "img/icon/icon-dark.png");
-        },
-        function(){
-            $(this).find("img").attr("src", "img/icon/icon.png");
-        }
-    );
-
-    //On Link Press
-    $(".link-page").click(function(){
-        var ClassList = $(this).attr('class').split(/\s+/);
-        console.log(ClassList);
-
-        //Loop through each class
-        for (var x = 0; x < ClassList.length; x++) {
-            //Class containing page is found
-            if (ClassList[x].substring(0, 10) === "link-page-") {
-
-                //Set page
-                SetPage(ClassList[x].split("link-page-")[1]);
-                break;
-            }
-        }
-    })
-});
-
-
 //Reset All Pages & Page Links
 function ResetPageSelection(){
     $("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
@@ -285,7 +253,7 @@ function PrintInfo(item){
     }
 
     $("#timeline-details").html(text);
-}
+} // Produce Timeline Details Styling
 
 function GetCleanDate(string){
 
@@ -296,5 +264,53 @@ function GetCleanDate(string){
     var date = new Date(string);
     var returnString = date.getDate().toString() + " " + monthNames[date.getMonth()] + " " + date.getFullYear().toString();
     return returnString;
+} // Clean Date\
+
+//Drop Downs
+$(".drop-down-button").click(function(){
+
+    //ResetDropDowns();
+    var ID = "#" + $(this).attr("id");
+
+    if($(".drop-down-box" + ID).is(":visible")){
+        $(".drop-down-box" + ID).slideUp();
+    }
+    else{
+        $(".drop-down-box" + ID).slideDown();
+    }
+
+
+
+})
+function ResetDropDowns(){
+    $(".drop-down-box").slideUp();
 }
+ResetDropDowns();
+
+//On Link Press
+$(".link-page").click(function(){
+    var ClassList = $(this).attr('class').split(/\s+/);
+    console.log(ClassList);
+
+    //Loop through each class
+    for (var x = 0; x < ClassList.length; x++) {
+        //Class containing page is found
+        if (ClassList[x].substring(0, 10) === "link-page-") {
+
+            //Set page
+            SetPage(ClassList[x].split("link-page-")[1]);
+            break;
+        }
+    }
+})
+
+//Hero Icon Image Change || TEMP: Until Character Card Images Are Made
+$(".hero-card").hover(
+    function(){
+        $(this).find("img").attr("src", "img/icon/icon-dark.png");
+    },
+    function(){
+        $(this).find("img").attr("src", "img/icon/icon.png");
+    }
+);
 
