@@ -25,10 +25,6 @@ $(".hero-card").hover(
     }
 );
 
-//Parallax
-var rellax = new Rellax('.rellax');
-console.log(rellax);
-
 //Set Page From Session Cookies
 if(Cookies.get().hasOwnProperty("page")){
     SetPage(Cookies.get("page"));
@@ -217,10 +213,16 @@ var groups = [
 
 ]; // Create Groups
 var items = new vis.DataSet([
-    {id: 1, content: 'Environmental Protests Resricted', title:'Mike Baird passes law restricting environmental protests. This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.', start: '2016-03-20', group: 1},
-    {id: 2, content: 'Donald Trump Elected', title:'Donald trump wins the american presidential election. Opened the door for global political unrest. Thanks to Australia\'s close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia\'s Asian population.', start: '2016-11-09', group: 1},
+
+    {id: 1, content: 'Environmental Protests Restricted', title:'Mike Baird passes law restricting environmental protests. This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.', start: '2016-03-20', type: 'point', group: 1},
+    {id: 2, content: 'Trump Elected', title:'Donald Trump wins the American presidential election. Opened the door for global political unrest. Thanks to Australia\'s close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia\'s Asian population.', start: '2016-11-09', type: 'point', group: 1},
     {id: 3, content: 'Viper Longying', title:'Viper trains with the Longying.', start: '2017-03-29', end: '2022-10-26', group: 2},
     {id: 4, content: 'Law Proffesion', title: 'Nick commits to his law profession.', start: '2022-10-26', end: '2023-12-03', group: 2},
+    {id: 5, content: 'LongYing Raid', title: 'Anti-terrorism forces from Fort Darling stormed the LongYing base(near Darling Harbour) and they suffered profound losses.', start: '2023-12-02', type: 'point', group: 2},
+    {id: 6, content: 'Lucky Moon Opens', title: 'Tongyi Shen opens the Lucky Moon Yum Cha on Elizabeth Street.', start: '2021-06-25', type: 'point', group: 2},
+    {id: 7, content: 'YangJian In China', title: 'The Three Eyed Warrior travels to China to train and lay the ground work for LongYing influence there.', start: '2020-05-07', end: '2023-12-05', group: 2},
+    {id: 'A', content: 'Stage 1', start: '2023-12-2', end: '2028-01-22', type: 'background', group: 2},
+    {id: 'B', content: 'Stage 2', start: '2014-01-25', end: '2014-01-30', type: 'background', group: 2}
 ]); // Create a DataSet (allows two way data-binding)
 var options = {
     width: '100%',

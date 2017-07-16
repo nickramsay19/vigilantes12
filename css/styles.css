@@ -66,6 +66,7 @@ td{
 }
 .hero-card-title {
     margin: 0 auto;
+    text-align: center;
 }
 
 .hero-card .content{
@@ -135,6 +136,9 @@ h2 span {
     padding:0 10px;
 }
 
-
+.tag:hover{
+    background-color: #222;
+    color: #fff;
+}
 
 
