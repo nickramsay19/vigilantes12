@@ -44,7 +44,7 @@ $(document).ready(function(){
         SetPage("team");
     });
     $(".link-page-discover").click(function(){
-        SetPage("discove");
+        SetPage("discover");
     });
     $(".link-page-timeline").click(function(){
         SetPage("timeline");
