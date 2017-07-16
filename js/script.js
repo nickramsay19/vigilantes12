@@ -36,48 +36,8 @@ $(document).ready(function(){
 
 //Reset All Pages & Page Links
 function ResetPageSelection(){
-
-    //Hide All Pages
-    $("#page-home").fadeOut(100, function(){});
-    $("#page-podcasts").fadeOut(100, function(){});
-    $("#page-team").fadeOut(100, function(){});
-    $("#page-discover").fadeOut(100, function(){});
-    $("#page-timeline").fadeOut(100, function(){});
-    $("#page-heroes").fadeOut(100, function(){});
-    $("#page-viper").fadeOut(100, function(){});
-    $("#page-viper-viper").fadeOut(100, function(){});
-    $("#page-viper-jp").fadeOut(100, function(){});
-    $("#page-spectre").fadeOut(100, function(){});
-    $("#page-mockingbird").fadeOut(100, function(){});
-    $("#page-burning").fadeOut(100, function(){});
-    $("#page-jack").fadeOut(100, function(){});
-    $("#page-dilhan").fadeOut(100, function(){});
-    $("#page-hannah").fadeOut(100, function(){});
-    $("#page-tom").fadeOut(100, function(){});
-    $("#page-miranda").fadeOut(100, function(){});
-    $("#page-hunter").fadeOut(100, function(){});
-
-
-    //Clear SideBar Styles
-    $(".link-page-home").removeClass("is-active");
-    $(".link-page-team").removeClass("is-active");
-    $(".link-page-discover").removeClass("is-active");
-    $(".link-page-timeline").removeClass("is-active");
-    $(".link-page-podcasts").removeClass("is-active");
-    $(".link-page-heroes").removeClass("is-active");
-    $(".link-page-viper").removeClass("is-active");
-    $(".link-page-viper-viper").removeClass("is-active");
-    $(".link-page-viper-jp").removeClass("is-active");
-    $(".link-page-spectre").removeClass("is-active");
-    $(".link-page-mockingbird").removeClass("is-active");
-    $(".link-page-burning").removeClass("is-active");
-    $(".link-page-jack").removeClass("is-active");
-    $(".link-page-dilhan").removeClass("is-active");
-    $(".link-page-hannah").removeClass("is-active");
-    $(".link-page-tom").removeClass("is-active");
-    $(".link-page-miranda").removeClass("is-active");
-    $(".link-page-hunter").removeClass("is-active");
-
+    $("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
+    $(".link-page").removeClass("is-active"); //Clear SideBar Styles
 }
 
 //Set Page
@@ -240,7 +200,6 @@ function SetPage(PageName){
     } */
 }
 
-
 //Timeline
 var container = document.getElementById('timeline'); // DOM element where the Timeline will be attached
 var groups = [
@@ -252,7 +211,7 @@ var groups = [
 
 ]; // Create Groups
 var items = new vis.DataSet([
-    {id: 1, content: 'Environmental Protests Resricted', title:'Mike Baird passes law restricting environmental protests', start: '2016-03-20', group: 1},
+    {id: 1, content: 'Environmental Protests Resricted', title:'Mike Baird passes law restricting environmental protests.', start: '2016-03-20', group: 1},
     {id: 2, content: 'Donald Trump Elected', title:'Donald trump wins the american presidential election.', start: '2016-11-09', group: 1},
     {id: 3, content: 'Viper Longying', title:'Viper trains with the Longying.', start: '2017-03-29', end: '2022-10-26', group: 2},
     {id: 4, content: 'Law Proffesion', title: 'Nick commits to his law profession.', start: '2022-10-26', end: '2023-12-03', group: 2},
@@ -272,27 +231,58 @@ var SelectedItem = 0;
 timeline.on('select', function(properties){
     if(parseInt(properties.items) > 0){
         SelectedItem = parseInt(properties.items);
-        var ItemContent = items.get(parseInt(properties.items)).title;
-        $("#timeline-details").text(ItemContent);
+        PrintInfo(parseInt(properties.items));
+
+        //var ItemContent = items.get(parseInt(properties.items)).title;
+        //$("#timeline-details").text(ItemContent);
     }
     else{
         SelectedItem = 0;
     }
 });
 timeline.on('itemover', function(properties){
-    var ItemContent = items.get(properties.item).title;
-    $("#timeline-details").text(ItemContent);
+    PrintInfo(properties.item);
+    //var ItemContent = items.get(properties.item).title;
+    //$("#timeline-details").text(ItemContent);
 });
 timeline.on('itemout', function(properties){
     if(SelectedItem > 0){
-        var ItemContent = items.get(SelectedItem).title;
-        $("#timeline-details").text(ItemContent);
+        PrintInfo(SelectedItem);
+        //var ItemContent = items.get(SelectedItem).title;
+        //$("#timeline-details").text(ItemContent);
     }
     else{
-        $("#timeline-details").text("Hover over an event to see extra details here!");
+        $("#timeline-details").html("<h3 class=\"title\">Hover over or select an event to see extra details about it!</h3>");
+    }
+});
+
+function PrintInfo(item){
+
+    var title = items.get(item).title;
+    var content = items.get(item).content;
+    var start = GetCleanDate(items.get(item).start);
+    var end = items.get(item).end;
+
+    var text;
+
+    if(!end){
+        text = "<h3 class=\"title\">" + content + "</h3><h4 class=\"subtitle\">" + start + "</h4>" + title;
+    }
+    else{
+        var end = GetCleanDate(end);
+        text = "<h3 class=\"title\">" + content + "</h3><h4 class=\"subtitle\">" + start + " - " + end + "</h4>" + title;
     }
 
+    $("#timeline-details").html(text);
+}
 
+function GetCleanDate(string){
 
+    var monthNames = ["January", "February", "March", "April", "May", "June",
+                      "July", "August", "September", "October", "November", "December"
+                     ];
 
-});
+    var date = new Date(string);
+    var returnString = date.getDate().toString() + " " + monthNames[date.getMonth()] + " " + date.getFullYear().toString();
+    return returnString;
+}

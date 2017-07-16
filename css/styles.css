@@ -82,6 +82,11 @@ td{
     display: none;
 }
 
+/* Timeline */
+#timeline-details{
+    height: 150px;
+}
+
 /* Extra */
 .hidden{
     display: none;
