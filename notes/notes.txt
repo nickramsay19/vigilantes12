@@ -2,7 +2,7 @@
 
 -Website (Nick):
 -CSS Hero-Card Hover on text doesn't work
--Move "Go Now" button up
+-Move "Go Now" button up, and fix image size for smaller monitors
 -Finish adding "is-one-quarter" to all sub-universes
 -Add links to home page tags
 
