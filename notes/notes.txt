@@ -8,6 +8,7 @@
 -Add search bar
 -Remove sonic content to hero cards
 -center all hero-card titles
+-Add filtering options for each sub-universe in timeline
 
 -Writing (Hunter):
 -Write about all characters
