@@ -1,3 +1,30 @@
+//On Link Press
+$(".link-page").click(function(){
+    var ClassList = $(this).attr('class').split(/\s+/);
+    console.log(ClassList);
+
+    //Loop through each class
+    for (var x = 0; x < ClassList.length; x++) {
+        //Class containing page is found
+        if (ClassList[x].substring(0, 10) === "link-page-") {
+
+            //Set page
+            SetPage(ClassList[x].split("link-page-")[1]);
+            break;
+        }
+    }
+});
+
+//Hero Icon Image Change || TEMP: Until Character Card Images Are Made
+$(".hero-card").hover(
+    function(){
+        $(this).find("img").attr("src", "img/icon/icon-dark.png");
+    },
+    function(){
+        $(this).find("img").attr("src", "img/icon/icon.png");
+    }
+);
+
 //Parallax
 var rellax = new Rellax('.rellax');
 console.log(rellax);
@@ -266,7 +293,9 @@ function GetCleanDate(string){
     return returnString;
 } // Clean Date\
 
+
 //Drop Downs
+$(".drop-down-box").slideUp(); // Close All Drop Downs
 $(".drop-down-button").click(function(){
 
     //ResetDropDowns();
@@ -274,43 +303,19 @@ $(".drop-down-button").click(function(){
 
     if($(".drop-down-box" + ID).is(":visible")){
         $(".drop-down-box" + ID).slideUp();
+
+        //Change to Chevron Down
+        $(".drop-down-button" + ID).removeClass("fa fa-arrow-circle-up");
+        $(".drop-down-button" + ID).addClass("fa fa-arrow-circle-down");
     }
     else{
         $(".drop-down-box" + ID).slideDown();
+
+        //Change to Chevron Up
+        $(".drop-down-button" + ID).removeClass("fa fa-arrow-circle-down");
+        $(".drop-down-button" + ID).addClass("fa fa-arrow-circle-up");
     }
+});
 
 
-
-})
-function ResetDropDowns(){
-    $(".drop-down-box").slideUp();
-}
-ResetDropDowns();
-
-//On Link Press
-$(".link-page").click(function(){
-    var ClassList = $(this).attr('class').split(/\s+/);
-    console.log(ClassList);
-
-    //Loop through each class
-    for (var x = 0; x < ClassList.length; x++) {
-        //Class containing page is found
-        if (ClassList[x].substring(0, 10) === "link-page-") {
-
-            //Set page
-            SetPage(ClassList[x].split("link-page-")[1]);
-            break;
-        }
-    }
-})
-
-//Hero Icon Image Change || TEMP: Until Character Card Images Are Made
-$(".hero-card").hover(
-    function(){
-        $(this).find("img").attr("src", "img/icon/icon-dark.png");
-    },
-    function(){
-        $(this).find("img").attr("src", "img/icon/icon.png");
-    }
-);
 
