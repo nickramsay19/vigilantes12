@@ -4,6 +4,7 @@
 -CSS Hero-Card Hover on text doesn't work
 -Move "Go Now" button up
 -Finish adding "is-one-quarter" to all sub-universes
+-Add links to home page tags
 
 -Writing (Hunter):
 -Write about all characters
