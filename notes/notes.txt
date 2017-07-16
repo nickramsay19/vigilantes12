@@ -5,9 +5,11 @@
 -Move "Go Now" button up, and fix image size for smaller monitors
 -Finish adding "is-one-quarter" to all sub-universes
 -Add links to home page tags
+-Add search bar
 
 -Writing (Hunter):
 -Write about all characters
+-Decide on tongyi quote
 
 -Write more events to timeline [short title < 5 words, paragraph, start and end]
 -Write storyline content
@@ -15,6 +17,20 @@
 
 -Artwork (Siena, Miranda):
 -Add Icons to each sub-universe and their respective characters
+
+-Other Notes:
+<div class="drop-down-box" id="nick">
+The reason I like pie is because of its simplicity, it is but delicious fruit, meat, vegetables, any of your choosing in a carbs rich casing. Use any element to open the dropdown menu, e.g. a, or element.
+
+Use a container element (like) to create the dropdown menu and add the dropdown links inside it.
+</div>
+<div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+<span style="background-color:#fff;">
+<a class="icon is-large" style="position: relative; bottom: 2px; background-color: white;">
+<i id="nick" class="drop-down-button fa fa-arrow-circle-down" aria-hidden="true"></i>
+</a>
+</span>
+</div>
 
 
 
