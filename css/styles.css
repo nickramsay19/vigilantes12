@@ -11,7 +11,12 @@ nav{
 
 }
 
-.nav { position: fixed !important; top: 0; left: 0; right: 0; }
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 a {
     text-decoration: none;
@@ -54,33 +59,35 @@ td{
     padding: 10px;
 }
 
-/* Hero Card */
-
+/* Hero Card Styling */
 .hero-card {
     background-color: white;
     color: #363636;
 }
-
-.hero-card:hover{
-    background-color: #363636;
-
-}
-
-.hero-card:hover .card-content .media p{
-    color: white;
-}
-
-.hero-card:hover .card-content .media p{
-    color: white;
-}
-
 .hero-card-title {
-    text-align: center;
+    margin: 0 auto;
 }
 
 .hero-card .content{
     display: none;
 }
+/* Hero Card Hover Effect*/
+.hero-card{
+    background-color: white;
+}
+.hero-card:hover{
+    background-color: #363636;
+
+}
+.hero-card:hover .card-content .media p{
+    color: white;
+}
+
+.hero-card .card-content .media p{
+    color: #363636;
+}
+
+
 
 /* Timeline */
 #timeline-details{
@@ -90,6 +97,28 @@ td{
 /* Extra */
 .hidden{
     display: none;
+}
+
+#content{
+    overflow: hidden;
+}
+
+.rellax{
+    border: none;
+    box-sizing:inherit;
+    padding: 0;
+    border: 0;
+}
+
+#banner{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#go-now{
+    margin: 0 auto;
+
 }
 
 

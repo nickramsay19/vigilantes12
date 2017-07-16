@@ -1,11 +1,22 @@
 !-- Todo --!
 
--Add character icons to replace Sonic and Knuckles
--Fix Header image "N" clip
--Timeline fix groups
+-Website (Nick):
+-CSS Hero-Card Hover on text doesn't work
+-Move "Go Now" button up
+-Finish adding "is-one-quarter" to all sub-universes
 
-!-- Timeline --!
+-Writing (Hunter):
+-Write about all characters
 
-- This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.
+-Write more events to timeline [short title < 5 words, paragraph, start and end]
+-Write storyline content
+-Write world history content
 
-- Opened the door for global political unrest. Thanks to Australia's close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia's Asian population.
+-Artwork (Siena, Miranda):
+-Add Icons to each sub-universe and their respective characters
+
+
+
+
+
+

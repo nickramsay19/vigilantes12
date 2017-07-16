@@ -10,16 +10,16 @@
         <link rel="icon" href="img/icon/icon.png">
 
         <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/creative.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="bower_components/vis/dist/vis.css">
         <link rel="stylesheet" type="text/css" href="bower_components/bulma/css/bulma.css">
         <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bulma_theme.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="css/creative.min.css">
+
     </head>
     <body>
-
         <!-- NavBar -->
         <nav class="nav has-shadow" id="top">
             <div class="container">
@@ -46,20 +46,26 @@
         </nav>
 
         <!-- Header Image -->
-        <header>
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <h1 id="homeHeading"></h1><br><br><br><br><br><br><br><br><br>
+        <header style="background-image: url(img/banners/banner.jpg);">
+            <img class="" src="img/banners/banner.jpg" style="visibility: hidden;" />
 
-                    <a href="#content" class="button is-large link-page link-page-home">Go Now</a>
-                </div>
+            <div class="header-content">
+                <a href="#content" class="button is-large link-page link-page-home">Go Now</a>
             </div>
         </header>
+
+        <!-- Parallax -->
+        <div class="rellax hidden" style="background-image: url(img/banners/banner.jpg);" id="banner" data-rellax-speed="-10">
+            <img src="img/banners/banner.jpg" style="visibility: hidden;">
+
+
+
+        </div>
 
         <!-- Content -->
         <section class="section" id="content">
             <br><br><br>
-            <div class="container content">
+            <div class="container">
 
                 <!-- Main Content -->
                 <div class="columns">
@@ -501,7 +507,7 @@
                         <div class="columns">
 
                             <!-- Viper -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class="link-page link-page-viper">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -511,11 +517,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-
-                                                <div class="media-content">
-                                                    <p class="title is-4 hero-card-title">Viper</p>
-                                                    <p class="subtitle is-6"></p>
-                                                </div>
+                                                <p class="title is-4 hero-card-title">Viper</p>
                                             </div>
                                         </div>
                                     </div>
@@ -523,7 +525,7 @@
                             </div>
 
                             <!-- Silver Spectre -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class="link-page link-page-spectre">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -536,7 +538,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Silver Spectre</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -551,7 +553,7 @@
                             </div>
 
                             <!-- Mockingbird -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-mockingbird">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -564,7 +566,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Mockingbird</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -579,7 +581,7 @@
                             </div>
 
                             <!-- Burning Hand -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-burning">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -592,7 +594,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Burning Hand</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -611,7 +613,7 @@
                         <div class="columns">
 
                             <!-- Jack Kitchin -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-jack">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -624,7 +626,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Jack Kitchin</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -639,7 +641,7 @@
                             </div>
 
                             <!-- Dilhan -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-dilhan hidden">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -652,7 +654,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Dilhan WIP</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -667,7 +669,7 @@
                             </div>
 
                             <!-- Hannah -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-hannah hidden">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -680,7 +682,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Hannah WIP</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -695,7 +697,7 @@
                             </div>
 
                             <!-- Tom -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-tom hidden">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -708,7 +710,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Tom WIP</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -727,7 +729,7 @@
                         <div class="columns">
 
                             <!-- Miranda -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-miranda hidden">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -740,7 +742,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Miranda WIP</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -755,7 +757,7 @@
                             </div>
 
                             <!-- Hunter -->
-                            <div class="column">
+                            <div class="column is-one-quarter">
                                 <a class=" link-page link-page-hunter hidden">
                                     <div class="card hero-card">
                                         <div class="card-image">
@@ -768,7 +770,7 @@
 
                                                 <div class="media-content">
                                                     <p class="title is-4 hero-card-title">Hunter WIP</p>
-                                                    <p class="subtitle is-6"></p>
+
                                                 </div>
                                             </div>
 
@@ -781,9 +783,6 @@
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="column"></div>
-                            <div class="column"></div>
                         </div>
                     </div>
 
@@ -811,7 +810,7 @@
                             <div class="columns">
 
                                 <!-- Viper -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -823,7 +822,7 @@
                                                 <div class="media">
                                                     <div class="media-content">
                                                         <p class="title is-4 hero-card-title">Viper</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -832,7 +831,7 @@
                                 </div>
 
                                 <!-- Three Eyed Warrior -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-jp">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -845,7 +844,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4 hero-card-title">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -853,9 +852,9 @@
                                     </a>
                                 </div>
 
-                                <!-- Lewis Patton -->
-                                <div class="column">
-                                    <a class=" link-page link-page-viper">
+                                <!-- Tongyi Shen -->
+                                <div class="column is-one-quarter">
+                                    <a class="link-page link-page-viper-tongyi">
                                         <div class="card hero-card">
                                             <div class="card-image">
                                                 <figure class="image hero-icon">
@@ -866,8 +865,8 @@
                                                 <div class="media">
 
                                                     <div class="media-content">
-                                                        <p class="title is-4 hero-card-title">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+                                                        <p class="title is-4 hero-card-title">Tongyi Shen</p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1008,7 +1007,6 @@
                                     </nav></h1><br><br>
                             <div class="columns">
                                 <div class="column">
-
                                     <blockquote>"A fanatic is one who sticks to his guns whether they're loaded or not"</blockquote>
 
                                     With the help of his friends Jonathan sought refuge in Chinatown when discrimination against Asians began. Here, he, Nicholas Ramsay and Tongyi Shen met the Longying and joined them.<br>
@@ -1084,6 +1082,72 @@
                         </div>
                     </div>
 
+                    <!-- Viper: Tongyi Shen -->
+                    <div class="column is-three-quarters" id="page-viper-tongyi" style="display: none;">
+                        <div class="content">
+                            <nav class="navbar">
+                                <div class="navbar-brand">
+                                    <h1 class="title">Tongyi Shen
+                                        </div>
+                                    <div class="navbar-end">
+                                        <nav class="breadcrumb is-right nav-breadcrumb">
+                                            <ul>
+                                                <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                                                <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                                                <li><a class=" link-page link-page-viper">Viper</a></li>
+                                                <li class="is-active"><a class=" link-page link-page-viper-jp">Tongyi Shen</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    </nav></h1><br><br>
+                            <div class="columns">
+                                <div class="column">
+                                    <blockquote>"Friends are like dumplings, they look plain from far away but are actually rich inside."</blockquote>
+                                    <blockquote class="hidden">"Walking with a friend in the dark is better than walking alone in the light"</blockquote>
+
+                                    Tongyi fled with his friends, Nick and Jonathan, to Chinatown when severe discrimination began. They remained in Chinatown as it was established as an Asian safe zone.
+                                    They stumbled upon the Longying and joined the group. While Nick and Jonathan trained, Tongyi took on an administrative role and helped establish connections for the Longying, preferring it to a combat role.<br><br>
+                                    He spent years working in restaurants across Chinatown and eventually opened his own restaurant outside of Chinatown. This restaurant was opened in Surry Hills and named the Lucky Moon.<br><br>
+                                    Tongyi then proceeded to link his restaurant to the Longying’s tunnel system allowing his restaurant to act as a base of operations and exit from Chinatown. Tongyi has been very careful to remain in the good graces of authorities and takes extra precautions when helping the Longying.<br>
+                                    He is a very close friend of Viper and looks out for his vigilante friend. Tongyi often advises and helps ground Viper though they are known to argue.
+                                    <br><br>
+
+                                    <h4 class="subtitle">Capabilities</h4>
+                                    <ul>
+                                        <li>Owner of the Lucky Moon Restaurant</li>
+                                        <li>Accomplished cook</li>
+                                        <li>Speaks Mandarin</li>
+                                    </ul><br>
+
+                                    <h4 class="subtitle">Qualities</h4>
+                                    <ul>
+                                        <li>Friendly</li>
+                                        <li>Kind-hearted</li>
+                                        <li>Easily upset</li>
+                                        <li>Reserved</li>
+                                        <li>Loyal</li>
+                                    </ul>
+                                </div>
+
+                                <div class="column">
+                                    <img width="400px" height="500px" src="img/character-art/tongyi.jpg" alt="Image">
+                                    <article class="message is-primary">
+                                        <div class="message-header">
+                                            Extra Resources
+                                        </div>
+                                        <div class="message-body">
+                                            <i>Some additional links and comments to help appreciate the Tongyi Shen:</i><br><br>
+                                            <h5 class="subtitle">Notes</h5>
+                                            <ul class="img-caption-body">
+                                                <li>Tongyi is most important as Nick's moral compass and line of support. He brings out the human side to Viper and asks important questions about what he's doing.</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Silver Spectre -->
                     <div class="column is-three-quarters" id="page-spectre" style="display: none;">
                         <div class="content">
@@ -1105,7 +1169,7 @@
                             <div class="columns">
 
                                 <!-- Silver Spectre -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1118,7 +1182,6 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4 hero-card-title">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1152,7 +1215,7 @@
                             <div class="columns">
 
                                 <!-- Viper -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1165,7 +1228,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1174,7 +1237,7 @@
                                 </div>
 
                                 <!-- Silver Spectre -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1187,7 +1250,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1196,7 +1259,7 @@
                                 </div>
 
                                 <!-- Mockingbird -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1209,7 +1272,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1218,7 +1281,7 @@
                                 </div>
 
                                 <!-- Burning Hand -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1231,7 +1294,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1265,7 +1328,7 @@
                             <div class="columns">
 
                                 <!-- Viper -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1278,7 +1341,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1287,7 +1350,7 @@
                                 </div>
 
                                 <!-- Silver Spectre -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1300,7 +1363,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1309,7 +1372,7 @@
                                 </div>
 
                                 <!-- Mockingbird -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1322,7 +1385,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1331,7 +1394,7 @@
                                 </div>
 
                                 <!-- Burning Hand -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1344,7 +1407,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1378,7 +1441,7 @@
                             <div class="columns">
 
                                 <!-- Viper -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1391,7 +1454,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1400,7 +1463,7 @@
                                 </div>
 
                                 <!-- Silver Spectre -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1413,7 +1476,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1422,7 +1485,7 @@
                                 </div>
 
                                 <!-- Mockingbird -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1435,7 +1498,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1444,7 +1507,7 @@
                                 </div>
 
                                 <!-- Burning Hand -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1457,7 +1520,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1491,7 +1554,7 @@
                             <div class="columns">
 
                                 <!-- Viper -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1504,7 +1567,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1513,7 +1576,7 @@
                                 </div>
 
                                 <!-- Silver Spectre -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1526,7 +1589,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1535,7 +1598,7 @@
                                 </div>
 
                                 <!-- Mockingbird -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1548,7 +1611,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1557,7 +1620,7 @@
                                 </div>
 
                                 <!-- Burning Hand -->
-                                <div class="column">
+                                <div class="column is-one-quarter">
                                     <a class=" link-page link-page-viper">
                                         <div class="card hero-card">
                                             <div class="card-image">
@@ -1570,7 +1633,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1617,7 +1680,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1639,7 +1702,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1661,7 +1724,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1683,7 +1746,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1730,7 +1793,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1752,7 +1815,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1774,7 +1837,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1796,7 +1859,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1843,7 +1906,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1865,7 +1928,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1887,7 +1950,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1909,7 +1972,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1956,7 +2019,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Silver Spectre</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1978,7 +2041,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Jonathan Pan</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2000,7 +2063,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Lewis Patton</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2022,7 +2085,7 @@
 
                                                     <div class="media-content">
                                                         <p class="title is-4">Billy Johnson</p>
-                                                        <p class="subtitle is-6"></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -2051,6 +2114,7 @@
         <!-- JS -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/js-cookie/src/js.cookie.js"></script>
+        <script src="bower_components/rellax/rellax.min.js"></script>
         <script src="bower_components/vis/dist/vis.js"></script>
         <script src="js/script.js"></script>
     </body>

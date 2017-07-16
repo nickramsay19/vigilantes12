@@ -1,19 +1,28 @@
+//Parallax
+var rellax = new Rellax('.rellax');
+console.log(rellax);
+
 //Set Page From Session Cookies
 if(Cookies.get().hasOwnProperty("page")){
-    SetPage(Cookies.get('page'));
+    SetPage(Cookies.get("page"));
+    document.getElementById('content').scrollIntoView();
+}
+else{
+    SetPage("home");
     document.getElementById('content').scrollIntoView();
 }
 
 //JQuery
 $(document).ready(function(){
+
     //Hero Icon Image Change || TEMP: Until Character Card Images Are Made
-    $(".hero-icon img").hover(
+    $(".hero-card").hover(
         function(){
-        $(this).attr("src", "img/icon/icon-dark.png");
-    },
+            $(this).find("img").attr("src", "img/icon/icon-dark.png");
+        },
         function(){
-        $(this).attr("src", "img/icon/icon.png");
-    }
+            $(this).find("img").attr("src", "img/icon/icon.png");
+        }
     );
 
     //On Link Press
@@ -33,6 +42,7 @@ $(document).ready(function(){
         }
     })
 });
+
 
 //Reset All Pages & Page Links
 function ResetPageSelection(){
@@ -211,8 +221,8 @@ var groups = [
 
 ]; // Create Groups
 var items = new vis.DataSet([
-    {id: 1, content: 'Environmental Protests Resricted', title:'Mike Baird passes law restricting environmental protests.', start: '2016-03-20', group: 1},
-    {id: 2, content: 'Donald Trump Elected', title:'Donald trump wins the american presidential election.', start: '2016-11-09', group: 1},
+    {id: 1, content: 'Environmental Protests Resricted', title:'Mike Baird passes law restricting environmental protests. This opened a path that led to unprecedented environmental destruction and severe coruption. As similar laws were implemented and tightened corporations were able to increase their influence exponentially.', start: '2016-03-20', group: 1},
+    {id: 2, content: 'Donald Trump Elected', title:'Donald trump wins the american presidential election. Opened the door for global political unrest. Thanks to Australia\'s close relationship with the USA and growing instability, Trump was able to pressure the Australian government to his ends. Most significantly this was the start of discrimination of Australia\'s Asian population.', start: '2016-11-09', group: 1},
     {id: 3, content: 'Viper Longying', title:'Viper trains with the Longying.', start: '2017-03-29', end: '2022-10-26', group: 2},
     {id: 4, content: 'Law Proffesion', title: 'Nick commits to his law profession.', start: '2022-10-26', end: '2023-12-03', group: 2},
 ]); // Create a DataSet (allows two way data-binding)
@@ -287,3 +297,4 @@ function GetCleanDate(string){
     var returnString = date.getDate().toString() + " " + monthNames[date.getMonth()] + " " + date.getFullYear().toString();
     return returnString;
 }
+
