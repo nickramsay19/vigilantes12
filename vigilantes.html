@@ -72,16 +72,32 @@
 
                     <!-- SideBar -->
                     <div class="column is-one-quarter" id="sidebar">
-                           <div class="field">
+                       <div class="field">
+                            <p class="control has-icons-left has-icons-right">
+                                <input class="input" id="search-input" type="text" placeholder="Search here" onkeyup="Search()">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </p>
+                        </div>
 
-                                <p class="control has-icons-left has-icons-right">
-                                    <input class="input" type="text" placeholder="Search here">
-                                    <span class="icon is-small is-left">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                </p>
-                            </div>
+                        <!-- Page Menu -->
                         <aside class="menu">
+                            <p class="menu-label search-label">
+                                Search Results
+                            </p>
+                            <ul class="menu-list search-list">
+                                <li class="search-list-item"><a class="link-page link-page-home is-active">Home</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-podcasts">Podcasts</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-discover">Discover More</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-team">The Team</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-history" id="side-nav-other">World History</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-heroes" id="side-nav-other">Sub-Universe</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-timeline" id="side-nav-other">Timeline</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-story" id="side-nav-other">Storylines</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-viper" id="side-nav-other">Viper</a></li>
+                                <li class="search-list-item"><a class="link-page link-page-viper-jp" id="side-nav-other">YangJian - JP - Three Eyed Warrior</a></li>
+                            </ul>
                             <p class="menu-label">
                                 General
                             </p>

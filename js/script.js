@@ -319,5 +319,21 @@ $(".drop-down-button").click(function(){
     }
 });
 
+//Search
+function Search(){
+    var SearchTerm = document.getElementById("search-input").value.toLowerCase();
+    var ul = $(".search-list");
+    var li = $(".search-list-item");
+
+    for(x = 0; x < li.length; x++){
+        if($(".search-list-item:eq("+ x.toString() +")").html().search(SearchTerm) > 0){
+            $(".search-list-item:eq("+ x.toString() +")").show();
+        }
+        else{
+            $(".search-list-item:eq("+ x.toString() +")").hide();
+        }
+    }
+}
+
 
 
