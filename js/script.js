@@ -238,6 +238,7 @@ timeline.on('select', function(properties){
     }
     else{
         SelectedItem = 0;
+        $("#timeline-details").html("<h3 class=\"title\">Hover over or select an event to see extra details about it!</h3>");
     }
 });
 timeline.on('itemover', function(properties){
