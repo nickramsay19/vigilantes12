@@ -41,6 +41,7 @@ else{
 
 //Reset All Pages & Page Links
 function ResetPageSelection(){
+    $(".drop-down-box").slideUp(); // Close All Drop Downs
     $("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
     $(".link-page").removeClass("is-active"); //Clear SideBar Styles
 }
@@ -292,7 +293,6 @@ function GetCleanDate(string){
     var returnString = date.getDate().toString() + " " + monthNames[date.getMonth()] + " " + date.getFullYear().toString();
     return returnString;
 } // Clean Date\
-
 
 //Drop Downs
 $(".drop-down-box").slideUp(); // Close All Drop Downs

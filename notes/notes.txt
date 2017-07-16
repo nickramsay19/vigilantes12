@@ -6,6 +6,8 @@
 -Finish adding "is-one-quarter" to all sub-universes
 -Add links to home page tags
 -Add search bar
+-Remove sonic content to hero cards
+-center all hero-card titles
 
 -Writing (Hunter):
 -Write about all characters
