@@ -46,8 +46,8 @@ function ResetPageSelection(){
 function SetPage(PageName){
 
     ResetPageSelection();
+    $(".link-page-" + PageName).addClass("is-active");
     setTimeout(function(){
-        $(".link-page-" + PageName).addClass("is-active");
         $("#page-" + PageName).fadeIn(500, function(){});
         Cookies.set('page', PageName);
     }, 200);
@@ -320,13 +320,26 @@ $(".drop-down-button").click(function(){
 });
 
 //Search
+$(".search-list-item").hide();
+$(".search-label").hide();
 function Search(){
     var SearchTerm = document.getElementById("search-input").value.toLowerCase();
-    var ul = $(".search-list");
+    if(SearchTerm == ""){
+        $(".search-label").hide();
+        $(".search-list").hide();
+    }
+    else{
+        $(".search-label").show();
+        $(".search-list").show();
+    }
+
     var li = $(".search-list-item");
+    var attr, html;
 
     for(x = 0; x < li.length; x++){
-        if($(".search-list-item:eq("+ x.toString() +")").html().search(SearchTerm) > 0){
+        html = $(".search-list-item:eq("+ x.toString() +")").html();
+
+        if(html.search(SearchTerm) > 0){
             $(".search-list-item:eq("+ x.toString() +")").show();
         }
         else{
