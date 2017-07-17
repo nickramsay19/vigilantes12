@@ -382,7 +382,6 @@ function Search(){
             }
         }
     }
-    alert(SearchOptionsDisplay);
 
     //$(".search-list").html(SearchOptionsDisplay.join());
     //Write to Page
