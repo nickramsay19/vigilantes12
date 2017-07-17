@@ -1,15 +1,13 @@
 !-- Todo --!
 
 -Website (Nick):
--CSS Hero-Card Hover on text doesn't work
 -Move "Go Now" button up, and fix image size for smaller monitors
 -Finish adding "is-one-quarter" to all sub-universes
--Add links to home page tags
--Add search bar
 -Remove sonic content to hero cards
 -center all hero-card titles
 -Add filtering options for each sub-universe in timeline
 -Podcast player timestamps reduce scroller size
+-Add letter bolding in search matches
 
 -Writing (Hunter):
 -Write about all characters
