@@ -1,7 +1,6 @@
 //On Link Press
 $(".link-page").click(function(){
     var ClassList = $(this).attr('class').split(/\s+/);
-    console.log(ClassList);
 
     //Loop through each class
     for (var x = 0; x < ClassList.length; x++) {
@@ -16,24 +15,11 @@ $(".link-page").click(function(){
 });
 
 //Hero Icon Image Change || TEMP: Until Character Card Images Are Made
-$(".hero-card").hover(
-    function(){
+$(".hero-card").hover(function(){
         $(this).find("img").attr("src", "img/icon/icon-dark.png");
-    },
-    function(){
+    },function(){
         $(this).find("img").attr("src", "img/icon/icon.png");
-    }
-);
-
-//Set Page From Session Cookies
-if(Cookies.get().hasOwnProperty("page")){
-    SetPage(Cookies.get("page"));
-    document.getElementById('content').scrollIntoView();
-}
-else{
-    SetPage("home");
-    document.getElementById('content').scrollIntoView();
-}
+    });
 
 //Reset All Pages & Page Links
 function ResetPageSelection(){
@@ -323,93 +309,6 @@ $(".drop-down-button").click(function(){
     }
 });
 
-//Search
-$(".search-list-item").hide();
-$(".search-label").hide();
-
-var SearchOptions = [
-    {tags: '! vigilantes Home', element: '<li class="search-list-item"><a class="link-page link-page-home is-active"><i class="fa fa-home"></i>&nbsp;Home</a></li>', matches: 0},
-    {tags: '! sound Podcasts', element: '<li class="search-list-item"><a class="link-page link-page-podcasts"><i class="fa fa-headphones"></i>&nbsp;Podcasts</a></li>', matches: 0},
-    {tags: '! extra info links Discover More', element: '<li class="search-list-item"><a class="link-page link-page-discover"><i class="fa fa-info-circle"></i>&nbsp;Discover More</a></li>', matches: 0},
-    {tags: '! developers writers website designers artists The Team', element: '<li class="search-list-item"><a class="link-page link-page-team"><i class="fa fa-pencil-square"></i>&nbsp;The Team</a></li>', matches: 0},
-    {tags: '! story World History', element: '<li class="search-list-item"><a class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
-    {tags: '! heroes characters universes sub', element: '<li class="search-list-item"><a class="link-page link-page-heroes"><i class="fa fa-address-book-o"></i>&nbsp;Sub-Universes</a></li>', matches: 0},
-    {tags: '! events story Timeline', element: '<li class="search-list-item"><a class="link-page link-page-timeline"><i class="fa fa-clock-o"></i>&nbsp;Timeline</a></li>', matches: 0},
-    {tags: '! Storylines', element: '<li class="search-list-item"><a class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
-    {tags: '! sub universe viper', element: '<li class="search-list-item"><a class="link-page link-page-viper"><i class="fa fa-address-book-o"></i>&nbsp;Viper</a></li>', matches: 0},
-    {tags: '! character person viper nick nicholas ramsay ninja snake rope dart long fist Changquan China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-viper"><i class="fa fa-user"></i>&nbsp;Viper</a></li>', matches: 0},
-    {tags: '! character person viper yang jian jonathan pan jp Monk spade monk\'s spade hook sword eye China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-jp"><i class="fa fa-user"></i>&nbsp;Three Eyed Warrior</a></li>', matches: 0},
-    {tags: '! character person viper Tongyi Shen Yum cha chef dumpling restaurant lucky moon China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-tongyi"><i class="fa fa-user"></i>&nbsp;Tongyi Shen</a></li>', matches: 0},
-    {tags: '! character person viper Major Lewis Patton Soldier military fort darling brave helmet alpha mind control', element: '<li class="search-list-item"><a class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
-    {tags: '! person viper Longying China Chinese asian Group syndicate gang', element: '<li class="search-list-item"><a class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
-    {tags: '! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
-    {tags: '! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
-    {tags: '! sub universe burning hand vigilante', element: '<li class="search-list-item"><a class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
-    {tags: '! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0}
-    ];
-var SearchOptionsDisplay;
-
-function Search(){
-    SearchOptionsDisplay = [];
-    var SearchTerm = document.getElementById("search-input").value.toLowerCase();
-    if(SearchTerm == ""){
-        $(".search-label").slideUp();
-        $(".search-list").slideUp();
-    }
-    else{
-        $(".search-label").slideDown();
-        $(".search-list").slideDown();
-    }
-
-    var li = $(".search-list-item");
-    var attr = "", html = "";
-
-    //NEW RANKING SYSTEM
-
-    var LargestMatch = 0;
-    for(var x = 0; x < SearchOptions.length; x++){
-
-        html = SearchOptions[x].element;
-        //SearchOptions[x].matches = html.search(SearchTerm);
-        SearchOptions[x].matches = SearchOptions[x].tags.toLowerCase().search(SearchTerm);
-
-        if(SearchOptions[x].matches > LargestMatch){
-            LargestMatch = SearchOptions[x].matches;
-        }
-    }
-
-    var SearchAccuracy = 2;
-    for(var y = LargestMatch; y > 0; y--){
-        for(var x = 0; x < SearchOptions.length; x++){
-            if(SearchOptions[x].matches == y){
-                SearchOptionsDisplay.push(SearchOptions[x].element);
-            }
-        }
-    }
-
-    //$(".search-list").html(SearchOptionsDisplay.join());
-    //Write to Page
-    $(".search-list").html(SearchOptionsDisplay.join(""));
-    for(var x = 0; x < SearchOptionsDisplay.length; x++){
-        //html = SearchOp
-        //$(".search-list").html(SearchOptionsDisplay[x]);
-    }
-    //$(".search-list").html(html + SearchOptionsDisplay[x]);
-
-    //$(".search-list-item").hide();
-
-    /*OLD
-    for(x = 0; x < li.length; x++){
-        html = $(".search-list-item:eq("+ x.toString() +")").html();
-
-        if(html.search(SearchTerm) > 0){
-            $(".search-list-item:eq("+ x.toString() +")").slideDown();
-        }
-        else{
-            $(".search-list-item:eq("+ x.toString() +")").slideUp();
-        }
-    }*/
-}
 
 
 

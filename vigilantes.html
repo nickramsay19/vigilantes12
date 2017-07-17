@@ -17,13 +17,19 @@
         <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/bulma_theme.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
 
     </head>
     <body>
         <!-- NavBar -->
-        <nav class="nav has-shadow" id="top">
+        <nav class="nav has-shadow">
             <div class="container">
-                <div class="nav-left">
+                <div class="nav-left mobile-hide">
+                    <a class="nav-item" href="#">
+                        <span><img class="image is-24x24" src="img/icon/icon-dark.png"></span>&nbsp;Vigilantes
+                    </a>
+                </div>
+                <div class="nav-right mobile-only">
                     <a class="nav-item" href="#">
                         <span><img class="image is-24x24" src="img/icon/icon-dark.png"></span>&nbsp;Vigilantes
                     </a>
@@ -67,12 +73,24 @@
             <br><br><br>
             <div class="container">
 
-                <!-- Main Content -->
-                <div class="columns">
+                <!-- Mobile Nav Bar -->
+                <div class="mobile-only" id="mobile-nav">
+                    <a class="link-page link-page-home is-active"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;</a>
+                    <a class="link-page link-page-podcasts"><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp;</a>
+                    <a class="link-page link-page-team"><i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp;</a>
+                    <a class="link-page link-page-discover" id="side-nav-other"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;</a>
+                    <a class="link-page link-page-history"><i class="fa fa-university" aria-hidden="true"></i></a>
+                    <a class="link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i></a>
+                    <a class="link-page link-page-timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;</a>
+                    <a class="link-page link-page-story"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;</a>
+                    <br><br><br>
+                </div>
 
+                <!-- Main Content -->
+                <div class="columns is-mobile">
                     <!-- SideBar -->
-                    <div class="column is-one-quarter" id="sidebar">
-                       <div class="field">
+                    <div class="column is-one-quarter-desktop mobile-hide" id="sidebar">
+                       <div class="field mobile-hide">
                             <p class="control has-icons-left has-icons-right">
                                 <input class="input" id="search-input" type="text" placeholder="Search here" onkeyup="Search()">
                                 <span class="icon is-small is-left">
@@ -82,7 +100,7 @@
                         </div>
 
                         <!-- Page Menu -->
-                        <aside class="menu">
+                        <aside class="menu page-menu mobile-hide">
                             <p class="menu-label search-label">
                                 Search Results
                             </p>
@@ -90,31 +108,33 @@
                                 <p class="hidden" id="search-list-begin"></p>
 
                             </ul>
-                            <p class="menu-label">
+                            <p class="menu-label mobile-hide">
                                 General
                             </p>
                             <ul class="menu-list">
-                                <li><a class="link-page link-page-home is-active"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
-                                <li><a class="link-page link-page-podcasts"><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp;Podcasts</a></li>
-                                <li><a class="link-page link-page-team"><i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp;The Team</a></li>
-                                <li><a class="link-page link-page-discover" id="side-nav-other"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Discover More</a></li>
+                                <li><a class="link-page link-page-home is-active"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">Home</span></a></li>
+                                <li><a class="link-page link-page-podcasts"><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">Podcasts</span></a></li>
+                                <li><a class="link-page link-page-team"><i class="fa fa-pencil-square" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">The Team</span></a></li>
+                                <li><a class="link-page link-page-discover" id="side-nav-other"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">Discover More</span></a></li>
                             </ul>
-                            <p class="menu-label">
+                            <p class="menu-label mobile-hide">
                                 Vigilantes
                             </p>
                             <ul class="menu-list">
-                                <li><a class="link-page link-page-history"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;World History</a></li>
-                                <li><a class="link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                <li><a class="link-page link-page-timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Timeline</a></li>
-                                <li><a class="link-page link-page-story"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Storylines</a></li>
+                                <li><a class="link-page link-page-history"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">World History</span></a></li>
+                                <li><a class="link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">Sub-Universes</span></a></li>
+                                <li><a class="link-page link-page-timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">Timeline</span></a></li>
+                                <li><a class="link-page link-page-story"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;<span class="mobile-hide">Storylines</span></a></li>
                             </ul>
-                            <br><br><br><br><br><br><br><br><br><br>
+
                         </aside>
                     </div>
 
                     <!-- HomePage -->
-                    <div class="column is-three-quarters" id="page-home">
+                    <div class="column is-three-quarters-desktop" id="page-home">
                         <div class="content">
+
+
                             <nav class="navbar">
                                 <div class="navbar-brand">
                                     <h1 class="title">Home</h1>
@@ -219,7 +239,7 @@
                                     </nav>
                                 </div>
                             </nav>
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Hunter -->
                                 <div class="column">
@@ -231,11 +251,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <div class="media-left">
-                                                    <figure class="image is-48x48">
-                                                        <img src="img/avatars/hunter.png" alt="Image">
-                                                    </figure>
-                                                </div>
+
                                                 <div class="media-content">
                                                     <p class="title is-4">Hunter</p>
                                                     <p class="subtitle is-6">@hunter</p>
@@ -305,7 +321,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Miranda -->
                                 <div class="column">
@@ -323,7 +339,7 @@
                                                     </figure>
                                                 </div>
                                                 <div class="media-content">
-                                                    <p class="title is-4">Miranda</p>
+                                                    <p class="title ">Miranda</p>
                                                     <p class="subtitle is-6">@miranda</p>
                                                 </div>
                                             </div>
@@ -351,7 +367,7 @@
                                                     </figure>
                                                 </div>
                                                 <div class="media-content">
-                                                    <p class="title is-4">Dilhan</p>
+                                                    <p class="title ">Dilhan</p>
                                                     <p class="subtitle is-6">@dilhan</p>
                                                 </div>
                                             </div>
@@ -379,7 +395,7 @@
                                                     </figure>
                                                 </div>
                                                 <div class="media-content">
-                                                    <p class="title is-4">Hugo</p>
+                                                    <p class="title ">Hugo</p>
                                                     <p class="subtitle is-6">@hugo</p>
                                                 </div>
                                             </div>
@@ -537,7 +553,7 @@
                         </nav>
 
                         <!-- Row 1 -->
-                        <div class="columns">
+                        <div class="columns is-mobile">
 
                             <!-- Viper -->
                             <div class="column is-one-quarter">
@@ -550,7 +566,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Viper</p>
+                                                <p class="title hero-card-title">Viper</p>
                                             </div>
                                         </div>
                                     </div>
@@ -568,7 +584,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Silver Spectre</p>
+                                                <p class="title  hero-card-title">Silver Spectre</p>
                                             </div>
                                         </div>
                                     </div>
@@ -586,7 +602,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Mockingbird</p>
+                                                <p class="title  hero-card-title">Mockingbird</p>
                                             </div>
                                         </div>
                                     </div>
@@ -604,7 +620,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Burning Hand</p>
+                                                <p class="title  hero-card-title">Burning Hand</p>
                                             </div>
                                         </div>
                                     </div>
@@ -613,7 +629,7 @@
                         </div>
 
                         <!-- Row 2 -->
-                        <div class="columns">
+                        <div class="columns is-mobile">
 
                             <!-- Jack Kitchin -->
                             <div class="column is-one-quarter">
@@ -626,7 +642,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Jack Kitchin</p>
+                                                <p class="title  hero-card-title">Jack Kitchin</p>
                                             </div>
                                         </div>
                                     </div>
@@ -644,7 +660,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Dilhan WIP</p>
+                                                <p class="title  hero-card-title">Dilhan WIP</p>
                                             </div>
                                         </div>
                                     </div>
@@ -662,7 +678,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Hannah WIP</p>
+                                                <p class="title  hero-card-title">Hannah WIP</p>
                                             </div>
                                         </div>
                                     </div>
@@ -680,7 +696,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Tom WIP</p>
+                                                <p class="title  hero-card-title">Tom WIP</p>
                                             </div>
                                         </div>
                                     </div>
@@ -689,7 +705,7 @@
                         </div>
 
                         <!-- Row 3 -->
-                        <div class="columns">
+                        <div class="columns is-mobile">
 
                             <!-- Miranda -->
                             <div class="column is-one-quarter">
@@ -702,7 +718,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Miranda WIP</p>
+                                                <p class="title  hero-card-title">Miranda WIP</p>
                                             </div>
                                         </div>
                                     </div>
@@ -720,7 +736,7 @@
                                         </div>
                                         <div class="card-content">
                                             <div class="media">
-                                                <p class="title is-4 hero-card-title">Hunter WIP</p>
+                                                <p class="title  hero-card-title">Hunter WIP</p>
                                             </div>
                                         </div>
                                     </div>
@@ -741,7 +757,7 @@
                                         <ul>
                                             <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                                             <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                            <li class="is-active"><a class=" link-page link-page-viper">Viper</a></li>
+                                            <li class="is-active"><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -750,7 +766,7 @@
                             Here is the page for the Viper Sub-universe.<br><br>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column is-one-quarter">
@@ -763,7 +779,7 @@
                                             </div>
                                             <div class="card-content">
                                                 <div class="media">
-                                                    <p class="title is-4 hero-card-title">Viper</p>
+                                                    <p class="title  hero-card-title">Viper</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -781,7 +797,7 @@
                                             </div>
                                             <div class="card-content">
                                                 <div class="media">
-                                                    <p class="title is-4 hero-card-title">YángJiǎn</p>
+                                                    <p class="title  hero-card-title">Yáng Jiǎn</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -799,7 +815,7 @@
                                             </div>
                                             <div class="card-content">
                                                 <div class="media">
-                                                    <p class="title is-4 hero-card-title">Tongyi Shen</p>
+                                                    <p class="title  hero-card-title">Tongyi Shen</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -817,7 +833,7 @@
                                             </div>
                                             <div class="card-content">
                                                 <div class="media">
-                                                    <p class="title is-4 hero-card-title">Major Patton</p>
+                                                    <p class="title  hero-card-title">Major Patton</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -826,7 +842,7 @@
                             </div>
 
                             <!-- Row 2 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- LongYing -->
                                 <div class="column is-one-quarter">
@@ -839,7 +855,7 @@
                                             </div>
                                             <div class="card-content">
                                                 <div class="media">
-                                                    <p class="title is-4 hero-card-title">Lóngyǐng</p>
+                                                    <p class="title  hero-card-title">Lóngyǐng</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -862,14 +878,14 @@
                                         <ul>
                                             <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                                             <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                            <li><a class=" link-page link-page-viper">Viper</a></li>
-                                            <li class="is-active"><a class=" link-page link-page-viper-viper">Viper</a></li>
+                                            <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
+                                            <li class="is-active"><a class=" link-page link-page-viper-viper"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Viper</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </nav>
                             <div class="columns">
-                                <div class="column is-two-thirds">
+                                <div class="column is-two-thirds-desktop">
 
                                     <blockquote>"Every great story seems to start with a snake."</blockquote>
 
@@ -971,13 +987,13 @@
                                         <ul>
                                             <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                                             <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                            <li><a class=" link-page link-page-viper">Viper</a></li>
-                                            <li class="is-active"><a class=" link-page link-page-viper-jp">Jonathan Pan</a></li>
+                                            <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
+                                            <li class="is-active"><a class=" link-page link-page-viper-jp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Jonathan Pan</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                     </nav><br><br>
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is-two-thirds">
                                     <blockquote>"A fanatic is one who sticks to his guns whether they're loaded or not"</blockquote>
 
@@ -1066,13 +1082,13 @@
                                             <ul>
                                                 <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                                                 <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                                <li><a class=" link-page link-page-viper">Viper</a></li>
-                                                <li class="is-active"><a class=" link-page link-page-viper-jp">Tongyi Shen</a></li>
+                                                <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
+                                                <li class="is-active"><a class=" link-page link-page-viper-jp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Tongyi Shen</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     </nav></h1><br><br>
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is-two-thirds">
                                     <blockquote>"Friends are like dumplings, they look plain from far away but are actually rich inside."</blockquote>
                                     <blockquote class="hidden">"Walking with a friend in the dark is better than walking alone in the light"</blockquote>
@@ -1134,13 +1150,13 @@
                                         <ul>
                                             <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                                             <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                            <li><a class=" link-page link-page-viper">Viper</a></li>
-                                            <li class="is-active"><a class=" link-page link-page-viper-jp">Major Lewis Patton</a></li>
+                                            <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
+                                            <li class="is-active"><a class=" link-page link-page-viper-jp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Major Lewis Patton</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </nav>
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is-two-thirds">
                                     <blockquote>"A soldier will fight long and hard for a bit of coloured ribbon."</blockquote>
 
@@ -1254,13 +1270,13 @@
                                         <ul>
                                             <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                                             <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
-                                            <li><a class=" link-page link-page-viper">Viper</a></li>
-                                            <li class="is-active"><a class=" link-page link-page-viper-jp">Lóngyǐng 龙影</a></li>
+                                            <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
+                                            <li class="is-active"><a class=" link-page link-page-viper-jp"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Lóngyǐng 龙影</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </nav>
-                            <div class="columns">
+                            <div class="columns is-mobile">
                                 <div class="column is-two-thirds">
                                     <blockquote>"Our greatest glory is not in never falling, but in rising every time we fall."</blockquote>
 
@@ -1363,11 +1379,11 @@
                                 </div>
                             </nav>
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Silver Spectre -->
                                 <div class="column is-one-quarter">
-                                    <a class=" link-page link-page-viper-viper">
+                                    <a class=" link-page link-page-spectre-spectre">
                                         <div class="card hero-card">
                                             <div class="card-image">
                                                 <figure class="image hero-icon">
@@ -1378,7 +1394,70 @@
                                                 <div class="media">
 
                                                     <div class="media-content">
-                                                        <p class="title is-4 hero-card-title">Silver Spectre</p>
+                                                        <p class="title  hero-card-title">Silver Spectre</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Red Rhino -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-rhino">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">Red Rhino</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Phillip Dean -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-dean">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">Phillip Dean</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- ExoCorp -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-exocorp">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">ExoCorp</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1387,6 +1466,211 @@
                                 </div>
                             </div>
 
+                            <!-- Row 2 -->
+                            <div class="columns is-mobile">
+
+                                <!-- Velvet Knights -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-velvet">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">Velvet Knights</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Gilgamesh -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-gilgamesh">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">Gilgamesh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Wrestling Society -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-wrestling">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">Wrestling Society</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Sydney Guard -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-wrestling">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <p class="title  hero-card-title">Sydney Guard</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Silver Spectre: Silver Spectre -->
+                    <div class="column is-three-quarters" id="page-spectre-spectre" style="display: none;">
+                        <div class="content">
+                            <nav class="navbar">
+                                <div class="navbar-brand">
+                                    <h1 class="title">Silver Spectre - Hugo Johannsen</h1>
+                                </div>
+                                <div class="navbar-end">
+                                    <nav class="breadcrumb is-right nav-breadcrumb">
+                                        <ul>
+                                            <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                                            <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                                            <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Silver Spectre</a></li>
+                                            <li class="is-active"><a class=" link-page link-page-viper-viper"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </nav><br><br>
+                            <div class="columns is-mobile">
+                                <div class="column is-two-thirds">
+
+                                    <blockquote>"I have never yet heard of a murderer who was not afraid of a ghost"</blockquote>
+
+                                    Hugo had dreamed of being a superhero since his childhood so when he saw an infomercial promising ‘amazing physical abilities with which to impress your peers’ he leapt at the chance, signing up despite warnings from his friends and family.<br><br>
+
+                                    He was accepted and sent to a facility owned by the corporation, ExoCorp. Here he underwent tests and experiments for a while with no success. Hugo was disappointed and deemed the endeavour hopeless, deciding to stop attending his sessions. After not turning up for several appointments some of the Velvet Knights arrived at his home and forcibly detained him, returning Hugo to ExoCorp, where his captors claimed he was too important to be allowed to leave.<br><br>
+
+                                    Hugo was angry with himself for being tricked and resolved to be uncooperative with the scientists. As a result they drugged him and the rest of his time in the facility passed as a blur.<br>
+                                    Eventually Hugo awoke in a room, alone but for Phillip Dean, the owner of ExoCorp, and as he came to was shocked to discover he had no physical form. He was startled but elated, figuring it was his promised ability. That was until he was told that so far the process had been irreversible at which point he flipped and tried and tried to get away. For some reason he was unable to escape and Dean eventually managed to calm him down, explaining that they believed the trigger was a mental process. Hugo concentrated hard and managed to revert to a tangible state.<br><br>
+                                    <div class="drop-down-box" id="spectre">
+                                        Dean then began to tell Hugo how amazing this power was and how beneficial it could be.<br>
+                                        He learnt that the Dean’s plan was to keep him captive, in order to test more, ensuring it was viable, then distribute the technology globally with the goal of bettering society.
+                                        Despite his apparent goodwill Hugo was disagreeable, not wanting to be tricked again or have his power lost in further experimentation so when a commotion erupted in another ward he seized the opportunity to escape, this time succeeding.<br>
+                                        After successfully escaping he decided that it would be best to keep what had happened secret, so that people don’t know about the technology and don’t flock to the corporation wanting superpowers of their own.<br>
+                                        Hugo also decided that he might as well become the superhero he had wanted to be so he snuck back into ExoCorp and stole the suit designed for him.<br>
+                                        With this he became the Silver Spectre and began his campaign to stop the work of ExoCorp.
+                                    </div>
+                                    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+                                        <span style="background-color:#fff;">
+                                            <a class="icon is-large" style="position: relative; bottom: 2px; background-color: white;">
+                                                <i id="spectre" class="drop-down-button fa fa-arrow-circle-down" aria-hidden="true"></i>
+                                            </a>
+                                        </span>
+                                    </div><br><br><br>
+
+                                    <h4 class="subtitle">Arsenal</h4>
+                                    <ul>
+                                        <li>Silver Spectre costume</li>
+                                        <li>
+                                            Shock gloves
+                                            <ul>
+                                                <li>Can deliver an electric shock from the palm generated by minute batteries in the glove.</li>
+                                                <li>Charging the gloves by proximity to each other can increase the charge generated and allowing Hugo to produce an EMP like blast if the gloves are then quickly separated.</li>
+                                            </ul>
+                                        </li>
+                                    </ul><br>
+
+                                    <h4 class="subtitle">Capabilities</h4>
+                                    <ul>
+                                        <li>Intangibility<br>
+                                            <ul>
+                                                <li>The ability to dispel his physical form, allowing objects to pass through him without resistance.</li>
+                                                <li>He is unable to pass through objects with a very high density (roughly 13kg/m3). E.g. Mercury, Tantalum, Uranium, Tungsten, Gold, Plutonium, Platinum, Iridium and Osmium.</li>
+                                                <li> If dense materials enter the body they limit the strength of his ability.</li>
+                                                <li>Some things cannot be tunnelled through if they are too large (exceeding a limit in width or height).</li>
+                                                <li>Can mentally control which parts of his body become intangible and when.</li>
+                                            </ul>
+                                        </li>
+                                        <li>Stealth<br>
+                                            <ul>
+                                                <li>Able to move quite quietly and discreetly</li>
+                                            </ul>
+
+                                        </li>
+                                    </ul><br>
+
+                                    <h4 class="subtitle">Qualities</h4>
+                                    <ul>
+                                        <li>Compassionate</li>
+                                        <li>Courageous</li>
+                                        <li>Somewhat slow</li>
+                                        <li>Naïve</li>
+                                        <li>Touchy</li>
+                                    </ul>
+                                </div>
+
+                                <div class="column">
+                                    <img width="400px" height="500px" src="img/character-art/spectre.png" alt="Image"><br><br>
+                                    <article class="message is-primary">
+                                        <div class="message-header">
+                                            Silver Spectre costume
+                                        </div>
+                                        <div class="message-body">
+                                            <ul class="img-caption-body">
+                                                <li>Made of a combination of carbon fibre and UHMWPE making it flexible and very protective, even very resistant to corrosion, abrasion, water, chemicals, UV radiation and microorganisms.</li>
+                                                <li>Grey trench coat.</li>
+                                                <li>Black combat boots.</li>
+                                                <li>Black shock gloves</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="message is-primary">
+                                        <div class="message-header">
+                                            Extra Resources
+                                        </div>
+                                        <div class="message-body">
+                                            <i>Some additional links and comments to help appreciate Silver Spectre:</i><br><br>
+                                            <h5 class="subtitle">Notes</h5>
+                                            <ul class="img-caption-body">
+                                                <li>The Silver Spectre has the very best intentions and only wants to do something for the greater good, but the world, especially the one he enters into, is much more horrifying and complex than he ever imagined. His story is that of overcoming his ignorance and inability, maintaining hope and resolve against failure and chaos.</li>
+                                                <li>The Silver Spectre is also symbolic of a ghost, haunting people for their crimes.</li>
+                                                <li>The idea of a Shakespearean fatal flaw is drawn upon in his naivety, and reflected in the styling of his story as a tragedy.</li>
+                                                <li>He is a beacon of light in a city of darkness.</li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -1409,7 +1693,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column is-one-quarter">
@@ -1424,7 +1708,7 @@
                                                 <div class="media">
 
                                                     <div class="media-content">
-                                                        <p class="title is-4">Silver Spectre</p>
+                                                        <p class="title ">Silver Spectre</p>
 
                                                     </div>
                                                 </div>
@@ -1446,7 +1730,7 @@
                                                 <div class="media">
 
                                                     <div class="media-content">
-                                                        <p class="title is-4">Jonathan Pan</p>
+                                                        <p class="title ">Jonathan Pan</p>
 
                                                     </div>
                                                 </div>
@@ -1468,7 +1752,7 @@
                                                 <div class="media">
 
                                                     <div class="media-content">
-                                                        <p class="title is-4">Lewis Patton</p>
+                                                        <p class="title ">Lewis Patton</p>
 
                                                     </div>
                                                 </div>
@@ -1522,7 +1806,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column is-one-quarter">
@@ -1635,7 +1919,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column is-one-quarter">
@@ -1748,7 +2032,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column is-one-quarter">
@@ -1861,7 +2145,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column">
@@ -1974,7 +2258,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column">
@@ -2087,7 +2371,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column">
@@ -2200,7 +2484,7 @@
                             </nav>
 
                             <!-- Row 1 -->
-                            <div class="columns">
+                            <div class="columns is-mobile">
 
                                 <!-- Viper -->
                                 <div class="column">
@@ -2314,5 +2598,8 @@
         <script src="bower_components/rellax/rellax.min.js"></script>
         <script src="bower_components/vis/dist/vis.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/cookies.js"></script>
+        <script src="js/search_bar.js"></script>
+
     </body>
 </html>

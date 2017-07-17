@@ -8,6 +8,7 @@
 -Add filtering options for each sub-universe in timeline
 -Podcast player timestamps reduce scroller size
 -Add letter bolding in search matches
+-add sub universe icon and cahracter icons to breadcrumbs
 
 -Writing (Hunter):
 -Write about all characters
