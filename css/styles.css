@@ -94,6 +94,14 @@ td{
 #timeline-details{
     height: 150px;
 }
+.vis-item.viper{
+    border-color: #55aa55;
+}
+.vis-range.viper, .vis-background.viper{
+    border-color: #55aa55;
+    background-color: #aaffaa;
+}
+
 
 /* Extra */
 .hidden{
