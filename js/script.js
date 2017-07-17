@@ -327,7 +327,7 @@ var SearchOptions = [
     {tags: '! vigilantes Home', element: '<li class="search-list-item"><a class="link-page link-page-home is-active"><i class="fa fa-home"></i>&nbsp;Home</a></li>', matches: 0},
     {tags: '! sound Podcasts', element: '<li class="search-list-item"><a class="link-page link-page-podcasts"><i class="fa fa-headphones"></i>&nbsp;Podcasts</a></li>', matches: 0},
     {tags: '! extra info links Discover More', element: '<li class="search-list-item"><a class="link-page link-page-discover"><i class="fa fa-info-circle"></i>&nbsp;Discover More</a></li>', matches: 0},
-    {tags: '! developers writers website designers artists The Team', element: '<li class="search-list-item"><a class="link-page link-page-team"><i class="fa fa-users"></i>&nbsp;The Team</a></li>', matches: 0},
+    {tags: '! developers writers website designers artists The Team', element: '<li class="search-list-item"><a class="link-page link-page-team"><i class="fa fa-pencil-square"></i>&nbsp;The Team</a></li>', matches: 0},
     {tags: '! story World History', element: '<li class="search-list-item"><a class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
     {tags: '! heroes characters universes sub', element: '<li class="search-list-item"><a class="link-page link-page-heroes"><i class="fa fa-address-book-o"></i>&nbsp;Sub-Universes</a></li>', matches: 0},
     {tags: '! events story Timeline', element: '<li class="search-list-item"><a class="link-page link-page-timeline"><i class="fa fa-clock-o"></i>&nbsp;Timeline</a></li>', matches: 0},
