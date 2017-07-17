@@ -221,6 +221,10 @@ var items = new vis.DataSet([
     {id: 5, content: 'Longying Raid', title: 'Anti-terrorism forces from Fort Darling stormed the Longying base(near Darling Harbour) and they suffered profound losses.', start: '2023-12-02', type: 'point', group: 2},
     {id: 6, content: 'Lucky Moon Opens', title: 'Tongyi Shen opens the Lucky Moon Yum Cha on Elizabeth Street.', start: '2021-06-25', type: 'point', group: 2},
     {id: 7, content: 'Yang Jian In China', title: 'The Three Eyed Warrior travels to China to train and lay the ground work for Longying influence there.', start: '2020-05-07', end: '2023-12-05', group: 2},
+    {id: 8, content: 'Zheng Found Guilty', title: 'Nick loses the defence of Chinaman William Zeng who was allegedly abused by a police officer.', start: '2024-01-10', type: 'point', group: 2},
+    {id: 9, content: 'Viper Reveal', title: 'In costume for the first time, Viper threatens Major Patton at the gates of Fort Darling before escaping thanks to the Three Eyed Warrior cutting power to Chinatown.', start: '2024-01-27', type: 'point', group: 2},
+    {id: 10, content: 'Dilhan Found Innocent', title: 'Nick wins the defence of Dilhan Ali, using a legal loophole to prove him innocent of conspiracy to commit terrorism.', start: '2024-02-01', type: 'point', group: 2},
+    {id: 11, content: 'Battle of Fort Darling', title: 'Asian forces led by Viper and the Longying storm Fort Darling, overwhelming Major Patton\'s forces and destroying the fort and its defences.', start: '2024-02-03', type: 'point', group: 2},
     {id: 'A', content: 'Stage 1', start: '2023-12-2', end: '2028-01-22', type: 'background', group: 2},
     {id: 'B', content: 'Stage 2', start: '2014-01-25', end: '2014-01-30', type: 'background', group: 2}
 ]); // Create a DataSet (allows two way data-binding)
@@ -294,7 +298,7 @@ function GetCleanDate(string){
     var date = new Date(string);
     var returnString = date.getDate().toString() + " " + monthNames[date.getMonth()] + " " + date.getFullYear().toString();
     return returnString;
-} // Clean Date\
+} // Clean Date
 
 //Drop Downs
 $(".drop-down-box").slideUp(); // Close All Drop Downs
@@ -332,16 +336,16 @@ var SearchOptions = [
     {tags: '! heroes characters universes sub', element: '<li class="search-list-item"><a class="link-page link-page-heroes"><i class="fa fa-address-book-o"></i>&nbsp;Sub-Universes</a></li>', matches: 0},
     {tags: '! events story Timeline', element: '<li class="search-list-item"><a class="link-page link-page-timeline"><i class="fa fa-clock-o"></i>&nbsp;Timeline</a></li>', matches: 0},
     {tags: '! Storylines', element: '<li class="search-list-item"><a class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
-    {tags: '! sub universe sub viper China Chinese asian nick nicholas ramsay ninja snake rope dart long fist', element: '<li class="search-list-item"><a class="link-page link-page-viper"><i class="fa fa-address-book-o"></i>&nbsp;Viper</a></li>', matches: 0},
+    {tags: '! sub universe viper', element: '<li class="search-list-item"><a class="link-page link-page-viper"><i class="fa fa-address-book-o"></i>&nbsp;Viper</a></li>', matches: 0},
     {tags: '! character person viper nick nicholas ramsay ninja snake rope dart long fist Changquan China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-viper"><i class="fa fa-user"></i>&nbsp;Viper</a></li>', matches: 0},
-    {tags: '! character person viper yang jian jonathan pan jp Monk spade monk\'s spade hook sword hook sword eye China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-jp"><i class="fa fa-user"></i>&nbsp;Three Eyed Warrior</a></li>', matches: 0},
+    {tags: '! character person viper yang jian jonathan pan jp Monk spade monk\'s spade hook sword eye China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-jp"><i class="fa fa-user"></i>&nbsp;Three Eyed Warrior</a></li>', matches: 0},
     {tags: '! character person viper Tongyi Shen Yum cha chef dumpling restaurant lucky moon China Chinese asian', element: '<li class="search-list-item"><a class="link-page link-page-viper-tongyi"><i class="fa fa-user"></i>&nbsp;Tongyi Shen</a></li>', matches: 0},
-    {tags: '! character person viper Major Lewis Patton China Chinese asian Soldier military fort darling bravehelm alpha mind control', element: '<li class="search-list-item"><a class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
-    {tags: '! character person viper Longying China Chinese asian Group syndicate gang', element: '<li class="search-list-item"><a class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
-    {tags: '! sub universe character person silver spectre ', element: '<li class="search-list-item"><a class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
-    {tags: '! sub universe character person mockingbird', element: '<li class="search-list-item"><a class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
-    {tags: '! sub universe character person burning hand', element: '<li class="search-list-item"><a class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
-    {tags: '! sub universe character person jack kitchin', element: '<li class="search-list-item"><a class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0}
+    {tags: '! character person viper Major Lewis Patton Soldier military fort darling brave helmet alpha mind control', element: '<li class="search-list-item"><a class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
+    {tags: '! person viper Longying China Chinese asian Group syndicate gang', element: '<li class="search-list-item"><a class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
+    {tags: '! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+    {tags: '! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
+    {tags: '! sub universe burning hand vigilante', element: '<li class="search-list-item"><a class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
+    {tags: '! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0}
     ];
 var SearchOptionsDisplay;
 
