@@ -5,7 +5,6 @@
     <div class="navbar-end">
         <nav class="breadcrumb is-right nav-breadcrumb">
             <ul>
-                <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                     <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
                     <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
                     <li class="is-active"><a class=" link-page link-page-viper-viper"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Viper</a></li>

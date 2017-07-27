@@ -48,9 +48,6 @@ function SetPage(PageName){
     $(".link-page").removeClass("is-active");
     $(".link-page-" + PageName).addClass("is-active");
 
-    //Get Component Text
-
-
     //Set Cookies
     Cookies.set('page', PageName);
 }

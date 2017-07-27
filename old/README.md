@@ -1,3 +1,0 @@
-"# Vigilantes"
-
-Nothing to be seen here...

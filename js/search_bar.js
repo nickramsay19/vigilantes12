@@ -27,11 +27,13 @@ var SearchOptions = [
 
     {name: 'Patton', tags: ' ! character person viper Major Lewis Patton Soldier military fort darling brave helmet alpha mind control', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
 
-    {name: 'Longying', tags: ' ! person viper Longying China Chinese asian Group syndicate gang', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
+    {name: 'Longying', tags: ' ! viper Longying China Chinese asian Group syndicate gang', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
 
     {name: 'Spectre', tags: ' ! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Spectre Spectre', tags: ' ! character person silver spectre vigilante hugo johannsen shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+    {name: 'Spectre Spectre', tags: ' ! character person silver spectre vigilante hugo johannsen shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+
+    {name: 'Red Rhino', tags: ' ! character person silver spectre vigilante dylan jenkin wrestler red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
 
     {name: 'Mockingbird', tags: ' ! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
 

@@ -1,18 +1,20 @@
-<nav class="navbar">
-    <div class="navbar-brand">
-        <h1 class="title">Three Eyed Warrior - Yang Jian - Jonathan Pan</h1>
+<div class="columns">
+    <div class="column is-one-third">
+        <h1 class="title">Yang Jian - Jonathan Pan</h1>
     </div>
-    <div class="navbar-end">
+    <div class="column">
         <nav class="breadcrumb is-right nav-breadcrumb">
             <ul>
-                <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
                     <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
                     <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
                     <li class="is-active"><a class=" link-page link-page-viper-jp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Jonathan Pan</a></li>
                     </ul>
                 </nav>
             </div>
-        </nav><br><br>
+        </nav>
+</div>
+
+
     <div class="columns is-mobile">
         <div class="column is-two-thirds">
             <blockquote>"A fanatic is one who sticks to his guns whether they're loaded or not"</blockquote>
