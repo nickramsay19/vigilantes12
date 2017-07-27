@@ -1,0 +1,186 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <h1 class="title">Silver Spectre</h1>
+    </div>
+    <div class="navbar-end">
+        <nav class="breadcrumb is-right nav-breadcrumb">
+            <ul>
+                <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                    <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                    <li class="is-active"><a class=" link-page link-page-spectre">Silver Spectre</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    <!-- Row 1 -->
+    <div class="columns is-mobile">
+
+        <!-- Silver Spectre -->
+        <div class="column is-one-quarter">
+            <a class=" link-page link-page-spectre-spectre">
+                <div class="card hero-card">
+                    <div class="card-image">
+                        <figure class="image hero-icon">
+                            <img src="img/icon/icon.png" alt="Image">
+                                </figure>
+                            </div>
+                        <div class="card-content">
+                            <div class="media">
+
+                                <div class="media-content">
+                                    <p class="title  hero-card-title">Silver Spectre</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+            <!-- Red Rhino -->
+            <div class="column is-one-quarter">
+                <a class=" link-page link-page-spectre-rhino">
+                    <div class="card hero-card">
+                        <div class="card-image">
+                            <figure class="image hero-icon">
+                                <img src="img/icon/icon.png" alt="Image">
+                                    </figure>
+                                </div>
+                            <div class="card-content">
+                                <div class="media">
+
+                                    <div class="media-content">
+                                        <p class="title  hero-card-title">Red Rhino</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                <!-- Phillip Dean -->
+                <div class="column is-one-quarter">
+                    <a class=" link-page link-page-spectre-dean">
+                        <div class="card hero-card">
+                            <div class="card-image">
+                                <figure class="image hero-icon">
+                                    <img src="img/icon/icon.png" alt="Image">
+                                        </figure>
+                                    </div>
+                                <div class="card-content">
+                                    <div class="media">
+
+                                        <div class="media-content">
+                                            <p class="title  hero-card-title">Phillip Dean</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                    <!-- ExoCorp -->
+                    <div class="column is-one-quarter">
+                        <a class=" link-page link-page-spectre-exocorp">
+                            <div class="card hero-card">
+                                <div class="card-image">
+                                    <figure class="image hero-icon">
+                                        <img src="img/icon/icon.png" alt="Image">
+                                            </figure>
+                                        </div>
+                                    <div class="card-content">
+                                        <div class="media">
+
+                                            <div class="media-content">
+                                                <p class="title  hero-card-title">ExoCorp</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="columns is-mobile">
+
+                        <!-- Velvet Knights -->
+                        <div class="column is-one-quarter">
+                            <a class=" link-page link-page-spectre-velvet">
+                                <div class="card hero-card">
+                                    <div class="card-image">
+                                        <figure class="image hero-icon">
+                                            <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                        <div class="card-content">
+                                            <div class="media">
+
+                                                <div class="media-content">
+                                                    <p class="title  hero-card-title">Velvet Knights</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+
+                            <!-- Gilgamesh -->
+                            <div class="column is-one-quarter">
+                                <a class=" link-page link-page-spectre-gilgamesh">
+                                    <div class="card hero-card">
+                                        <div class="card-image">
+                                            <figure class="image hero-icon">
+                                                <img src="img/icon/icon.png" alt="Image">
+                                                    </figure>
+                                                </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <div class="media-content">
+                                                        <p class="title  hero-card-title">Gilgamesh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+                                <!-- Wrestling Society -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-spectre-wrestling">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                        </figure>
+                                                    </div>
+                                                <div class="card-content">
+                                                    <div class="media">
+
+                                                        <div class="media-content">
+                                                            <p class="title  hero-card-title">Wrestling Society</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+
+                                    <!-- Sydney Guard -->
+                                    <div class="column is-one-quarter">
+                                        <a class=" link-page link-page-spectre-wrestling">
+                                            <div class="card hero-card">
+                                                <div class="card-image">
+                                                    <figure class="image hero-icon">
+                                                        <img src="img/icon/icon.png" alt="Image">
+                                                            </figure>
+                                                        </div>
+                                                    <div class="card-content">
+                                                        <div class="media">
+                                                            <p class="title  hero-card-title">Sydney Guard</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                    </div>
+                                    <script src="../js/script.js"></script>

@@ -1,0 +1,25 @@
+
+<nav class="navbar">
+    <div class="navbar-brand">
+        <h1 class="title">Timeline</h1>
+    </div>
+    <div class="navbar-end">
+        <nav class="breadcrumb is-right nav-breadcrumb">
+            <ul>
+                <li><a class="link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                <li class="is-active"><i class="fa fa-clock-o"></i>&nbsp;Timeline</li>
+            </ul>
+        </nav>
+    </div>
+</nav>
+
+<div class="notification is-primary" id="timeline-details">
+    <h6 class="subtitle">Hover over or select an event to see extra details about it!</h6>
+</div>
+
+<div class="content">
+    <div id="timeline"></div>
+</div>
+
+<script src="../js/timeline.js"></script>
+    <script src="../js/script.js"></script>

@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <h1 class="title">Home</h1>
+    </div>
+    <div class="navbar-end">
+        <nav class="breadcrumb is-right nav-breadcrumb">
+            <ul>
+                <li><a class="link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</li>
+            </ul>
+        </nav>
+    </div>
+</nav>
+
+The official website for Vigilantes!<br>
+Here, a wide range of resources are available to help you explore the world and the characters that inhabit it.<br><br>
+
+Listen to the Vigilante <a class="link-page link-page-podcasts"><span class="tag is-light">Podcasts</span></a> for easy insight into the vigilantes and the people behind them.<br>
+Then read <a class="link-page link-page-history"><span class="tag is-light">World History</span></a> to understand the need for Vigilantes in dystopian Sydney.<br>
+Then meet <a class="link-page link-page-team"><span class="tag is-light">The Team</span></a> behind the project before exploring the <a class="link-page link-page-heroes"><span class="tag is-light">Sub-Universes</span></a> and reading each character's profile.<br>
+After that, check out the <a class="link-page link-page-timeline"><span class="tag is-light">Timeline</span></a> to see the chronology of those sagas detailed in <a class="link-page link-page-story"><span class="tag is-light">&nbsp;Storylines</span></a>, the adventures of Sydney's Vigilantes.<br>
+And if that wasn't enough, go to <a class="link-page link-page-discover"><span class="tag is-light">Discover More</span></a> for links to keep exploring, and even contributing to, the world of vigilantes.<br><br>
+And above all, thanks for coming!<br><br>
+
+
+<script src="../js/script.js"></script>

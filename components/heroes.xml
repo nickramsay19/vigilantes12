@@ -1,0 +1,206 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <h1 class="title">Sub-Universes</h1>
+    </div>
+    <div class="navbar-end">
+        <nav class="breadcrumb is-right nav-breadcrumb">
+            <ul>
+                <li><a class="link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                    <li class="is-active"><a class="link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+    <!-- Row 1 -->
+    <div class="columns is-mobile">
+
+        <!-- Viper -->
+        <div class="column is-one-quarter">
+            <a class="link-page link-page-viper">
+                <div class="card hero-card">
+                    <div class="card-image">
+                        <figure class="image hero-icon">
+                            <img src="img/icon/icon.png" alt="Image">
+                                </figure>
+                            </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <p class="title hero-card-title">Viper</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+            <!-- Silver Spectre -->
+            <div class="column is-one-quarter">
+                <a class="link-page link-page-spectre">
+                    <div class="card hero-card">
+                        <div class="card-image">
+                            <figure class="image hero-icon">
+                                <img src="img/icon/icon.png" alt="Image">
+                                    </figure>
+                                </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <p class="title  hero-card-title">Silver Spectre</p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+
+                <!-- Mockingbird -->
+                <div class="column is-one-quarter">
+                    <a class=" link-page link-page-mockingbird">
+                        <div class="card hero-card">
+                            <div class="card-image">
+                                <figure class="image hero-icon">
+                                    <img src="img/icon/icon.png" alt="Image">
+                                        </figure>
+                                    </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <p class="title  hero-card-title">Mockingbird</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                    <!-- Burning Hand -->
+                    <div class="column is-one-quarter">
+                        <a class=" link-page link-page-burning">
+                            <div class="card hero-card">
+                                <div class="card-image">
+                                    <figure class="image hero-icon">
+                                        <img src="img/icon/icon.png" alt="Image">
+                                            </figure>
+                                        </div>
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <p class="title  hero-card-title">Burning Hand</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="columns is-mobile">
+
+                        <!-- Jack Kitchin -->
+                        <div class="column is-one-quarter">
+                            <a class=" link-page link-page-jack">
+                                <div class="card hero-card">
+                                    <div class="card-image">
+                                        <figure class="image hero-icon">
+                                            <img src="img/icon/icon.png" alt="Image">
+                                                </figure>
+                                            </div>
+                                        <div class="card-content">
+                                            <div class="media">
+                                                <p class="title  hero-card-title">Jack Kitchin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+
+                            <!-- Dilhan -->
+                            <div class="column is-one-quarter">
+                                <a class=" link-page link-page-dilhan hidden">
+                                    <div class="card hero-card">
+                                        <div class="card-image">
+                                            <figure class="image hero-icon">
+                                                <img src="img/icon/icon.png" alt="Image">
+                                                    </figure>
+                                                </div>
+                                            <div class="card-content">
+                                                <div class="media">
+                                                    <p class="title  hero-card-title">Dilhan WIP</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+                                <!-- Hannah -->
+                                <div class="column is-one-quarter">
+                                    <a class=" link-page link-page-hannah hidden">
+                                        <div class="card hero-card">
+                                            <div class="card-image">
+                                                <figure class="image hero-icon">
+                                                    <img src="img/icon/icon.png" alt="Image">
+                                                        </figure>
+                                                    </div>
+                                                <div class="card-content">
+                                                    <div class="media">
+                                                        <p class="title  hero-card-title">Hannah WIP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+
+                                    <!-- Tom -->
+                                    <div class="column is-one-quarter">
+                                        <a class=" link-page link-page-tom hidden">
+                                            <div class="card hero-card">
+                                                <div class="card-image">
+                                                    <figure class="image hero-icon">
+                                                        <img src="img/icon/icon.png" alt="Image">
+                                                            </figure>
+                                                        </div>
+                                                    <div class="card-content">
+                                                        <div class="media">
+                                                            <p class="title  hero-card-title">Tom WIP</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                    </div>
+
+                                    <!-- Row 3 -->
+                                    <div class="columns is-mobile">
+
+                                        <!-- Miranda -->
+                                        <div class="column is-one-quarter">
+                                            <a class=" link-page link-page-miranda hidden">
+                                                <div class=<script src="../js/script.js"></script>"card hero-card">
+                                                    <div class="card-image">
+                                                        <figure class="image hero-icon">
+                                                            <img src="img/icon/icon.png" alt="Image">
+                                                                </figure>
+                                                            </div>
+                                                        <div class="card-content">
+                                                            <div class="media">
+                                                                <p class="title  hero-card-title">Miranda WIP</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+
+                                            <!-- Hunter -->
+                                            <div class="column is-one-quarter">
+                                                <a class=" link-page link-page-hunter hidden">
+                                                    <div class="card hero-card">
+                                                        <div class="card-image">
+                                                            <figure class="image hero-icon">
+                                                                <img src="img/icon/icon.png" alt="Image">
+                                                                    </figure>
+                                                                </div>
+                                                            <div class="card-content">
+                                                                <div class="media">
+                                                                    <p class="title  hero-card-title">Hunter WIP</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                            <script src="../js/script.js"></script>

@@ -1,0 +1,90 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+        <h1 class="title">Three Eyed Warrior - Yang Jian - Jonathan Pan</h1>
+    </div>
+    <div class="navbar-end">
+        <nav class="breadcrumb is-right nav-breadcrumb">
+            <ul>
+                <li><a class=" link-page link-page-home"><span><img class="image is-16x16" src="img/icon/icon.png"></span>&nbsp;Vigilantes</a></li>
+                    <li><a class=" link-page link-page-heroes"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Sub-Universes</a></li>
+                    <li><a class=" link-page link-page-viper"><i class="fa fa-address-book-o" aria-hidden="true"></i>&nbsp;Viper</a></li>
+                    <li class="is-active"><a class=" link-page link-page-viper-jp"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Jonathan Pan</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav><br><br>
+    <div class="columns is-mobile">
+        <div class="column is-two-thirds">
+            <blockquote>"A fanatic is one who sticks to his guns whether they're loaded or not"</blockquote>
+
+            With the help of his friends Jonathan sought refuge in Chinatown when discrimination against Asians began. Here, he, Nicholas Ramsay and Tongyi Shen met the Longying and joined them.<br>
+            Jonathan was quick to commit to the group and fully believed in what they were doing. He felt it was his duty as a Chinese-Australian to aid the group’s cause so he trained wholeheartedly for many years. His weapon of choice was the monk’s spade and after learning what he could from the Longying staff master he proceeded to teach himself the finer points of the weapon.<br><br>
+            He eventually travelled to China to meet a master of the weapon. In China Jonathan trained further and made a reputation for himself, even managing to convince some warriors to return to Sydney with him.<br>
+            This laid the groundwork for Longying connections to China. When he returned to Sydney Jonathan quickly rose through the ranks of the Longying, gaining a seat on the council of elders despite his youth, and earning his title, Yang Jian, after a Chinese god. Jonathan embraced his title tattooing a third eye onto his forehead, as this ‘truth-seeing eye’ was a feature of the god.<br>
+            Now Jonathan is one of the best warriors of the Longying and has committed entirely to the group, severing all former ties and fighting with the single mindset of liberating Sydney’s Chinese population.<br><br>
+
+            <h4 class="subtitle">Arsenal</h4>
+            <ul>
+                <li>Monk's Spade</li>
+                <li>Two hook sword<br>Engraved with carvings and inscriptions.</li>
+                    <li>Yang Jian outfit</li>
+                    </ul><br>
+
+                <h4 class="subtitle">Capabilities</h4>
+                <ul>
+                    <li>Accomplished martial artist<br>
+                        Able to skilfully combine elements of a number of martial arts (principally Chinese ones, though other techniques are sometimes used) in a strong and steady style to complement the monk’s spade.</li>
+                        <li>Speaks Mandarin</li>
+                        </ul><br>
+
+                    <h4 class="subtitle">Qualities</h4>
+                    <ul>
+                        <li>Unwavering</li>
+                        <li>Calm/collected</li>
+                        <li>Extremely loyal</li>
+                        <li>Concerned with face</li>
+                        <li>Overcompensating</li>
+                        <li>Unsympathetic</li>
+                    </ul>
+                    </div>
+
+                    <div class="column">
+                        <img width="400px" height="500px" src="img/character-art/jp.png" alt="Image"><br><br>
+                            <article class="message is-primary">
+                                <div class="message-header">
+                                    Yang Jian Outfit
+                                </div>
+                                <div class="message-body">
+                                    <ul class="img-caption-body">
+                                        <li>Chinese style chest-plate and shoulder guards.</li>
+                                        <li>Long gloves, trousers and boots.</li>
+                                        <li>Tattoo of an eye on forehead.</li>
+                                        <li>Black bandana over his mouth and chin.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="message is-primary">
+                                <div class="message-header">
+                                    Extra Resources
+                                </div>
+                                <div class="message-body">
+                                    <i>Some additional links and comments to help appreciate the Three Eyed Warrior:</i><br><br>
+                                    <h5 class="subtitle">Monk's Spade</h5>
+                                    <ul class="img-caption-body">
+                                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlKWHoVRKVM8%26ab_channel%3Dpook522&h=ATN8MGphXauG2CzfT4Gx5wfZGgIAX4RZ81qBIbt43WPUejGeCRWtnPZtiL1xdlLeiQ9Wrc3sA3YTerLOxxBO-4MyhG-rw6kE48JTNu7hNbdNK-XKQijcrfN52gOb5hvc9k750GxFg0mJMgNFMBZ985dkjtxtOw">Monk's Spade Form</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=b8cSjlbluF0&ab_channel=bgblindninja">Monks spade</a></li>
+                                    </ul>
+                                    <h5 class="subtitle">Hook Sword</h5>
+                                    <ul class="img-caption-body">
+                                        <li><a href="https://youtu.be/aLCQA197rwc?t=1m36s">Rope Dart/Kunai</a></li>
+                                    </ul>
+                                    <h5 class="subtitle">Notes</h5>
+                                    <ul class="img-caption-body">
+                                        <li>Yang Jian is the embodiment of dedication and precision. His character is built around self-control, composure and unthinking devotion to his cause. This devotion can be both terrible and wonderful.</li>
+                                        <li>Other themes includes the distancing of friends and racism.</li>
+                                    </ul>
+                                    </div>
+                                    </article>
+                                </div>
+                                </div>
+                            <script src="../js/script.js"></script>

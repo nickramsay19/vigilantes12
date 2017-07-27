@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+
+}
+
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    color:
+}
+
+.img-caption-body{
+
+}
+
+.breadcrumb ul li{
+    margin-bottom: 32px;
+}
+
+.breadcrumb-nav{
+    height: 60px;
+}
+
+.menu-list{
+    padding: 0px;
+    list-style: none;
+    list-style-type: none;
+}
+
+.menu-list li{
+    list-style: none;
+    border-radius: 2px;
+    display: block;
+}
+.menu-list li a{
+    text-decoration: none;
+    transition: none 86ms ease-out;
+}
+
+.podcast-player{
+    margin-top: 35px;
+}
+
+td{
+    padding: 10px;
+}
+
+/* Hero Card Styling */
+.hero-card {
+    background-color: white;
+    color: #363636;
+}
+.hero-card-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-card .content{
+    display: none;
+}
+/* Hero Card Hover Effect*/
+.hero-card{
+    background-color: white;
+}
+.hero-card:hover{
+    background-color: #363636;
+
+}
+.hero-card:hover .card-content .media p{
+    color: white;
+}
+
+.hero-card .card-content .media p{
+    color: #363636;
+}
+
+
+
+/* Timeline */
+#timeline-details{
+    height: 150px;
+}
+.vis-item.viper{
+    border-color: #55aa55;
+}
+.vis-range.viper, .vis-background.viper{
+    border-color: #55aa55;
+    background-color: #aaffaa;
+}
+
+
+/* Extra */
+.hidden{
+    display: none;
+}
+
+#content{
+    overflow: hidden;
+}
+
+.rellax{
+    border: none;
+    box-sizing:inherit;
+    padding: 0;
+    border: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#go-now{
+    margin: 0 auto;
+
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+h2 span {
+
+    background:#fff;
+    padding:0 10px;
+}
+
+.tag:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+

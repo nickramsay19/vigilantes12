@@ -26,9 +26,11 @@ a {
 .img-caption-body{
 
 }
-
+.breadcrumb {
+    margin-top: 0px;
+}
 .breadcrumb ul li{
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
 
 .breadcrumb-nav{
