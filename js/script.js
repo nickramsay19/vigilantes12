@@ -36,7 +36,7 @@ function SetPage(PageName){
     //Animation Effect
     $("#page-shell").fadeOut(250, function(){
         //Get Component Text
-        $.get("../components/" + PageName + ".xml", function(data) {
+        $.get("../components/" + PageName + ".html", function(data) {
             $("#page-shell").html(data);
         }, 'text');
     });
@@ -50,6 +50,9 @@ function SetPage(PageName){
 
     //Set Cookies
     Cookies.set('page', PageName);
+
+    //Refresh Page
+    $('body').hide().show();
 }
 
 //Drop Downs

@@ -27,7 +27,7 @@ var SearchOptions = [
 
     {name: 'Patton', tags: ' ! character person viper Major Lewis Patton Soldier military fort darling brave helmet alpha mind control', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
 
-    {name: 'Longying', tags: ' ! viper Longying China Chinese asian Group syndicate gang', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
+    {name: 'Longying', tags: ' ! viper Longying China Chinese asian group syndicate gang', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
 
     {name: 'Spectre', tags: ' ! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
@@ -35,11 +35,19 @@ var SearchOptions = [
 
     {name: 'Red Rhino', tags: ' ! character person silver spectre vigilante dylan jenkin wrestler red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
 
+    {name: 'ExoCorp', tags: ' ! group person exocorp corp silver spectre', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-corp"><i class="fa fa-user"></i>&nbsp;ExoCorp</a></li>', matches: 0},
+
+    {name: 'Phillip Dean', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+
     {name: 'Mockingbird', tags: ' ! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
 
     {name: 'Burning Hand', tags: ' ! sub universe burning hand vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
 
-    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0}
+    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+
+    {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0}
+
+
 ];
 var SearchOptionsDisplay;
 
