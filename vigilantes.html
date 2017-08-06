@@ -105,11 +105,14 @@
                     </div>
 
                     <!-- Page Shell -->
-                    <div class="column is-three-quarters" id="page-shell"></div>
+                    <div class="column content" id="page-shell"></div>
                 </div>
             </div>
         </section>
 
+        <div id="components" style="display: none">
+
+        </div>
 
         <!-- Footer -->
         <footer class="footer" style="display: none">
@@ -122,6 +125,34 @@
             </div>
         </footer>
 
+        <!-- Modal -->
+        <div class="modal is-active access-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Site access</p>
+                </header>
+                <section class="modal-card-body">
+                    <h1>Please enter password to access site</h1>
+                    <p>To ensure you are authorised to access the site please enter the password.</p><br><br>
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-danger access-value" type="password" placeholder="Password">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fa fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <footer class="modal-card-foot">
+                    <a class="button is-success access-enter">Enter site</a>
+                </footer>
+            </div>
+        </div>
+
         <!-- Scripts -->
         <!-- Resource Scripts -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -131,6 +162,7 @@
 
         <!-- Custom Scripts -->
         <script src="js/script.js"></script>
+        <script src="js/startup.js"></script>
         <script src="js/cookies.js"></script>
         <script src="js/search_bar.js"></script>
 

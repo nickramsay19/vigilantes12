@@ -5,6 +5,7 @@
 -center all hero-card titles
 -Podcast player timestamps reduce scroller size
 -add sub universe icon and cahracter icons to breadcrumbs
+-add dropdown to spectre-velvet
 
 -Writing (Hunter):
 -Write about all characters
