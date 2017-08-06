@@ -152,4 +152,11 @@ h2 span {
     color: #fff;
 }
 
+#quiz {
+    text-align: center;
+    padding: 40px;
+}
+#quiz a{
+    width: 100%;
+}
 

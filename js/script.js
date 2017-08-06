@@ -24,17 +24,12 @@ $(".link-page").click(function(){
 
 //Reset All Pages & Page Links
 function ResetPageSelection(){
-    //Clear SideBar Styles
-    $(".link-page").removeClass("is-active");
+    //$(".drop-down-box").slideUp(); // Close All Drop Downs
+    //$("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
+    $(".link-page").removeClass("is-active"); //Clear SideBar Styles
 }
 
 function SetPage(PageName){
-    //Animation Effect
-    $("#page-shell").fadeOut(250, function(){
-        //Get Component Text
-        $.get("components/" + PageName + ".html", function(data) {
-            $("#page-shell").html(data);
-        }, 'text');
 
     //Reset Pages
     ResetPageSelection();
@@ -50,7 +45,6 @@ function SetPage(PageName){
 
     //Set Cookies
     Cookies.set('page', PageName);
-});
 }
 
 //Drop Downs
@@ -91,5 +85,4 @@ $(".access-enter").click(function(){
         Cookies.set('access', 'true');
     }
 })
-
 

@@ -317,45 +317,49 @@
 <div id="page-quiz" style="display: none">
     <nav class="navbar">
         <div class="navbar-brand">
-            <h1 class="title">Discover More</h1>
+            <h1 class="title">Quiz</h1>
         </div>
         <div class="navbar-end">
             <nav class="breadcrumb is-right nav-breadcrumb">
                 <ul>
-                    <li class="is-active"><a><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Discover More</a></li>
+                    <li class="is-active"><a><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Quiz</a></li>
                 </ul>
             </nav>
         </div>
-    </nav>
-    Links to continue exploring Vigilantes elsewhere.<br><br>
+    </nav><br>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Title</td>
-                <td>Description</td>
-                <td>Link</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Google Docs</td>
-                <td>A collaborative document where ideas are brainstormed.</td>
-                <td><a href="https://docs.google.com/document/d/1-4bpu0zVuVLfw92r9-R0TAxHrKBCyHLjKRPQSJP5ZT8/edit?usp=sharing"><button class="button is-primary">Go!</button></a></td>
-            </tr>
-            <tr>
-                <td>Popplet Mind Map</td>
-                <td>An illustration of the connections within the universe.</td>
-                <td><a href="http://popplet.com/app/#/3469369"><button class="button is-primary">Go!</button></a></td>
-            </tr>
-            <tr>
-                <td>Vigilante Attributes</td>
-                <td>A table of Top-Trumps like values to compare Vigilantes.</td>
-                <td><a href="https://docs.google.com/spreadsheets/d/1wrcFABkcUHQGJp57JqIoWB5LKmN_Uc9BJ-GE3b5c0nI/edit?usp=sharing"><button class="button is-primary">Go!</button></a></td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="quiz" class="card">
+        <div id="quiz-title">
+            <h3>Welcome to the Vigilantes Quiz</h3><br><br>
+            <a class="quiz-start button is-primary is-large" href="#">Start</a>
+        </div>
+        <div id="quiz-game" style="display: none;">
+            <h3 id="quiz-question">QUESTION</h3><br><br>
+            <div class="columns">
+                <div class="column">
+                    <a class="quiz-answer quiz-answer-a button is-primary is-large" href="#">ANSWER A</a>
+                </div>
+                <div class="column">
+                    <a class="quiz-answer quiz-answer-b button is-primary is-large" href="#">ANSWER B</a>
+                </div>
+                <div class="column">
+                    <a class="quiz-answer quiz-answer-c button is-primary is-large" href="#">ANSWER C</a>
+                </div>
+                <div class="column">
+                    <a class="quiz-answer quiz-answer-d button is-primary is-large" href="#">ANSWER D</a>
+                </div><br><br>
+
+            </div>
+            <footer class="card-footer">
+                <div class="card-footer-item"><h4 id="quiz-correct-percentage">Correct questions: 0</h4></div>
+                <div class="card-footer-item"><h4 id="quiz-correct-count">Questions answered: 0</h4></div>
+                <div class="card-footer-item"><a class="button is-primary quiz-start" href="#">Restart</a></div>
+            </footer>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
+    <script src="js/quiz.js"></script>
 </div><!-- Quiz -->
 
 
