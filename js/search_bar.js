@@ -39,15 +39,21 @@ var SearchOptions = [
 
     {name: 'Phillip Dean', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
 
+    {name: 'Velvet Knights', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+
+    {name: 'Gilgamesh', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+
+    {name: 'Sydney Guard', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+
     {name: 'Mockingbird', tags: ' ! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
 
     {name: 'Burning Hand', tags: ' ! sub universe burning hand vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
 
     {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
-    {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0}
+    {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
-
+    {name: 'Hunter', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-hunter"><i class="fa fa-smile-o"></i>&nbsp;Hunter\'s Secret Page</a></li>', matches: 0},
 ];
 var SearchOptionsDisplay;
 

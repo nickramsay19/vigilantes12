@@ -1,3 +1,7 @@
+//Global Variables
+var PageShell = $("#page-shell");
+var Components = $("#components");
+
 //On Link Press
 $(".link-page").click(function(){
     var ClassList = $(this).attr('class').split(/\s+/);
@@ -18,41 +22,29 @@ $(".link-page").click(function(){
     }
 });
 
-//Hero Icon Image Change || TEMP: Until Character Card Images Are Made
-$(".hero-card").hover(function(){
-        $(this).find("img").attr("src", "img/icon/icon-dark.png");
-    },function(){
-        $(this).find("img").attr("src", "img/icon/icon.png");
-    });
-
 //Reset All Pages & Page Links
 function ResetPageSelection(){
-    $(".drop-down-box").slideUp(); // Close All Drop Downs
-    $("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
+    //$(".drop-down-box").slideUp(); // Close All Drop Downs
+    //$("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
     $(".link-page").removeClass("is-active"); //Clear SideBar Styles
 }
 
 function SetPage(PageName){
-    //Animation Effect
-    $("#page-shell").fadeOut(250, function(){
-        //Get Component Text
-        $.get("../components/" + PageName + ".html", function(data) {
-            $("#page-shell").html(data);
-        }, 'text');
-    });
-    setTimeout(function(){
-        $("#page-shell").fadeIn(250, function(){});
-    }, 200);
 
-    //Set link to is-active
-    $(".link-page").removeClass("is-active");
+    //Reset Pages
+    ResetPageSelection();
+    PageShell.fadeOut(200, function(){
+
+        //Change Page
+        PageShell.html($("#page-" + PageName).html());
+        PageShell.fadeIn(500, function(){})
+    });
+
+    //Set Link to Active
     $(".link-page-" + PageName).addClass("is-active");
 
     //Set Cookies
     Cookies.set('page', PageName);
-
-    //Refresh Page
-    $('body').hide().show();
 }
 
 //Drop Downs
@@ -76,6 +68,13 @@ $(".drop-down-button").click(function(){
         $(".drop-down-button" + ID).removeClass("fa fa-arrow-circle-down");
         $(".drop-down-button" + ID).addClass("fa fa-arrow-circle-up");
     }
+});
+
+//Hero Icon Image Change || TEMP: Until Character Card Images Are Made
+$(".hero-card").hover(function(){
+    $(this).find("img").attr("src", "img/icon/icon-dark.png");
+},function(){
+    $(this).find("img").attr("src", "img/icon/icon.png");
 });
 
 
