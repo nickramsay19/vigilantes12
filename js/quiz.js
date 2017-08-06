@@ -64,8 +64,8 @@ $(".quiz-answer").click(function(){
 
     ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length))];
     FillQuiz(ChosenQuestion);
-    CorrectPercentageBox.html("Correct questions: " + CorrectCount);
-    CorrectionCountBox.html("Questions answered: " + QuestionsCompleted);
+    CorrectPercentageBox.html("Correct: " + CorrectCount);
+    CorrectionCountBox.html("Answered: " + QuestionsCompleted);
 });
 
 //On Start Game Click
