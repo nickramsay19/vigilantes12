@@ -9,6 +9,8 @@ var SearchOptions = [
 
     {name: 'The Team', tags: ' ! developers writers website designers artists The Team', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-team"><i class="fa fa-pencil-square"></i>&nbsp;The Team</a></li>', matches: 0},
 
+    {name: 'Quiz', tags: ' ! quiz question ask test', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-quiz"><i class="fa fa-question"></i>&nbsp;Quiz</a></li>', matches: 0},
+
     {name: 'World History', tags: ' ! story World History', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
 
     {name: 'Sub Universes', tags: ' ! heroes characters universes sub', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-heroes"><i class="fa fa-address-book-o"></i>&nbsp;Sub-Universes</a></li>', matches: 0},
@@ -53,7 +55,7 @@ var SearchOptions = [
 
     {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
-    {name: 'Hunter', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-hunter"><i class="fa fa-smile-o"></i>&nbsp;Hunter\'s Secret Page</a></li>', matches: 0},
+    {name: 'Hunter', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-hunter"><i class="fa fa-smile-o"></i>&nbsp;Hunter\'s Secret Page</a></li>', matches: 0}
 ];
 var SearchOptionsDisplay;
 
