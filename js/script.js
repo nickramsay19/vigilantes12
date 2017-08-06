@@ -37,7 +37,7 @@ function SetPage(PageName){
 
         //Change Page
         PageShell.html($("#page-" + PageName).html());
-        PageShell.fadeIn(500, function(){})
+        PageShell.fadeIn(10000, function(){})
     });
 
     //Set Link to Active
