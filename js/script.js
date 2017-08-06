@@ -37,7 +37,7 @@ function SetPage(PageName){
 
         //Change Page
         PageShell.html($("#page-" + PageName).html());
-        PageShell.fadeIn(10000, function(){})
+        PageShell.fadeIn(200, function(){})
     });
 
     //Set Link to Active
@@ -76,5 +76,14 @@ $(".hero-card").hover(function(){
 },function(){
     $(this).find("img").attr("src", "img/icon/icon.png");
 });
+
+//Password
+$(".access-enter").click(function(){
+    var Value = $(".access-value").val();
+    if(Value == "nickiscool"){
+        $(".access-modal").removeClass("is-active");
+        Cookies.set('access', 'true');
+    }
+})
 
 
