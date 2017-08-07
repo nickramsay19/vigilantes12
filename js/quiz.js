@@ -13,7 +13,7 @@ var AnswerD = $(".quiz-answer-d");
 var Questions = [
     {question: 'Which of Dexter\'s family members died?', answer_a: 'His mother', answer_b: 'His father', answer_c: 'Both his parents', answer_d: 'His son'},
 
-    {question: 'What inspired Vigilantes?', answer_a: 'Marvel\'s Daredevil series', answer_b: 'Batman and Robin', answer_c: 'Marvel\'s Luke Cage series', answer_d: 'Hunters broken mind'},
+    {question: 'What inspired Vigilantes?', answer_a: 'Marvel\'s Daredevil series', answer_b: 'Batman and Robin', answer_c: 'Marvel\'s Luke Cage series', answer_d: 'Hunter\'s broken mind'},
 
     {question: 'Whose outfit is Viper\'s outfit inspired by?', answer_a: 'Iron fist', answer_b: 'Daredevil', answer_c: 'Spiderman', answer_d: 'Batman'},
 
@@ -31,15 +31,15 @@ var Questions = [
     
     {question: 'What does the Three Eyed Warrior have a tattoo of', answer_a: 'An eye', answer_b: 'A snake', answer_c: 'A dragon', answer_d: 'A sword'},
     
-    {question: 'Where is the Lucky Moon Yum Cha?', answer_a: 'Elizabeht Street', answer_b: 'Paddys Market', answer_c: 'George Street', answer_d: 'Tumbalong Park'},
+    {question: 'Where is the Lucky Moon Yum Cha?', answer_a: 'Elizabeht Street', answer_b: 'Paddy\'s Market', answer_c: 'George Street', answer_d: 'Tumbalong Park'},
     
-    {question: 'What weapon does the Three Eyed Warrior use?', answer_a: 'Monks Spade', answer_b: 'Katana', answer_c: 'Rope Darts', answer_d: 'His Fists'},
+    {question: 'What weapon does the Three Eyed Warrior use?', answer_a: 'Monk\'s Spade', answer_b: 'Katana', answer_c: 'Rope Darts', answer_d: 'His Fists'},
      
-    {question: 'Where did the Mariners hook come from?', answer_a: 'Taiwanese Pirates', answer_b: 'A car accident', answer_c: 'It was caught in a winch', answer_d: 'Gangrene'},
+    {question: 'Where did the Mariner\'s hook come from?', answer_a: 'Taiwanese Pirates', answer_b: 'A car accident', answer_c: 'It was caught in a winch', answer_d: 'Gangrene'},
     
     {question: 'How did Viper meet Luke Wood?', answer_a: 'He intercepted a delivery', answer_b: 'They were introduced', answer_c: 'He was sent a message', answer_d: 'He heard rumours'},
     
-    {question: 'Which business tycoon becomes Vipers nemesis in Stage 2?', answer_a: 'Lukian Adams', answer_b: 'Major Patton', answer_c: 'Philip Dean', answer_d: 'Oscar Martin'},
+    {question: 'Which business tycoon becomes Viper\'s nemesis in Stage 2?', answer_a: 'Lukian Adams', answer_b: 'Major Patton', answer_c: 'Philip Dean', answer_d: 'Oscar Martin'},
     
     {question: 'Which world leader does Viper assasinate?', answer_a: 'Kim Jong Sun', answer_b: 'Donald Trump', answer_c: 'Vladimir Putin', answer_d: 'Tony Abbott'},
     
@@ -65,7 +65,7 @@ var Questions = [
 
     {question: 'Where is the Sydney Guard based?', answer_a: 'North Sydney', answer_b: 'The CBD', answer_c: 'The Eastern Suburbs', answer_d: 'The Inner West'},
     
-    {question: 'What is Red Rhinos power?', answer_a: 'Growth', answer_b: 'Strength', answer_c: 'Indestructibility', answer_d: 'Speed'},
+    {question: 'What is Red Rhino\'s power?', answer_a: 'Growth', answer_b: 'Strength', answer_c: 'Indestructibility', answer_d: 'Speed'},
     
     {question: 'What phobia does the Burning Hand have?', answer_a: 'Spiders', answer_b: 'Heights', answer_c: 'Fire', answer_d: 'Lawnmowers'},
     
@@ -81,7 +81,7 @@ var Questions = [
     
     {question: 'How did Silver Spectre escape from ExoCorp?', answer_a: 'There was a distraction', answer_b: 'Stealth', answer_c: 'He was released', answer_d: 'Jonah Riley broke him out'},
     
-    {question: 'What is the Silver Spectres fatal flaw?', answer_a: 'Naivety', answer_b: 'Arrogance', answer_c: 'Laziness', answer_d: 'Stubborness'},
+    {question: 'What is the Silver Spectre\'s fatal flaw?', answer_a: 'Naivety', answer_b: 'Arrogance', answer_c: 'Laziness', answer_d: 'Stubborness'},
     
     {question: 'Which colour arrow points up in the Silver Spectre symbol?', answer_a: 'Silver', answer_b: 'Blue', answer_c: 'White', answer_d: 'Black'},
 ];
