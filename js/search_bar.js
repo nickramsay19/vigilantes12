@@ -27,7 +27,7 @@ var SearchOptions = [
 
     {name: 'Tongyi', tags: ' ! character person viper Tongyi Shen Yum cha chef dumpling restaurant lucky moon China Chinese asian', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-tongyi"><i class="fa fa-user"></i>&nbsp;Tongyi Shen</a></li>', matches: 0},
 
-    {name: 'Patton', tags: ' ! character person viper Major Lewis Patton Soldier military fort darling brave helmet alpha mind control', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
+    {name: 'Patton', tags: ' ! character person villain viper major lewis patton soldier military fort darling brave helmet alpha mind control', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-patton"><i class="fa fa-user"></i>&nbsp;Major Patton</a></li>', matches: 0},
 
     {name: 'Longying', tags: ' ! viper Longying China Chinese asian group syndicate gang', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
 
