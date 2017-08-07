@@ -9,7 +9,7 @@ var SearchOptions = [
 
     {name: 'The Team', tags: ' ! developers writers website designers artists The Team', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-team"><i class="fa fa-pencil-square"></i>&nbsp;The Team</a></li>', matches: 0},
 
-    {name: 'Quiz', tags: ' ! quiz question ask test', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-quiz"><i class="fa fa-question"></i>&nbsp;Quiz</a></li>', matches: 0},
+    {name: 'Quiz', tags: ' ! quiz question knowledge ask test', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-quiz"><i class="fa fa-question"></i>&nbsp;Quiz</a></li>', matches: 0},
 
     {name: 'World History', tags: ' ! story World History', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
 
@@ -17,7 +17,7 @@ var SearchOptions = [
 
     {name: 'Timeline', tags: ' ! events story Timeline', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-timeline"><i class="fa fa-clock-o"></i>&nbsp;Timeline</a></li>', matches: 0},
 
-    {name: 'Storylines', tags: ' ! Storylines', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
+    {name: 'Storylines', tags: ' ! Storylines stages sagas tales ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
 
     {name: 'Viper', tags: ' ! sub universe viper', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper"><i class="fa fa-address-book-o"></i>&nbsp;Viper</a></li>', matches: 0},
 
