@@ -53,6 +53,8 @@ var SearchOptions = [
 
     {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
+    {name: 'Cosmologist', tags: ' ! cole johnson cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+
     {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
     {name: 'Hunter', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-hunter"><i class="fa fa-smile-o"></i>&nbsp;Hunter\'s Secret Page</a></li>', matches: 0}
