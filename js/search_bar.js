@@ -33,19 +33,19 @@ var SearchOptions = [
 
     {name: 'Spectre', tags: ' ! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Spectre Spectre', tags: ' ! character person silver spectre vigilante hugo johannsen shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+    {name: 'Spectre Spectre', tags: ' ! character person silver spectre vigilante hugo johansenn ghost grey shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Red Rhino', tags: ' ! character person silver spectre vigilante dylan jenkin wrestler red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
+    {name: 'Red Rhino', tags: ' ! character person vigilante dylan jenkin wrestler substax growth wrestling society steroids drugs red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
 
-    {name: 'ExoCorp', tags: ' ! group person exocorp corp silver spectre', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-corp"><i class="fa fa-user"></i>&nbsp;ExoCorp</a></li>', matches: 0},
+    {name: 'ExoCorp', tags: ' ! group evil exocorp corp company technology science corporation', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-corp"><i class="fa fa-user"></i>&nbsp;ExoCorp</a></li>', matches: 0},
 
-    {name: 'Phillip Dean', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+    {name: 'Phillip Dean', tags: ' ! character person villain vigilante philip dean rich man exocorp', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+    
+    {name: 'Velvet Knights', tags: ' ! group mercenaries exocorp hitmen velvet knights arthur alastair hughes galahad lancelot gawain geraint percival lamorak kay gareth bedivere gaheris tristan kray brothers hired round table criminals gangs richardson twins', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Velvet Knights</a></li>', matches: 0},
 
-    {name: 'Velvet Knights', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+    {name: 'Gilgamesh', tags: ' ! character person villain daniel watson gilgamesh the director wrestling society power fists wrestle disabled', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Gilgamesh</a></li>', matches: 0},
 
-    {name: 'Gilgamesh', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
-
-    {name: 'Sydney Guard', tags: ' ! character person silver spectre vigilante phillip dean rich man', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+    {name: 'Sydney Guard', tags: ' ! group sydney guard silver spectre mockingbird team dean red rhino hugo johansenn dylan jenkin siena mitchell vigilantes north sergeant jonah riley', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Sydney Guard</a></li>', matches: 0},
 
     {name: 'Mockingbird', tags: ' ! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
 
