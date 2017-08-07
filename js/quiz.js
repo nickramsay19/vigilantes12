@@ -25,7 +25,65 @@ var Questions = [
 
     {question: 'Who wields two giant power fists?', answer_a: 'Gilgamesh', answer_b: 'Red Rhino', answer_c: 'Sir Lancelot', answer_d: 'Doomfist'},
 
-    {question: 'Who is Nitya Rampal in relation to Burning Hand?', answer_a: 'His cousin', answer_b: 'His sister', answer_c: 'His grandmother', answer_d: 'His stepmother'}
+    {question: 'Who is Nitya Rampal in relation to Burning Hand?', answer_a: 'His cousin', answer_b: 'His sister', answer_c: 'His grandmother', answer_d: 'His stepmother'},
+    
+    {question: 'How long did Viper train for?', answer_a: '5 Years', answer_b: '4 Years', answer_c: '6 Years', answer_d: '3 Years'},
+    
+    {question: 'What does the Three Eyed Warrior have a tattoo of', answer_a: 'An eye', answer_b: 'A snake', answer_c: 'A dragon', answer_d: 'A sword'},
+    
+    {question: 'Where is the Lucky Moon Yum Cha?', answer_a: 'Elizabeht Street', answer_b: 'Paddys Market', answer_c: 'George Street', answer_d: 'Tumbalong Park'},
+    
+    {question: 'What weapon does the Three Eyed Warrior use?', answer_a: 'Monks Spade', answer_b: 'Katana', answer_c: 'Rope Darts', answer_d: 'His Fists'},
+     
+    {question: 'Where did the Mariners hook come from?', answer_a: 'Taiwanese Pirates', answer_b: 'A car accident', answer_c: 'It was caught in a winch', answer_d: 'Gangrene'},
+    
+    {question: 'How did Viper meet Luke Wood?', answer_a: 'He intercepted a delivery', answer_b: 'They were introduced', answer_c: 'He was sent a message', answer_d: 'He heard rumours'},
+    
+    {question: 'Which business tycoon becomes Vipers nemesis in Stage 2?', answer_a: 'Lukian Adams', answer_b: 'Major Patton', answer_c: 'Philip Dean', answer_d: 'Oscar Martin'},
+    
+    {question: 'Which world leader does Viper assasinate?', answer_a: 'Kim Jong Sun', answer_b: 'Donald Trump', answer_c: 'Vladimir Putin', answer_d: 'Tony Abbott'},
+    
+    {question: 'Where does the Mariner fish?', answer_a: 'The Southern Ocean', answer_b: 'The Pacific Ocean', answer_c: 'The South China Sea', answer_d: 'Syndey Harbour'},
+    
+    {question: 'What was the name of the dog owned by the Sydney Slasher as a child?', answer_a: 'Marlowe', answer_b: 'Scruffy', answer_c: 'Rumo', answer_d: 'Metallica'},
+    
+    {question: 'How many times does the Sydney Slasher stab his father?', answer_a: '50', answer_b: '100', answer_c: '13', answer_d: '66'},
+    
+    {question: 'Where did the Sydney Slasher travel after school?', answer_a: 'Israel', answer_b: 'Russia', answer_c: 'America', answer_d: 'Egypt'},
+    
+    {question: 'What was the managers name in the video store the Sydney Slasher worked in?', answer_a: 'Guy', answer_b: 'Bruce', answer_c: 'Dwight', answer_d: 'Marx'},
+    
+    {question: 'How many people did the Slasher kill in his first set?', answer_a: '11', answer_b: '14', answer_c: '9', answer_d: '13'},
+
+    {question: 'What did the Slasher feed on in his coffin?', answer_a: 'Blood', answer_b: 'Nothing', answer_c: 'Worms', answer_d: 'Skin'},
+    
+    {question: 'Who leads the Sydney Guard?', answer_a: 'Silver Spectre', answer_b: 'Mockingbird', answer_c: 'Viper', answer_d: 'Philip Dean'},
+    
+    {question: 'Which steroid gives Red Rhino his powers?', answer_a: 'Substax', answer_b: 'Osteopose', answer_c: 'AB3', answer_d: 'Hydropolyglycerin'},
+    
+    {question: 'Which Velvet Knight is commonly pitted against Silver Spectre?', answer_a: 'Sir Gallahad', answer_b: 'Sir Lancelot', answer_c: 'Sir Bedivere', answer_d: 'Philip Dean'},
+
+    {question: 'Where is the Sydney Guard based?', answer_a: 'North Sydney', answer_b: 'The CBD', answer_c: 'The Eastern Suburbs', answer_d: 'The Inner West'},
+    
+    {question: 'What is Red Rhinos power?', answer_a: 'Growth', answer_b: 'Strength', answer_c: 'Indestructibility', answer_d: 'Speed'},
+    
+    {question: 'What phobia does the Burning Hand have?', answer_a: 'Spiders', answer_b: 'Heights', answer_c: 'Fire', answer_d: 'Lawnmowers'},
+    
+    {question: 'Who made Vigilantes?', answer_a: 'Some losers in a dark room', answer_b: 'Your mum', answer_c: 'Peter Dutton', answer_d: 'God made the world therefore...'},
+    
+    {question: 'What does Viper work as?', answer_a: 'Lawyer', answer_b: 'Comedian', answer_c: 'Accountant', answer_d: 'Snake Whisperer'},
+    
+    {question: 'Which of the following is the UHMWPE in the Spectre Suit resistant to?', answer_a: 'Microorganisms', answer_b: 'Fire', answer_c: 'Lightning', answer_d: 'Pterodactyls'},
+    
+    {question: 'What is the maximum density Silver Spectre can pass through?', answer_a: '13kg/m^3', answer_b: '28g/cm^3', answer_c: '110kg/m^3', answer_d: '52g/m^3'},
+
+    {question: 'Which of the following can Silver Spectre not pass through?', answer_a: 'Osmium', answer_b: 'Iron', answer_c: 'Copper', answer_d: 'Argon'},
+    
+    {question: 'How did Silver Spectre escape from ExoCorp?', answer_a: 'There was a distraction', answer_b: 'Stealth', answer_c: 'He was released', answer_d: 'Jonah Riley broke him out'},
+    
+    {question: 'What is the Silver Spectres fatal flaw?', answer_a: 'Naivety', answer_b: 'Arrogance', answer_c: 'Laziness', answer_d: 'Stubborness'},
+    
+    {question: 'Which colour arrow points up in the Silver Spectre symbol?', answer_a: 'Silver', answer_b: 'Blue', answer_c: 'White', answer_d: 'Black'},
 ];
 
 //Variables
