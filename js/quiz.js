@@ -84,6 +84,57 @@ var Questions = [
     {question: 'What is the Silver Spectre\'s fatal flaw?', answer_a: 'Naivety', answer_b: 'Arrogance', answer_c: 'Laziness', answer_d: 'Stubborness'},
     
     {question: 'Which colour arrow points up in the Silver Spectre symbol?', answer_a: 'Silver', answer_b: 'Blue', answer_c: 'White', answer_d: 'Black'},
+    
+    {question: 'What do the Silver Spectre\s gloves do?', answer_a: 'Produce electricity', answer_b: 'Keep his hands warm', answer_c: 'Provide grip', answer_d: 'Stick to things'},
+    
+    {question: 'What/who promised Silver Spectre amazing physical abilities?', answer_a: 'An Informercial', answer_b: 'An ExoCorp Ambassador', answer_c: 'A Brochure', answer_d: 'Red Rhino'},
+    
+    {question: 'What field of science did Red Rhino study?', answer_a: 'Biotechnology', answer_b: 'Engineering', answer_c: 'Quantum Physics', answer_d: 'Robotics'},
+    
+    {question: 'What group did Red Rhino join to help release frustration?', answer_a: 'The Wrestling Society', answer_b: 'The Klu Klux Klan', answer_c: 'The Boxing Guild', answer_d: 'The Longying'},
+    
+    {question: 'What is a negative side effect of Substax?', answer_a: 'Mood Swings', answer_b: 'Anxiety', answer_c: 'Asthma', answer_d: 'Irritated Eyes'},
+    
+    {question: 'Who is Silver Spectre\s closest friend?', answer_a: 'Red Rhino', answer_b: 'Jonah Riley', answer_c: 'Mockingbird', answer_d: 'DJ Snaggletooth'},
+    
+    {question: 'What poison coats Philip Dean\s bullets?', answer_a: 'Pufferfish Venom', answer_b: 'Cyanide', answer_c: 'Scorpion Venom', answer_d: 'Cone Shell Venom'},
+    
+    {question: 'How did Philip Dean\s mother die?', answer_a: 'Cancer', answer_b: 'Car Accident', answer_c: 'Domestic Violence', answer_d: 'Drug Overdose'},
+    
+    {question: 'Where did the Velvet Knights originate?', answer_a: 'Britain', answer_b: 'Australia', answer_c: 'America', answer_d: 'China'},
+    
+    {question: 'Which experiment created the Experimentals?', answer_a: 'P-4', answer_b: 'Experiment X', answer_c: 'AB3', answer_d: 'The Spectre Series'},
+    
+    {question: 'Which religion does Philip Dean follow?', answer_a: 'Catholicism', answer_b: 'Atheism', answer_c: 'Islam', answer_d: 'Buddhism'},
+    
+    {question: 'Where did DJ Snaggletooth travel after school?', answer_a: 'Costa Rica', answer_b: 'India', answer_c: 'Cambodia', answer_d: 'Bolivia'},
+    
+    {question: 'What weapon does DJ Snaggletooth use?', answer_a: 'A Blowgun', answer_b: 'His Mixtape', answer_c: 'A Chakram', answer_d: 'A Staff'},
+    
+    {question: 'What is the Burning Hand\s weapon of choice?', answer_a: 'Bagh Naka', answer_b: 'Joddapuhr', answer_c: 'Boomerangs', answer_d: 'Brak Nagha'},
+    
+    {question: 'Who was the main catalyst for the transformation to Vigilante Sydney?', answer_a: 'Mike Baird', answer_b: 'Pauline Hansen', answer_c: 'Donald Trump', answer_d: 'Viper'},
+    
+    {question: 'Since 2016, in what way did Sydney grow?', answer_a: 'Urban Consolidation', answer_b: 'Urban Sprawling', answer_c: 'Gentrification', answer_d: 'Planned Suburban Development'},
+    
+    {question: 'Who is Darling Harbour important for?', answer_a: 'Smugglers', answer_b: 'Policemen', answer_c: 'The Mariner', answer_d: 'Businessmen'},
+    
+    {question: 'Which language can Viper speak?', answer_a: 'Mandarin', answer_b: 'Russian', answer_c: 'Cantonese', answer_d: 'Hindi'},
+    
+    {question: 'Which suburb is encroaching into Darlinghurst?', answer_a: 'Kings Cross', answer_b: 'Chinatown', answer_c: 'Mosman', answer_d: 'Glebe'},
+    
+    {question: 'What suburb lies below Darlinghurst?', answer_a: 'Downtown', answer_b: 'Underground', answer_c: 'Darlinghurst Zero', answer_d: 'Subway'},
+    
+    {question: 'What does Mockingbird work as?', answer_a: 'A Forensic Artist', answer_b: 'A Forensic Scientist', answer_c: 'A Policewoman', answer_d: 'A Graphic Designer'},
+    
+    {question: 'What rank is Jonah Riley as a police officer?', answer_a: 'Sergeant', answer_b: 'Major', answer_c: 'Superintendent', answer_d: 'Detective'},
+    
+    {question: 'Where did Luke Wood travel for work?', answer_a: 'Germany', answer_b: 'Russia', answer_c: 'China', answer_d: 'England'},
+    
+    {question: 'Which vigilante was the most difficult to write?', answer_a: 'Mockingbird', answer_b: 'Adam Crespo', answer_c: 'Burning Hand', answer_d: 'Three Eyed Warrior'},
+    
+    {question: 'Which vigilante was created first?', answer_a: 'Viper', answer_b: 'Silver Spectre', answer_c: 'Burning Hand', answer_d: 'Jack Kitchin'},
+    
 ];
 
 //Variables
