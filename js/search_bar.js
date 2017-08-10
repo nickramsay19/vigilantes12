@@ -51,9 +51,9 @@ var SearchOptions = [
 
     {name: 'Burning Hand', tags: ' ! sub universe burning hand vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
 
-    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin sedgley probability manipulation gambling las vegas unlucky lucky fortunate vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
-    {name: 'Cosmologist', tags: ' ! cole johnson cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+    {name: 'Cosmologist', tags: ' ! cole johnson interdimensional time manipulation pocket hipster universe clairvoyance foresight preacher gay french longevity dimensions dimensional travel the cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
     {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
