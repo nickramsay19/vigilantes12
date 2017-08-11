@@ -1,0 +1,15 @@
+!-- Dropdown template --!
+
+1. Change INSERT_UNIQUE_ID_HERE in both the text div and the button
+2. Insert the text into INSERT_DROPDOWN_TEXT_HERE
+
+<div class="drop-down-box" id="INSERT_UNIQUE_ID_HERE">
+    INSERT_DROPDOWN_TEXT_HERE
+</div>
+<div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
+    <span style="background-color:#fff;">
+        <a class="icon is-large" style="position: relative; bottom: 2px; background-color: white;">
+            <i id="INSERT_UNIQUE_ID_HERE" class="drop-down-button fa fa-arrow-circle-down" aria-hidden="true"></i>
+        </a>
+    </span>
+</div>
