@@ -1,7 +1,11 @@
 !-- Dropdown template --!
 
+GUIDE:
+
 1. Change INSERT_UNIQUE_ID_HERE in both the text div and the button
 2. Insert the text into INSERT_DROPDOWN_TEXT_HERE
+
+TEMPLATE:
 
 <div class="drop-down-box" id="INSERT_UNIQUE_ID_HERE">
     INSERT_DROPDOWN_TEXT_HERE
