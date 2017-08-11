@@ -14,6 +14,28 @@
     -Write storyline content
     -Write world history content
 
+    Release:
+    -Burning hand subuniverse (stretch)
+    -Jack Kitchin subuniverse
+    -Slightely expanded timeline
+    -4 subuniverse card iocons (stretch)
+    -Banner image
+    -Page by page polish
+    -Quiz breadcrumb icon
+    -Password removed
+
+    Update 2 - Mockingbird:
+    -Mockingbird subuniverse
+    -Viper character card iocons
+    -139 question quiz
+    -Cookies fix
+
+    Update 3 - Snakes & The City:
+    -Viper storyline release
+    -Spectre character card iocns
+    -Location and map added
+    -Phone viewing
+
 -Artwork (Siena, Miranda):
     -Add Icons to each sub-universe and their respective characters
 
