@@ -1,0 +1,17 @@
+!-- Tutorial: How to add a page --!
+
+1. Copy and paste an already made page from the components.html
+2. Change the title and breadcrumbs both for the specific sub-universe and page itself
+    a. Change the title of the page in the h1 tag
+    b. Change the breadcrumbs for the sub universe and page itself names
+    c. If the page is group us the fa-users class in the i tag instead of fa-user
+4. Edit the data needed
+    a. Insert the main body and change subtitles as you please
+    b. If a dropdown is needed copy the template from Dropdown.txt and change the required data
+5. Add a searchbar item in js/search_bar.js in the SearchOptions array
+    a. Add the Name of the page(this is not neccessary, it just helps the reader identitfy it)
+    b. Insert the tags for the page including the '!' tag for debugging purposes
+    c. Change the neccessary data in the element item
+        1. The i tag fontawesome icon beginning with fa-
+        2. The name in the the a tag to appear in the search bxar
+
