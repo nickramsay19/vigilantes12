@@ -188,6 +188,33 @@ var Questions = [
     {question: 'What is Burning Hand\s mother\s name?', answer_a: 'Catherine', answer_b: 'Kim', answer_c: 'Barbara', answer_d: 'Sonia'},
     
     {question: 'Where is Burning Hand\s family from?', answer_a: 'Kolkata', answer_b: 'Delhi', answer_c: 'Mumbai', answer_d: 'Kathmandu'},
+    
+    {question: 'Who was the first Arthur of the Velvet Knights?', answer_a: 'Felix Laycock', answer_b: 'Alastair Hughes', answer_c: 'Caleb Perry', answer_d: 'Gareth Myman'},
+    
+    {question: 'What does Major Patton use?', answer_a: 'BraveHelm Alpha', answer_b: 'BraveHelm Beta', answer_c: 'BraveHelm+', answer_d: 'BraveHelmet'},
+    
+    {question: 'What artillery weapon is located at Fort Darling?', answer_a: 'Howitzer', answer_b: 'Mortar', answer_c: 'Cannon', answer_d: 'Trebuchet'},
+    
+    {question: 'Which type of drone can be found at Fort Darling?', answer_a: 'Skylark', answer_b: 'Sentinel', answer_c: 'Predator', answer_d: 'Hermes'},
+    
+    {question: 'Does Fort Darling have a tank?', answer_a: 'No', answer_b: 'Yes', answer_c: 'I didn\t read the article', answer_d: 'No, it has a submarine'},
+    
+    {question: 'What sport did Major Patton play in his youth?', answer_a: 'AFL', answer_b: 'Soccer', answer_c: 'Golf', answer_d: 'Shooting'},
+    
+    {question: 'Where did Major Patton fight?', answer_a: 'Afghanistan', answer_b: 'Vietnam', answer_c: 'Iraq', answer_d: 'Syria'},
+    
+    {question: 'Which friend did Major Patton kill?', answer_a: 'Captain Grove', answer_b: 'Private Ryan', answer_c: 'Corporal Stokes', answer_d: 'Private Walters'},
+    
+    {question: 'Who first designed the BraveHelm?', answer_a: 'DARPA', answer_b: 'ExoCorp', answer_c: 'The US Army', answer_d: 'NASA'},
+    
+    {question: 'Which vehicle does Dexter Barker drive?', answer_a: 'A Bus', answer_b: 'A Motorcycle', answer_c: 'A Taxi', answer_d: 'A Mech'},
+    
+    {question: 'Who is the Director', answer_a: 'Daniel Watson', answer_b: 'Dexter Barker', answer_c: 'Nitya Rampal', answer_d: 'Philip Dean'},
+    
+    {question: 'What is Mr Ly\s first name?', answer_a: 'Ben', answer_b: 'Dong', answer_c: 'Jude', answer_d: 'Dan'},
+    
+    {question: 'Why was Mr Ly dishonoured?', answer_a: 'He was gay', answer_b: 'He killed someone', answer_c: 'He betrayed his family', answer_d: 'He stole from the king'},
+    
 ];
 
 //Variables
