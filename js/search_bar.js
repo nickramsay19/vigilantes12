@@ -7,9 +7,9 @@ var SearchOptions = [
 
     {name: 'Discover More', tags: ' ! extra info links Discover More', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-discover"><i class="fa fa-info-circle"></i>&nbsp;Discover More</a></li>', matches: 0},
 
-    {name: 'The Team', tags: ' ! developers writers website designers artists The Team', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-team"><i class="fa fa-pencil-square"></i>&nbsp;The Team</a></li>', matches: 0},
+    {name: 'The Team', tags: ' ! developers writers website authors creators contact devs designers artists The Team', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-team"><i class="fa fa-pencil-square"></i>&nbsp;The Team</a></li>', matches: 0},
 
-    {name: 'Quiz', tags: ' ! quiz question knowledge ask test', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-quiz"><i class="fa fa-question"></i>&nbsp;Quiz</a></li>', matches: 0},
+    {name: 'Quiz', tags: ' ! quiz questions knowledge ask test', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-quiz"><i class="fa fa-question"></i>&nbsp;Quiz</a></li>', matches: 0},
 
     {name: 'World History', tags: ' ! story World History', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
 
@@ -33,27 +33,29 @@ var SearchOptions = [
 
     {name: 'Spectre', tags: ' ! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Spectre Spectre', tags: ' ! character person silver spectre vigilante hugo johansenn ghost grey shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+    {name: 'Silver Spectre', tags: ' ! character person silver spectre vigilante hugo johansenn ghost grey shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Red Rhino', tags: ' ! character person vigilante dylan jenkin wrestler substax growth wrestling society steroids drugs red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
+    {name: 'Red Rhino', tags: ' ! character person vigilante dylan jenkin wrestler substax growth wrestling society steroids drugs red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
 
-    {name: 'ExoCorp', tags: ' ! group evil exocorp corp company technology science corporation', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-corp"><i class="fa fa-user"></i>&nbsp;ExoCorp</a></li>', matches: 0},
+    {name: 'ExoCorp', tags: ' ! group evil exocorp corp company technology science corporation', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-corp"><i class="fa fa-users"></i>&nbsp;ExoCorp</a></li>', matches: 0},
 
-    {name: 'Phillip Dean', tags: ' ! character person villain vigilante philip dean rich man exocorp', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Phillip Dean</a></li>', matches: 0},
+    {name: 'Philip Dean', tags: ' ! character person villain vigilante philip dean rich man exocorp', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Philip Dean</a></li>', matches: 0},
     
-    {name: 'Velvet Knights', tags: ' ! group mercenaries exocorp hitmen velvet knights arthur alastair hughes galahad lancelot gawain geraint percival lamorak kay gareth bedivere gaheris tristan kray brothers hired round table criminals gangs richardson twins', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Velvet Knights</a></li>', matches: 0},
+    {name: 'Velvet Knights', tags: ' ! group mercenaries exocorp hitmen velvet knights arthur alastair hughes galahad lancelot gawain geraint percival lamorak kay gareth bedivere gaheris tristan kray brothers hired round table criminals gangs richardson twins', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-velvet"><i class="fa fa-users"></i>&nbsp;Velvet Knights</a></li>', matches: 0},
 
-    {name: 'Gilgamesh', tags: ' ! character person villain daniel watson gilgamesh the director wrestling society power fists wrestle disabled', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Gilgamesh</a></li>', matches: 0},
+    {name: 'Gilgamesh', tags: ' ! character person villain daniel watson gilgamesh the director wrestling society power fists wrestle disabled', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-daniel"><i class="fa fa-user"></i>&nbsp;Gilgamesh</a></li>', matches: 0},
 
-    {name: 'Sydney Guard', tags: ' ! group sydney guard silver spectre mockingbird team dean red rhino hugo johansenn dylan jenkin siena mitchell vigilantes north sergeant jonah riley', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-dean"><i class="fa fa-user"></i>&nbsp;Sydney Guard</a></li>', matches: 0},
+    {name: 'Sydney Guard', tags: ' ! group sydney guard silver spectre mockingbird team dean red rhino hugo johansenn dylan jenkin siena mitchell vigilantes north sergeant jonah riley', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-guard"><i class="fa fa-users"></i>&nbsp;Sydney Guard</a></li>', matches: 0},
 
     {name: 'Mockingbird', tags: ' ! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
 
     {name: 'Burning Hand', tags: ' ! sub universe burning hand vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-burning"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
 
-    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin sedgley probability manipulation gambling las vegas unlucky lucky fortunate vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilantes', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+    
+    {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin sedgley probability manipulation gambling las vegas unlucky lucky fortunate vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-kitchin"><i class="fa fa-user"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
-    {name: 'Cosmologist', tags: ' ! cole johnson interdimensional interdimensionals time manipulation pocket hipster universe clairvoyance foresight preacher gay french longevity dimensions dimensional travel the cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-jack"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+    {name: 'Cosmologist', tags: ' ! cole johnson jack kitchin interdimensional interdimensionals time manipulation pocket hipster universe clairvoyance foresight preacher gay french longevity dimensions dimensional travel the cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-cole"><i class="fa fa-user"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
     {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
