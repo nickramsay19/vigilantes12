@@ -55,7 +55,11 @@ var SearchOptions = [
     
     {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin sedgley probability manipulation gambling las vegas unlucky lucky fortunate vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-kitchin"><i class="fa fa-user"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
 
-    {name: 'Cosmologist', tags: ' ! cole johnson jack kitchin interdimensional interdimensionals time manipulation pocket hipster universe clairvoyance foresight preacher gay french longevity dimensions dimensional travel the cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-cole"><i class="fa fa-user"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
+    {name: 'Cosmologist', tags: ' ! cole johnson jack kitchin interdimensional interdimensionals time manipulation pocket hipster universe clairvoyance foresight preacher gay french longevity dimensions dimensional travel the cosmologist', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-cole"><i class="fa fa-user"></i>&nbsp;Cosmologist</a></li>', matches: 0},
+    
+    {name: 'Ruby Keeler-Milne', tags: ' ! ruby keeler milne jack kitchin interdimensional interdimensionals space illusions manipulation dress universe telepathy existential french les apaches longevity dimensions dimensional', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-ruby"><i class="fa fa-user"></i>&nbsp;Ruby Keeler-Milne</a></li>', matches: 0},
+    
+    {name: 'Will Salkeld', tags: ' ! will salkeld jack kitchin politics politician house of representatives lover good negotiator diplomat', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-will"><i class="fa fa-user"></i>&nbsp;Will Salkeld</a></li>', matches: 0},
 
     {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
