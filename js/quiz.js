@@ -31,7 +31,7 @@ var Questions = [
     
     {question: 'What does the Three Eyed Warrior have a tattoo of', answer_a: 'An eye', answer_b: 'A snake', answer_c: 'A dragon', answer_d: 'A sword'},
     
-    {question: 'Where is the Lucky Moon Yum Cha?', answer_a: 'Elizabeht Street', answer_b: 'Paddy\'s Market', answer_c: 'George Street', answer_d: 'Tumbalong Park'},
+    {question: 'Where is the Lucky Moon Yum Cha?', answer_a: 'Elizabeth Street', answer_b: 'Paddy\'s Market', answer_c: 'George Street', answer_d: 'Tumbalong Park'},
     
     {question: 'What weapon does the Three Eyed Warrior use?', answer_a: 'Monk\'s Spade', answer_b: 'Katana', answer_c: 'Rope Darts', answer_d: 'His Fists'},
      
@@ -43,7 +43,7 @@ var Questions = [
     
     {question: 'Which world leader does Viper assasinate?', answer_a: 'Kim Jong Sun', answer_b: 'Donald Trump', answer_c: 'Vladimir Putin', answer_d: 'Tony Abbott'},
     
-    {question: 'Where does the Mariner fish?', answer_a: 'The Southern Ocean', answer_b: 'The Pacific Ocean', answer_c: 'The South China Sea', answer_d: 'Syndey Harbour'},
+    {question: 'Where does the Mariner fish?', answer_a: 'The Southern Ocean', answer_b: 'The Pacific Ocean', answer_c: 'The South China Sea', answer_d: 'Sydney Harbour'},
     
     {question: 'What was the name of the dog owned by the Sydney Slasher as a child?', answer_a: 'Marlowe', answer_b: 'Scruffy', answer_c: 'Rumo', answer_d: 'Metallica'},
     
@@ -134,6 +134,86 @@ var Questions = [
     {question: 'Which vigilante was the most difficult to write?', answer_a: 'Mockingbird', answer_b: 'Adam Crespo', answer_c: 'Burning Hand', answer_d: 'Three Eyed Warrior'},
     
     {question: 'Which vigilante was created first?', answer_a: 'Viper', answer_b: 'Silver Spectre', answer_c: 'Burning Hand', answer_d: 'Jack Kitchin'},
+    
+    {question: 'How did Mockingbird defeat the Sydney Slasher?', answer_a: 'Pushed him off a roof', answer_b: 'Shot him', answer_c: 'Called the police for help', answer_d: 'Led him into a trap'},
+    
+    {question: 'What does /Longying\ translate to?', answer_a: 'Shadow Dragon', answer_b: 'Dark Viper', answer_c: 'Night Sword', answer_d: 'Dragon Claw'},
+    
+    {question: 'Which weapon is not used by the Longying?', answer_a: 'Dagger', answer_b: 'Bow', answer_c: 'Rope Dart', answer_d: 'Staff'},
+    
+    {question: 'What is on the second floor of Paddy\s Markets?', answer_a: 'A Storeroom', answer_b: 'A Restaurant', answer_c: 'Dormitories', answer_d: 'A Training Centre'},
+    
+    {question: 'Which item does Jonah not carry with him?', answer_a: 'Speedometer', answer_b: 'Taser', answer_c: 'Torch', answer_d: 'Radio'},
+    
+    {question: 'Who served as inspiration for Jonah Riley?', answer_a: 'Cleaver Greene', answer_b: 'Walter White', answer_c: 'John McClane', answer_d: 'Diane Pizzaro'},
+    
+    {question: 'When were the Velvet Knights formed?', answer_a: '1965', answer_b: '2001', answer_c: '1987', answer_d: '2016'},
+    
+    {question: 'Who leads the Velvet Knights?', answer_a: 'Alastair Hughes', answer_b: 'Jack Jameson', answer_c: 'Sophie King', answer_d: 'Robert Muldoon'},
+    
+    {question: 'Which is a dart not used by DJ Snaggletooth?', answer_a: 'Explosive Dart', answer_b: 'Flare Dart', answer_c: 'Electric Dart', answer_d: 'Tracker Dart'},
+    
+    {question: 'Who has the highest score in agility?', answer_a: 'DJ Snaggletooth', answer_b: 'Burning Hand', answer_c: 'Viper', answer_d: 'Ruby Keeler-Milne'},
+    
+    {question: 'What did DJ Snaggletooth work as after school?', answer_a: 'A Wildlife Photographer', answer_b: 'A DJ', answer_c: 'A Stuntman', answer_d: 'A Vlogger'},
+    
+    {question: 'Where are the Bondi Boys based?', answer_a: 'Bondi Junction', answer_b: 'Bondi Beach', answer_c: 'Mexico City', answer_d: 'Bondi RSL Club'},
+    
+    {question: 'Which tribe did DJ Snaggletooth befriend?', answer_a: 'The Cabecar', answer_b: 'The Sentinelese', answer_c: 'The Mascho Piro', answer_d: 'The Cabellos Largos'},
+    
+    {question: 'What is the diameter of Burning Hand\s chakram?', answer_a: '30cm', answer_b: '25cm', answer_c: '15cm', answer_d: '10cm'},
+    
+    {question: 'Which martial art does the Burning Hand practice?', answer_a: 'Taekwondo', answer_b: 'Karate', answer_c: 'Changquan', answer_d: 'Krav Maga'},
+    
+    {question: 'What is the furthest the Burning Hand can throw his chakram?', answer_a: '60m', answer_b: '10m', answer_c: '40m', answer_d: '25m'},
+    
+    {question: 'Which gang did the Burning Hand join in Kolkata?', answer_a: 'The Tigers', answer_b: 'The Wrestling Society', answer_c: 'The Kolkata Cutters', answer_d: 'The Triad'},
+    
+    {question: 'Which problem affected the Burning Hand in his youth?', answer_a: 'Sweating', answer_b: 'Hair Loss', answer_c: 'Autism', answer_d: 'Headaches'},
+    
+    {question: 'What is the Burning Hand\s ultimate goal?', answer_a: 'Climb the Himalayas', answer_b: 'Bring back his father', answer_c: 'Destroy the Comancheros', answer_d: 'Get laid'},
+    
+    {question: 'Who did the Burning Hand fall in love with?', answer_a: 'Asri Nanda', answer_b: 'Amelia Dharkur', answer_c: 'Raj Rampal', answer_d: 'Masara Landi'},
+    
+    {question: 'Which family member did Burning Hand kill?', answer_a: 'Eshan Rampal', answer_b: 'Raj Rampal', answer_c: 'Kym Rampal', answer_d: 'Rahel Rampal'},
+    
+    {question: 'What is the maximum age for Bondi Boys?', answer_a: '30', answer_b: '12', answer_c: '24', answer_d: '35'},
+    
+    {question: 'Who takes over the Bondi Boys after their previous leader\s death?', answer_a: 'Harley Fogul', answer_b: 'Ash Newman', answer_c: 'DJ Snaggletooth', answer_d: 'Brian Hunt'},
+    
+    {question: 'What power does the Silver Spectre have?', answer_a: 'Intangibility', answer_b: 'Invisibility', answer_c: 'Emotional Perception', answer_d: 'Precognition'},
+    
+    {question: 'Which vigilante is a skilled parkourist?', answer_a: 'DJ Snaggletooth', answer_b: 'Burning Hand', answer_c: 'Red Rhino', answer_d: 'Dexter Barker'},
+    
+    {question: 'What is Burning Hand\s mother\s name?', answer_a: 'Catherine', answer_b: 'Kim', answer_c: 'Barbara', answer_d: 'Sonia'},
+    
+    {question: 'Where is Burning Hand\s family from?', answer_a: 'Kolkata', answer_b: 'Delhi', answer_c: 'Mumbai', answer_d: 'Kathmandu'},
+    
+    {question: 'Who was the first Arthur of the Velvet Knights?', answer_a: 'Felix Laycock', answer_b: 'Alastair Hughes', answer_c: 'Caleb Perry', answer_d: 'Gareth Myman'},
+    
+    {question: 'What does Major Patton use?', answer_a: 'BraveHelm Alpha', answer_b: 'BraveHelm Beta', answer_c: 'BraveHelm+', answer_d: 'BraveHelmet'},
+    
+    {question: 'What artillery weapon is located at Fort Darling?', answer_a: 'Howitzer', answer_b: 'Mortar', answer_c: 'Cannon', answer_d: 'Trebuchet'},
+    
+    {question: 'Which type of drone can be found at Fort Darling?', answer_a: 'Skylark', answer_b: 'Sentinel', answer_c: 'Predator', answer_d: 'Hermes'},
+    
+    {question: 'Does Fort Darling have a tank?', answer_a: 'No', answer_b: 'Yes', answer_c: 'I didn\t read the article', answer_d: 'No, it has a submarine'},
+    
+    {question: 'What sport did Major Patton play in his youth?', answer_a: 'AFL', answer_b: 'Soccer', answer_c: 'Golf', answer_d: 'Shooting'},
+    
+    {question: 'Where did Major Patton fight?', answer_a: 'Afghanistan', answer_b: 'Vietnam', answer_c: 'Iraq', answer_d: 'Syria'},
+    
+    {question: 'Which friend did Major Patton kill?', answer_a: 'Captain Grove', answer_b: 'Private Ryan', answer_c: 'Corporal Stokes', answer_d: 'Private Walters'},
+    
+    {question: 'Who first designed the BraveHelm?', answer_a: 'DARPA', answer_b: 'ExoCorp', answer_c: 'The US Army', answer_d: 'NASA'},
+    
+    {question: 'Which vehicle does Dexter Barker drive?', answer_a: 'A Bus', answer_b: 'A Motorcycle', answer_c: 'A Taxi', answer_d: 'A Mech'},
+    
+    {question: 'Who is the Director', answer_a: 'Daniel Watson', answer_b: 'Dexter Barker', answer_c: 'Nitya Rampal', answer_d: 'Philip Dean'},
+    
+    {question: 'What is Mr Ly\s first name?', answer_a: 'Ben', answer_b: 'Dong', answer_c: 'Jude', answer_d: 'Dan'},
+    
+    {question: 'Why was Mr Ly dishonoured?', answer_a: 'He was gay', answer_b: 'He killed someone', answer_c: 'He betrayed his family', answer_d: 'He stole from the king'},
     
 ];
 
