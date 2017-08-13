@@ -315,6 +315,8 @@
 </div><!-- Discover More -->
 
 <div id="page-quiz" style="display: none">
+
+    <!-- Title & Breadcrumbs -->
     <nav class="navbar">
         <div class="navbar-brand">
             <h1 class="title">Quiz</h1>
@@ -322,17 +324,42 @@
         <div class="navbar-end">
             <nav class="breadcrumb is-right nav-breadcrumb">
                 <ul>
-                    <li class="is-active"><a><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Quiz</a></li>
+                    <li class="is-active"><a><i class="fa fa-question" aria-hidden="true"></i>&nbsp;Quiz</a></li>
                 </ul>
             </nav>
         </div>
     </nav><br>
 
+    <!-- Quiz -->
     <div id="quiz" class="card">
+
+        <!-- Title Screen -->
         <div id="quiz-title">
-            <h3>Welcome to the Vigilantes Quiz</h3><br><br>
-            <a class="quiz-start button is-primary is-large" href="#">Start</a>
+            <div class="ribbon" style="margin-bottom: 100px">
+                <div class="medallion"></div>
+
+                <div class="ribbon-1">
+                    <span class="inner">
+                        <span class="fadeLeft">The...</span>
+                    </span>
+                </div>
+
+                <div class="ribbon-2">
+                    <span class="inner">
+                        <span class="fadeRight">Vigilantes Quiz</span>
+                    </span>
+                </div>
+
+                <div class="ribbon-3">
+                    <span class="inner">
+                        <span class="fadeLeft">See how many questions you can get right</span>
+                    </span>
+                </div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a class="quiz-start button is-primary is-large" href="#">Begin!</a>
         </div>
+
+        <!-- Quiz Questions -->
         <div id="quiz-game" style="display: none;">
             <h3 id="quiz-question">QUESTION</h3><br><br>
             <div class="columns">
@@ -351,11 +378,13 @@
                     <a class="quiz-answer quiz-answer-d button is-primary is-large" href="#">ANSWER D</a>
                 </div><br><br>
             </div>
-            <footer class="card-footer">
-                <div class="card-footer-item"><h4 id="quiz-correct-percentage">Correct: 0</h4></div>
-                <div class="card-footer-item"><h4 id="quiz-correct-count">Answered: 0</h4></div>
-                <div class="card-footer-item"><a class="button is-primary quiz-start" href="#">Restart</a></div>
-            </footer>
+            <progress id="quiz-progress" class="progress is-primary" value="30" max="100">30%</progress>
+        </div>
+
+        <!-- Results Page -->
+        <div id="quiz-results" style="display: none;">
+            <h1>You got <span id="quiz-results-percentage">VALUE</span>% correct!</h1><br><br><br>
+            <a class="quiz-start button is-primary is-large" href="#">Try again</a>
         </div>
     </div>
 
@@ -2308,8 +2337,8 @@
             Ruby was soon captured by a fireteam of American soldiers and was raped. The cavalry didn’t come. This, for the most impactful time in her life showed her the failure of humanity and began that philosophy central to her character, existentialism.<br>
             Ruby was taken back to a prisoner of war camp, forced to care for the wounded. Here she met another woman, Nurse Roth, who she became unwilling friends with.<br>
             As the war drew to a close she told Roth about her rape and Roth, seeing a chance to continue her legacy and give Ruby back the dignity and power she had lost gave Ruby a ring, and like Father Hargreaves, passed on her power to the first of a new generation of interdimensionals. And that was how Ruby gained the ability to bend the first three dimensions to her will.<br><br>
-            
-            
+
+
             By the time the war had drawn to a close, a powerful Ruby had arrived in Paris, determined to lead a new life of which she was in command. Having come to the realisation that to her all that mattered was her own success she was ready to do so; in spectacular fashion.<br>
             Over the coming years she tried several approaches to gain the influence she sought and eventually, making the most of a fortunate coincidence, drew together the Les Apaches (one part a gang of street thugs, the other a society of writers and musicians, both of which had chosen the same name). Ruby infiltrated both groups and adopted positions of power in each, allowing her to gradually integrate them by mixing and matching members and events, blurring the two groups into one and granting her control over both Paris' poor and aristocracy.<br><br>
             Then came the night that set the Cosmologist on his path. At the Les Apaches club in Paris Ruby had Cole's lover, Raphael, shot. This was the first time she had killed someone outside of war. At this point, a council ran the Les Apaches, and Ruby having manoeuvred to control a sizeable portion of the gang, was forced to appeal to them to retain her command.<br>

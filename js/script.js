@@ -22,17 +22,10 @@ $(".link-page").click(function(){
     }
 });
 
-//Reset All Pages & Page Links
-function ResetPageSelection(){
-    //$(".drop-down-box").slideUp(); // Close All Drop Downs
-    //$("[id^=page-]").fadeOut(100, function(){}); //Hide All Pages
-    $(".link-page").removeClass("is-active"); //Clear SideBar Styles
-}
-
 function SetPage(PageName){
 
     //Reset Pages
-    ResetPageSelection();
+    $(".link-page").removeClass("is-active");
     PageShell.fadeOut(200, function(){
 
         //Change Page

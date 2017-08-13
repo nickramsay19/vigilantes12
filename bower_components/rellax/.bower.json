@@ -18,14 +18,13 @@
     "test",
     "tests"
   ],
-  "_release": "319c1acace",
+  "_release": "38e60007eb",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "319c1acace50488f68f2ebc517b7b15349804435"
+    "commit": "38e60007ebc830e4021a8f46df383578d63b17f1"
   },
   "_source": "https://github.com/dixonandmoe/rellax.git",
   "_target": "*",
-  "_originalSource": "rellax",
-  "_direct": true
+  "_originalSource": "rellax"
 }
