@@ -53,6 +53,10 @@ var SearchOptions = [
 
     {name: 'Burning Hand', tags: ' ! burning hand vigilante indian kickboxing taekwondo counsellor martial arts teacher bagh naka chakram kolkata asri nanda sweating fire flame flaming tiger claws', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle-kyle"><i class="fa fa-user"></i>&nbsp;Burning Hand</a></li>', matches: 0},
     
+    {name: 'Dexter Barker', tags: ' ! burning hand dexter barker bus driver transport friend hope soup kitchin', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle-dexter"><i class="fa fa-user"></i>&nbsp;Dexter Barker</a></li>', matches: 0},
+    
+    {name: 'Adam Crespo', tags: ' ! burning hand adam crespo drug dealer criminal vigilante person antihero cannabis bombs bikies gangs farm brother zack liam motorcycle motorbike streetfighter sawed off shotgun gas mask revenge redemption', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle-crespo"><i class="fa fa-user"></i>&nbsp;Adam Crespo</a></li>', matches: 0},
+    
     {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilantes', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
     
     {name: 'Jack Kitchin', tags: ' ! jack kitchin sedgley probability manipulation gambling las vegas unlucky lucky fortunate vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-kitchin"><i class="fa fa-user"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
