@@ -65,9 +65,11 @@ $(".drop-down-button").click(function(){
 
 //Hero Icon Image Change || TEMP: Until Character Card Images Are Made
 $(".hero-card").hover(function(){
-    $(this).find("img").attr("src", "img/icon/icon-dark.png");
+    var IMG = $(this).find("img");
+    IMG.attr("src", "img/logo/" + IMG.attr("id") + "-light.png");
 },function(){
-    $(this).find("img").attr("src", "img/icon/icon.png");
+    var IMG = $(this).find("img");
+    IMG.attr("src", "img/logo/" + IMG.attr("id") + ".png");
 });
 
 //Password
