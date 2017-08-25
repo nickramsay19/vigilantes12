@@ -160,3 +160,19 @@ h2 span {
     width: 100%;
 }
 
+/* Banner Image */
+#banner {
+
+    text-align: center;
+
+    background: url(../img/banners/banner2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#banner-button {
+    margin: 500px;
+    margin-top: 600px;
+}
+
