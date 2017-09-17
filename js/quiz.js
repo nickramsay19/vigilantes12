@@ -215,81 +215,81 @@ var Questions = [
     {question: 'What is Mr Ly\s first name?', answer_a: 'Ben', answer_b: 'Dong', answer_c: 'Jude', answer_d: 'Dan'},
 
     {question: 'Why was Mr Ly dishonoured?', answer_a: 'He was gay', answer_b: 'He killed someone', answer_c: 'He betrayed his family', answer_d: 'He stole from the king'},
-    
+
     {question: 'What is Will Salkeld?', answer_a: 'A politician', answer_b: 'A stripper', answer_c: 'An author', answer_d: 'An activist'},
-    
+
     {question: 'Where did Will Salkeld meet Ruby Keeler-Milne?', answer_a: 'Las Vegas', answer_b: 'Sydney', answer_c: 'Kolkata', answer_d: 'Paris'},
-    
+
     {question: 'When did the Southeast Asian war break out?', answer_a: '2018', answer_b: '2020', answer_c: '2024', answer_d: '2031'},
-    
+
     {question: 'How much money worth of trade passes through the South China Sea yeary?', answer_a: '$5.3 Trillion', answer_b: '$22.8 Billion', answer_c: '$12.4 Billion', answer_d: '$489.6 Billion'},
-    
+
     {question: 'What was the catalyst for the Southeast Asian War?', answer_a: 'ISIS shot down a Chinese plane', answer_b: 'China stole sand from Malaysia', answer_c: 'The US bombed Manilla', answer_d: 'Trump tried to assassinate Kim Jon Un'},
-    
+
     {question: 'Which country is not a combatant in the Southeast Asian War?', answer_a: 'Cambodia', answer_b: 'Philippines', answer_c: 'Indonesia', answer_d: 'Brunei'},
-    
+
     {question: 'What is the average temperature on Macquarie Island?', answer_a: '6˚C', answer_b: '12˚C', answer_c: '-2˚C', answer_d: '3˚C'},
-    
+
     {question: 'What political system exists on Macquarie Island?', answer_a: 'Anarchocommunism', answer_b: 'Fascism', answer_c: 'Totalitarianism', answer_d: 'Feudalism'},
-    
+
     {question: 'What is the name of Macquarie Island\s preacher?', answer_a: 'Father Scott-Mitchell', answer_b: 'Father Hargreaves', answer_c: 'Jesse Custer', answer_d: 'Father Neal'},
-    
+
     {question: 'What is not a food source for the Macquarie Islanders', answer_a: 'Moths', answer_b: 'Krill', answer_c: 'Lichen', answer_d: 'Whale'},
-    
+
     {question: 'What does the Cosmologist dress as?', answer_a: 'A Hipster', answer_b: 'A Wizard', answer_c: 'A Chef', answer_d: 'A Doctor'},
-    
+
     {question: 'Which dimension can the Comsologist manipulate?', answer_a: 'Time', answer_b: 'Space', answer_c: 'Probability', answer_d: 'All of them'},
-    
+
     {question: 'What was the name of Cole\s lover?', answer_a: 'Raphael', answer_b: 'Susan', answer_c: 'Ruby', answer_d: 'Piérre'},
-    
+
     {question: 'Who commands the Les Apaches?', answer_a: 'Ruby Keeler-Milne', answer_b: 'Jack Kitchin', answer_c: 'The Cosmologist', answer_d: 'Burning Hand'},
-    
+
     {question: 'How old was Father Hargreaves when he died?', answer_a: 'Over 200', answer_b: 'Almost 400', answer_c: '98', answer_d: '173'},
-    
+
     {question: 'What is a central theme of Cole\s story?', answer_a: 'Faith', answer_b: 'Jealousy', answer_c: 'Racism', answer_d: 'Technology'},
-    
+
     {question: 'Where did Cole meet Father Hargreaves?', answer_a: 'Outside Paris', answer_b: 'Athens', answer_c: 'Melbourne', answer_d: 'Nazi Germany'},
-    
+
     {question: 'Why did the Cosmologist settle in Sydney?', answer_a: 'He didn\t know anyone there', answer_b: 'There was lots of crime', answer_c: 'It was an interdimensional waypoint', answer_d: 'His father had lived there'},
-    
+
     {question: 'How many shots does Jack Kitchin\s gun hold?', answer_a: 'Five', answer_b: 'Two', answer_c: 'Ten', answer_d: 'Seven'},
-    
+
     {question: 'What colour is Jack Kitchin\s glove?', answer_a: 'Red', answer_b: 'Brown', answer_c: 'Blue', answer_d: 'Purple'},
-    
+
     {question: 'What is the name of Jack Kitchin\s weapon?', answer_a: 'Sedgley OSS .38', answer_b: 'Sedgley OSS', answer_c: 'Sedgely OSS .38', answer_d: 'Sedgely OSS'},
-    
+
     {question: 'What was Jack Kitchin cursed with?', answer_a: 'Bad Luck', answer_b: 'Erectile Dysfunction', answer_c: 'Hopelessness', answer_d: 'Amnesia'},
-    
+
     {question: 'What is Jack Kitchin\s superpower?', answer_a: 'Probability Manipulation', answer_b: 'Pressure Alteration', answer_c: 'Fortune Telling', answer_d: 'Intangibility'},
-    
+
     {question: 'What event did Jack miss?', answer_a: 'His brother\s wedding', answer_b: 'His mother\s funeral', answer_c: 'His own divorce', answer_d: 'His presidential inauguration'},
-    
+
     {question: 'What American city did Jack Kitchin live in?', answer_a: 'Las Vegas', answer_b: 'New York', answer_c: 'San Francisco', answer_d: 'Colorado'},
-    
+
     {question: 'What did Jack Kitchin do when he got his powers?', answer_a: 'Went back to gambling', answer_b: 'Confronted the Les Apaches', answer_c: 'Fled to Alaska', answer_d: 'Slept for a week'},
-    
+
     {question: 'How many women was Jack Kitchin dating at once in Vegas?', answer_a: 'Four', answer_b: 'Six', answer_c: 'Eight', answer_d: 'Not Enough'},
-    
+
     {question: 'Where did Jack Kitchin meet the Cosmologist?', answer_a: 'A Church', answer_b: 'A Bar', answer_c: 'A Barber', answer_d: 'A Mini-Golf Course'},
-    
+
     {question: 'How much money did the gambling counsellor give Jack Kitchin?', answer_a: '$100', answer_b: '$48', answer_c: '$20', answer_d: '$12.50'},
-    
+
     {question: 'Which big-name gambler beat Jack Kitchin?', answer_a: 'Red Pig', answer_b: 'Ruby Keeler-Milne', answer_c: 'Fortuno', answer_d: 'Weaver'},
-    
+
     {question: 'What happens if Jack Kitchin overuses his power?', answer_a: 'His brain bleeds', answer_b: 'His power reverses', answer_c: 'He creates a paradox', answer_d: 'A demon is summoned to stop him'},
-    
+
     {question: 'What is Ruby Keeler-Milne\s dress made of?', answer_a: 'Universes', answer_b: 'Silk', answer_c: 'Dark Matter', answer_d: 'Sapphire'},
-    
+
     {question: 'Which war did Ruby Keeler-Milne fight in?', answer_a: 'World War I', answer_b: 'World War II', answer_c: 'Afghanistan War', answer_d: 'Vietnam War'},
-    
+
     {question: 'Where was Ruby Keeler-Milne born?', answer_a: 'Germany', answer_b: 'Australia', answer_c: 'France', answer_d: 'Turkmenistan'},
-    
+
     {question: 'Which dimension can Ruby Keeler-Milne manipulate', answer_a: 'Space', answer_b: 'Time', answer_c: 'Probability', answer_d: 'The Dark Dimension'},
-    
+
     {question: 'Ruby Keeler Milne\s powers centre around:', answer_a: 'Illusions', answer_b: 'Clairvoyance', answer_c: 'Elemental Magic', answer_d: 'Super Strength'},
-    
+
     {question: 'In what year was Ruby Keeler-Milne born?', answer_a: '1897', answer_b: '1901', answer_c: '2000', answer_d: '1935'},
-    
+
     {question: 'Who did Ruby Keeler-Milne befriend in a POW camp?', answer_a: 'Nurse Roth', answer_b: 'Father Scott-Mitchell', answer_c: 'Will Salkeld', answer_d: 'Jack Kitchin'},
 
 ];
@@ -302,6 +302,7 @@ var ChosenQuestion = Questions[0];
 
 //On Answer Click
 $(".quiz-answer").click(function(){
+
     if($(this).hasClass("quiz-answer-a") && ChosenQuestion.answer_a == AnswerA.html()){
         Correct = true;
         CorrectCount++;
