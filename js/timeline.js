@@ -21,6 +21,7 @@ var items = new vis.DataSet([
     {id: 9, content: 'Viper Reveal', title: 'In costume for the first time, Viper threatens Major Patton at the gates of Fort Darling before escaping thanks to the Three Eyed Warrior cutting power to Chinatown.', start: '2024-01-27', type: 'point', group: 2, className: 'viper'},
     {id: 10, content: 'Dilhan Found Innocent', title: 'Nick wins the defence of Dilhan Ali, using a legal loophole to prove him innocent of conspiracy to commit terrorism.', start: '2024-02-01', type: 'point', group: 2, className: 'viper'},
     {id: 11, content: 'Battle of Fort Darling', title: 'Asian forces led by Viper and the Longying storm Fort Darling, overwhelming Major Patton\'s forces and destroying the fort and its defences.', start: '2024-02-03', type: 'point', group: 2, className: 'viper'},
+    {id: 12, content: 'Southeast Asian War', title: 'Following tension over territory disputes in the South China Sea, a multifaceted and devastating war has erupted, largely a proxy war between China and the USA but with dire ramifications for the wntire region.', start: '2018-05-19', end: '2030-02-07', group: 1},
     {id: 'A', content: 'Stage 1', start: '2023-12-2', end: '2024-02-03', type: 'background', group: 2, className: 'viper'},
     {id: 'B', content: 'Stage 2', start: '2014-01-25', end: '2014-01-30', type: 'background', group: 2, className: 'viper'}
 ]); // Create a DataSet (allows two way data-binding)
