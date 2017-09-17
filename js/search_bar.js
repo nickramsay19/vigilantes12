@@ -11,19 +11,19 @@ var SearchOptions = [
 
     {name: 'Quiz', tags: ' ! quiz questions knowledge ask test', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-quiz"><i class="fa fa-question"></i>&nbsp;Quiz</a></li>', matches: 0},
 
-    {name: 'World History', tags: ' ! story World History', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
+    {name: 'World History', tags: ' ! story World sydney History', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-history" alt=""><i class="fa fa-university"></i>&nbsp;World History</a></li>', matches: 0},
 
     {name: 'Sub Universes', tags: ' ! heroes characters universes sub', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-heroes"><i class="fa fa-address-book-o"></i>&nbsp;Sub-Universes</a></li>', matches: 0},
 
-    {name: 'Timeline', tags: ' ! events story Timeline', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-timeline"><i class="fa fa-clock-o"></i>&nbsp;Timeline</a></li>', matches: 0},
+    {name: 'Timeline', tags: ' ! events storyline chronology history Timeline', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-timeline"><i class="fa fa-clock-o"></i>&nbsp;Timeline</a></li>', matches: 0},
 
-    {name: 'Storylines', tags: ' ! Storylines stages sagas tales ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
+    {name: 'Storylines', tags: ' ! Storylines stages sagas series tales ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
 
     {name: 'Viper', tags: ' ! sub universe viper', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper"><i class="fa fa-address-book-o"></i>&nbsp;Viper</a></li>', matches: 0},
 
-    {name: 'Viper Viper', tags: ' ! character person viper nick nicholas ramsay ninja snake rope dart long fist Changquan China Chinese asian', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-viper"><i class="fa fa-user"></i>&nbsp;Viper</a></li>', matches: 0},
+    {name: 'Viper Viper', tags: ' ! character person viper nick nicholas lawyer ramsay ninja snake rope dart long fist Changquan China Chinese asian', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-viper"><i class="fa fa-user"></i>&nbsp;Viper</a></li>', matches: 0},
 
-    {name: 'JP', tags: ' ! character person viper yang jian jonathan pan jp Monk spade monk\'s spade hook sword eye China Chinese asian three eyed warrior', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-jp"><i class="fa fa-user"></i>&nbsp;Three Eyed Warrior</a></li>', matches: 0},
+    {name: 'JP', tags: ' ! character person viper yang jian jonathan pan jp Monk spade monk\'s monks spade hook sword eye China Chinese asian three eyed warrior', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-jp"><i class="fa fa-user"></i>&nbsp;Three Eyed Warrior</a></li>', matches: 0},
 
     {name: 'Tongyi', tags: ' ! character person viper Tongyi Shen Yum cha chef dumpling restaurant lucky moon China Chinese asian', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-tongyi"><i class="fa fa-user"></i>&nbsp;Tongyi Shen</a></li>', matches: 0},
 
@@ -33,7 +33,7 @@ var SearchOptions = [
 
     {name: 'Spectre', tags: ' ! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Silver Spectre', tags: ' ! character person silver spectre vigilante hugo johansenn ghost grey shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+    {name: 'Silver Spectre', tags: ' ! character person silver spectre vigilante hugo johansenn ghost grey shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
     {name: 'Red Rhino', tags: ' ! character person vigilante dylan jenkin wrestler substax growth wrestling society steroids drugs red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
 
