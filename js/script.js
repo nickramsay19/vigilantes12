@@ -22,15 +22,26 @@ $(".link-page").click(function(){
     }
 });
 
+function ResetAllPages(){
+    $('.page').fadeOut(50, function(){});
+    $(".link-page").removeClass("is-active");
+}
+
 function SetPage(PageName){
 
-    //Reset Pages
-    $(".link-page").removeClass("is-active");
-    PageShell.fadeOut(200, function(){
+    //Hide all pages
+    ResetAllPages();
 
-        //Change Page
-        PageShell.html($("#page-" + PageName).html());
-        PageShell.fadeIn(200, function(){})
+    // Show PageName
+    $(".page-" + PageName).fadeIn(100, function(){
+        if(PageName == "quiz"){
+
+            //Begin Quiz Title Animation
+            $('.ribbon').removeClass('active');
+            setTimeout(function() {
+                $('.ribbon').addClass('active');
+            }, 10);
+        }
     });
 
     //Set Link to Active
@@ -63,7 +74,7 @@ $(".drop-down-button").click(function(){
     }
 });
 
-//Hero Icon Image Change || TEMP: Until Character Card Images Are Made
+//Hero Icon Image Change
 $(".hero-card").hover(function(){
     var IMG = $(this).find("img");
     IMG.attr("src", "img/logo/" + IMG.attr("id") + "-light.png");
@@ -72,12 +83,5 @@ $(".hero-card").hover(function(){
     IMG.attr("src", "img/logo/" + IMG.attr("id") + ".png");
 });
 
-//Password
-$(".access-enter").click(function(){
-    var Value = $(".access-value").val();
-    if(Value == "nickiscool"){
-        $(".access-modal").removeClass("is-active");
-        Cookies.set('access', 'true');
-    }
-})
+
 
