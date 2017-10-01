@@ -19,6 +19,7 @@ var SearchOptions = [
 
     {name: 'Storylines', tags: ' ! Storylines stages sagas series tales ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-story"><i class="fa fa-book"></i>&nbsp;Storylines</a></li>', matches: 0},
 
+    
     {name: 'Viper', tags: ' ! sub universe viper', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper"><i class="fa fa-address-book-o"></i>&nbsp;Viper</a></li>', matches: 0},
 
     {name: 'Viper Viper', tags: ' ! character person viper nick nicholas lawyer ramsay ninja snake rope dart long fist Changquan China Chinese asian', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-viper"><i class="fa fa-user"></i>&nbsp;Viper</a></li>', matches: 0},
@@ -31,11 +32,12 @@ var SearchOptions = [
 
     {name: 'Longying', tags: ' ! viper Longying China Chinese asian group syndicate gang', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-viper-long"><i class="fa fa-users"></i>&nbsp;Longying</a></li>', matches: 0},
 
+    
     {name: 'Spectre', tags: ' ! sub universe silver spectre vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre"><i class="fa fa-address-book-o"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Silver Spectre', tags: ' ! character person silver spectre vigilante hugo johansenn ghost grey shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
+    {name: 'Silver Spectre', tags: ' ! character person silver spectre vigilante hugo johannsen ghost grey phantom uhmwpe depression naive ignorant innocent depressed shock gloves intangible physics ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-spectre"><i class="fa fa-user"></i>&nbsp;Silver Spectre</a></li>', matches: 0},
 
-    {name: 'Red Rhino', tags: ' ! character person vigilante dylan jenkin wrestler substax growth wrestling society steroids drugs red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
+    {name: 'Red Rhino', tags: ' ! character person vigilante dylan jenkin wrestler substax growth wrestling society scientist biotechnology biotechnologist addiction strength giant huge strong steroids drugs red rhino', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-rhino"><i class="fa fa-user"></i>&nbsp;Red Rhino</a></li>', matches: 0},
 
     {name: 'ExoCorp', tags: ' ! group evil exocorp corp company technology science corporation', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-corp"><i class="fa fa-users"></i>&nbsp;ExoCorp</a></li>', matches: 0},
 
@@ -47,8 +49,14 @@ var SearchOptions = [
 
     {name: 'Sydney Guard', tags: ' ! group sydney guard silver spectre mockingbird team dean red rhino hugo johansenn dylan jenkin siena mitchell vigilantes north sergeant jonah riley', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-spectre-guard"><i class="fa fa-users"></i>&nbsp;Sydney Guard</a></li>', matches: 0},
 
-    {name: 'Mockingbird', tags: ' ! sub universe mockingbird vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-address-book-o"></i>&nbsp;Mockingbird</a></li>', matches: 0},
+    
+    {name: 'Echo 59', tags: ' ! sub universe echo 59 vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-echo"><i class="fa fa-address-book-o"></i>&nbsp;Echo 59</a></li>', matches: 0},
+    
+    {name: 'Echo 59', tags: ' ! sub universe echo 59 vigilante forensic artist policewoman police officer detective sound megaphone frequency pitch volume trauama psycological cop sonic fear glock e59 north sydney composite drawing art diagram', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-echo-echo"><i class="fa fa-user"></i>&nbsp;Echo 59</a></li>', matches: 0},
 
+    {name: 'Sergeant Riley', tags: ' ! sub universe echo 59 vigilante policeman police officer driving driver charming cleaver greene informant rake self destructive drunk sergeant jonah riley romeo', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-user"></i>&nbsp;Sergeant Riley</a></li>', matches: 0},
+    
+    
     {name: 'Burning Hand', tags: ' ! sub universe burning hand vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
 
     {name: 'Burning Hand', tags: ' ! burning hand vigilante indian kickboxing taekwondo counsellor martial arts teacher bagh naka chakram kolkata asri nanda sweating fire flame flaming tiger claws', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle-kyle"><i class="fa fa-user"></i>&nbsp;Burning Hand</a></li>', matches: 0},
@@ -56,6 +64,7 @@ var SearchOptions = [
     {name: 'Dexter Barker', tags: ' ! burning hand dexter barker bus driver transport friend hope soup kitchin', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle-dexter"><i class="fa fa-user"></i>&nbsp;Dexter Barker</a></li>', matches: 0},
     
     {name: 'Adam Crespo', tags: ' ! burning hand adam crespo drug dealer criminal vigilante person antihero cannabis bombs bikies gangs farm brother zack liam motorcycle motorbike streetfighter sawed off shotgun gas mask revenge redemption', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle-crespo"><i class="fa fa-user"></i>&nbsp;Adam Crespo</a></li>', matches: 0},
+  
     
     {name: 'Jack Kitchin', tags: ' ! sub universe jack kitchin vigilantes', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin"><i class="fa fa-address-book-o"></i>&nbsp;Jack Kitchin</a></li>', matches: 0},
     
@@ -67,6 +76,7 @@ var SearchOptions = [
     
     {name: 'Will Salkeld', tags: ' ! will salkeld jack kitchin politics politician house of representatives lover good negotiator diplomat', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kitchin-will"><i class="fa fa-user"></i>&nbsp;Will Salkeld</a></li>', matches: 0},
 
+    
     {name: 'Nick', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-nick"><i class="fa fa-smile-o"></i>&nbsp;Nick\'s Secret Page</a></li>', matches: 0},
 
     {name: 'Hunter', tags: ' ! ', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-hunter"><i class="fa fa-smile-o"></i>&nbsp;Hunter\'s Secret Page</a></li>', matches: 0}
