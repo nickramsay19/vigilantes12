@@ -40,7 +40,7 @@ var Questions = [
 
     {question: 'How did Viper meet Luke Wood?', answer_a: 'He intercepted a delivery', answer_b: 'They were introduced', answer_c: 'He was sent a message', answer_d: 'He heard rumours'},
 
-    {question: 'Which business tycoon becomes Viper\'s nemesis in Stage 2?', answer_a: 'Lukian Adams', answer_b: 'Major Patton', answer_c: 'Philip Dean', answer_d: 'Oscar Martin'},
+    {question: 'Which business tycoon became Viper\'s nemesis in Stage 2?', answer_a: 'Lukian Adams', answer_b: 'Major Patton', answer_c: 'Philip Dean', answer_d: 'Oscar Martin'},
 
     {question: 'Which world leader does Viper assasinate?', answer_a: 'Kim Jong Sun', answer_b: 'Donald Trump', answer_c: 'Vladimir Putin', answer_d: 'Tony Abbott'},
 
@@ -48,17 +48,13 @@ var Questions = [
 
     {question: 'What was the name of the dog owned by the Sydney Slasher as a child?', answer_a: 'Marlowe', answer_b: 'Scruffy', answer_c: 'Rumo', answer_d: 'Metallica'},
 
-    {question: 'How many times does the Sydney Slasher stab his father?', answer_a: '50', answer_b: '100', answer_c: '13', answer_d: '66'},
-
     {question: 'Where did the Sydney Slasher travel after school?', answer_a: 'Israel', answer_b: 'Russia', answer_c: 'America', answer_d: 'Egypt'},
 
     {question: 'What was the managers name in the video store the Sydney Slasher worked in?', answer_a: 'Guy', answer_b: 'Bruce', answer_c: 'Dwight', answer_d: 'Marx'},
 
-    {question: 'How many people did the Slasher kill in his first set?', answer_a: '11', answer_b: '14', answer_c: '9', answer_d: '13'},
+    {question: 'How many people did the Slasher kill in his first set?', answer_a: '6', answer_b: '11', answer_c: '9', answer_d: '7'},
 
-    {question: 'What did the Slasher feed on in his coffin?', answer_a: 'Blood', answer_b: 'Nothing', answer_c: 'Worms', answer_d: 'Skin'},
-
-    {question: 'Who leads the Sydney Guard?', answer_a: 'Silver Spectre', answer_b: 'Mockingbird', answer_c: 'Viper', answer_d: 'Philip Dean'},
+    {question: 'Who leads the Sydney Guard?', answer_a: 'Silver Spectre', answer_b: 'Echo 59', answer_c: 'Viper', answer_d: 'Philip Dean'},
 
     {question: 'Which steroid gives Red Rhino his powers?', answer_a: 'Substax', answer_b: 'Osteopose', answer_c: 'AB3', answer_d: 'Hydropolyglycerin'},
 
@@ -126,17 +122,17 @@ var Questions = [
 
     {question: 'What suburb lies below Darlinghurst?', answer_a: 'Downtown', answer_b: 'Underground', answer_c: 'Darlinghurst Zero', answer_d: 'Subway'},
 
-    {question: 'What does Mockingbird work as?', answer_a: 'A Forensic Artist', answer_b: 'A Forensic Scientist', answer_c: 'A Policewoman', answer_d: 'A Graphic Designer'},
+    {question: 'What does Echo 59 work as?', answer_a: 'A Forensic Artist', answer_b: 'A Forensic Scientist', answer_c: 'A Policewoman', answer_d: 'A Graphic Designer'},
 
     {question: 'What rank is Jonah Riley as a police officer?', answer_a: 'Sergeant', answer_b: 'Major', answer_c: 'Superintendent', answer_d: 'Detective'},
 
     {question: 'Where did Luke Wood travel for work?', answer_a: 'Germany', answer_b: 'Russia', answer_c: 'China', answer_d: 'England'},
 
-    {question: 'Which vigilante was the most difficult to write?', answer_a: 'Mockingbird', answer_b: 'Adam Crespo', answer_c: 'Burning Hand', answer_d: 'Three Eyed Warrior'},
+    {question: 'Which vigilante was the most difficult to write?', answer_a: 'Echo 59', answer_b: 'Adam Crespo', answer_c: 'Burning Hand', answer_d: 'Three Eyed Warrior'},
 
     {question: 'Which vigilante was created first?', answer_a: 'Viper', answer_b: 'Silver Spectre', answer_c: 'Burning Hand', answer_d: 'Jack Kitchin'},
 
-    {question: 'How did Mockingbird defeat the Sydney Slasher?', answer_a: 'Pushed him off a roof', answer_b: 'Shot him', answer_c: 'Called the police for help', answer_d: 'Led him into a trap'},
+    {question: 'How did Echo 59 defeat the Sydney Slasher?', answer_a: 'Pushed him off a roof', answer_b: 'Shot him', answer_c: 'Called the police for help', answer_d: 'Led him into a trap'},
 
     {question: 'What does /Longying\ translate to?', answer_a: 'Shadow Dragon', answer_b: 'Dark Viper', answer_c: 'Night Sword', answer_d: 'Dragon Claw'},
 
@@ -291,7 +287,11 @@ var Questions = [
     {question: 'In what year was Ruby Keeler-Milne born?', answer_a: '1897', answer_b: '1901', answer_c: '2000', answer_d: '1935'},
 
     {question: 'Who did Ruby Keeler-Milne befriend in a POW camp?', answer_a: 'Nurse Roth', answer_b: 'Father Scott-Mitchell', answer_c: 'Will Salkeld', answer_d: 'Jack Kitchin'},
+    
+    {question: 'Who revealed the identity of the Sydney Slasher?', answer_a: 'Mrs Weingarten', answer_b: 'Sergeant Riley', answer_c: 'Rolf Harris', answer_d: 'Superintendent Wade'},
 
+    {question: 'Why did Superintendent Wade allow the Sydney Slasher to continue killing?', answer_a: 'To lower the value of local properties', answer_b: 'To ruin the reputation of the police department', answer_c: 'He was sadistic', answer_d: 'To create a symbol for the media'},
+    
 ];
 
 //Variables

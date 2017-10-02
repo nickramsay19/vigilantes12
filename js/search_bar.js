@@ -54,7 +54,7 @@ var SearchOptions = [
     
     {name: 'Echo 59', tags: ' ! sub universe echo 59 vigilante forensic artist policewoman police officer detective sound megaphone frequency pitch volume trauama psycological cop sonic fear glock e59 north sydney composite drawing art diagram', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-echo-echo"><i class="fa fa-user"></i>&nbsp;Echo 59</a></li>', matches: 0},
 
-    {name: 'Sergeant Riley', tags: ' ! sub universe echo 59 vigilante policeman police officer driving driver charming cleaver greene informant rake self destructive drunk sergeant jonah riley romeo', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-user"></i>&nbsp;Sergeant Riley</a></li>', matches: 0},
+    {name: 'Sergeant Riley', tags: ' ! sub universe echo 59 vigilante policeman police officer cop cars glock driving driver charming cleaver greene informant rake self destructive drunk sergeant jonah riley romeo', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-mockingbird"><i class="fa fa-user"></i>&nbsp;Sergeant Riley</a></li>', matches: 0},
     
     
     {name: 'Burning Hand', tags: ' ! sub universe burning hand vigilante', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-kyle"><i class="fa fa-address-book-o"></i>&nbsp;Burning Hand</a></li>', matches: 0},
