@@ -7,6 +7,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Tabs */
+.tabs ul{
+    margin-left: 0;
+}
+
+
 nav{
 
 }
