@@ -1,3 +1,7 @@
+//Dependencies
+var $ = require('jquery');
+require('./script.js');
+
 //Global Variables
 var SearchOptions = [
     {name: 'Home', tags: ' ! vigilantes Home', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-home"><i class="fa fa-home"></i>&nbsp;Home</a></li>', matches: 0},
@@ -136,6 +140,17 @@ function Search(){
     //Write to Page
     $(".search-list").html(SearchOptionsDisplay.join(""));
 }
+
+var SearchListItem = $('.search-list-item');
+SearchListItem.click(function(){
+    SearchLinkPressed($(this));
+});
+
+var SearchBar = $('#search-input');
+
+SearchBar.keyup(function(){
+    Search();
+});
 
 function SearchLinkPressed(thisElement){
     var ClassList = $(thisElement).attr('class').split(/\s+/);

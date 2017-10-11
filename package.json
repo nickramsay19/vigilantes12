@@ -1,0 +1,27 @@
+{
+  "name": "vigilantes12",
+  "version": "2.0.0",
+  "description": "The official website for Vigilantes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekl489/vigilantes12.git"
+  },
+  "author": "Nick Ramsay, Hunter Forbes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekl489/vigilantes12/issues"
+  },
+  "homepage": "https://github.com/ekl489/vigilantes12#readme",
+  "dependencies": {
+    "bulma": "^0.6.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "js-cookie": "^2.1.4",
+    "vis": "^4.20.1",
+    "webpack": "^3.6.0"
+  }
+}

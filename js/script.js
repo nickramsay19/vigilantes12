@@ -1,4 +1,9 @@
+//Dependencies
+var $ = require('jquery');
+var Cookies = require('js-cookie');
+
 //Global Variables
+//Cookie.set('message', 'Hello there!');
 var PageShell = $("#page-shell");
 var Components = $("#components");
 

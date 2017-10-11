@@ -1,3 +1,7 @@
+//Dependencies
+var $ = require('jquery');
+var Cookies = require('js-cookie');
+
 //Set Page From Session Cookies
 if(Cookies.get().hasOwnProperty("page")){
     SetPage(Cookies.get("page"));
@@ -8,7 +12,3 @@ else{
     document.getElementById('content').scrollIntoView();
 }
 
-if(Cookies.get().hasOwnProperty("access")){
-    $(".access-modal").removeClass("is-active");
-    Cookies.set('access', 'true');
-}

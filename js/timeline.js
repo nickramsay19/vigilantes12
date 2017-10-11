@@ -1,3 +1,8 @@
+//Dependencies
+var $ = require('jquery');
+var vis = require('vis');
+require('./script.js');
+
 //Timeline
 var container = document.getElementById('timeline'); // DOM element where the Timeline will be attached
 var groups = [

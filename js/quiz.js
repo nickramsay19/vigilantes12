@@ -1,14 +1,20 @@
+//Dependencies
+var $ = require('jquery');
+require('./script.js');
+
 //Elements
 var QuestionBox = $("#quiz-question");
-var CorrectionBox = $("#quiz-correct");
-var CorrectionCountBox= $("#quiz-correct-count");
-var CorrectPercentageBox = $("#quiz-correct-percentage");
-var ProgressBar = $('#quiz-progress');
-
+var NextButton = $("#next-button");
 var AnswerA = $(".quiz-answer-a");
 var AnswerB = $(".quiz-answer-b");
 var AnswerC = $(".quiz-answer-c");
 var AnswerD = $(".quiz-answer-d");
+
+
+var ProgressBar = $('#quiz-progress');
+var CorrectionBox = $("#quiz-correct");
+var CorrectionCountBox= $("#quiz-correct-count");
+var CorrectPercentageBox = $("#quiz-correct-percentage");
 
 //Question List
 var Questions = [
@@ -287,41 +293,62 @@ var Questions = [
     {question: 'In what year was Ruby Keeler-Milne born?', answer_a: '1897', answer_b: '1901', answer_c: '2000', answer_d: '1935'},
 
     {question: 'Who did Ruby Keeler-Milne befriend in a POW camp?', answer_a: 'Nurse Roth', answer_b: 'Father Scott-Mitchell', answer_c: 'Will Salkeld', answer_d: 'Jack Kitchin'},
-    
+
     {question: 'Who revealed the identity of the Sydney Slasher?', answer_a: 'Mrs Weingarten', answer_b: 'Sergeant Riley', answer_c: 'Rolf Harris', answer_d: 'Superintendent Wade'},
 
     {question: 'Why did Superintendent Wade allow the Sydney Slasher to continue killing?', answer_a: 'To lower the value of local properties', answer_b: 'To ruin the reputation of the police department', answer_c: 'He was sadistic', answer_d: 'To create a symbol for the media'},
-    
+
 ];
 
 //Variables
 var CorrectCount = 0;
-var QuestionsCompleted = 0;
 var Correct = false;
+var QuestionsCompleted = 0;
 var ChosenQuestion = Questions[0];
+var UserAnswer = '';
+
+//Start Game
+ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length) + 1)];
+FillQuiz(ChosenQuestion);
 
 //On Answer Click
 $(".quiz-answer").click(function(){
 
-    if($(this).hasClass("quiz-answer-a") && ChosenQuestion.answer_a == AnswerA.html()){
-        Correct = true;
+    // set user answer
+    if($(this).html() == ChosenQuestion.answer_a){
+        UserAnswer = ChosenQuestion.answer_a;
         CorrectCount++;
     }
-    else if($(this).hasClass("quiz-answer-b") && ChosenQuestion.answer_a == AnswerB.html()){
-        Correct = true;
-        CorrectCount++;
+
+    // set styles
+    ResetQuestions();
+    if(ChosenQuestion.answer_a == AnswerA.html()){
+        AnswerA.addClass('is-success');
+        AnswerB.addClass('is-danger');
+        AnswerC.addClass('is-danger');
+        AnswerD.addClass('is-danger');
     }
-    else if($(this).hasClass("quiz-answer-c") && ChosenQuestion.answer_a == AnswerC.html()){
-        Correct = true;
-        CorrectCount++;
+    else if(ChosenQuestion.answer_a ==  AnswerB.html()){
+        AnswerA.addClass('is-danger');
+        AnswerB.addClass('is-success');
+        AnswerC.addClass('is-danger');
+        AnswerD.addClass('is-danger');
     }
-    else if($(this).hasClass("quiz-answer-d") && ChosenQuestion.answer_a == AnswerD.html()){
-        Correct = true;
-        CorrectCount++;
+    else if(ChosenQuestion.answer_a ==  AnswerC.html()){
+        AnswerA.addClass('is-danger');
+        AnswerB.addClass('is-danger');
+        AnswerC.addClass('is-success');
+        AnswerD.addClass('is-danger');
     }
-    else{
-        Correct = false;
+    else if(ChosenQuestion.answer_a ==  AnswerD.html()){
+        AnswerA.addClass('is-danger');
+        AnswerB.addClass('is-danger');
+        AnswerC.addClass('is-danger');
+        AnswerD.addClass('is-success');
     }
+
+    // show next button
+    NextButton.show();
 
     //Add to questions asked
     QuestionsCompleted++;
@@ -331,21 +358,16 @@ $(".quiz-answer").click(function(){
 
     //Check if Quiz Completed
     if(QuestionsCompleted >= 10){
-        $("#quiz-game").fadeOut(200, function(){
-            $("#quiz-results").fadeIn(200, function(){});
-            $("#quiz-results-percentage").html((CorrectCount * 10).toString());
-
-        })
+        NextButton.html('Finish');
     }
 
-    ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length))];
-    FillQuiz(ChosenQuestion);
-    CorrectPercentageBox.html("Correct: " + CorrectCount);
-    CorrectionCountBox.html("Answered: " + QuestionsCompleted);
+    //Display Correction
+    //CorrectionBox.html(Correct ? 'Correct' : 'Incorrect');
 });
 
 //On Start Game Click
 $(".quiz-start").click(function(){
+    NextButton.html("Next");
     $("#quiz-results").hide();
     $("#quiz-title").fadeOut(200, function(){
         $("#quiz-game").fadeIn(200, function(){});
@@ -354,6 +376,26 @@ $(".quiz-start").click(function(){
         ProgressBar.val(0);
     });
 });
+
+NextButton.click(function(){
+
+    // create next question
+    ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length))];
+    FillQuiz(ChosenQuestion);
+    ResetQuestions();
+
+    //Check if Quiz Completed
+    if(QuestionsCompleted >= 10){
+        NextButton.html("Next");
+        $("#quiz-game").fadeOut(200, function(){
+            $("#quiz-results").fadeIn(200, function(){});
+            $("#quiz-results-percentage").html((CorrectCount * 10).toString());
+        });
+    }
+
+    // next button
+    NextButton.hide();
+})
 
 //Fill Quiz With Question
 function FillQuiz(object){
@@ -367,7 +409,7 @@ function FillQuiz(object){
 }
 
 //Shuffle Array
-function Shuffle(array){
+function Shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
     // While there remain elements to shuffle...
@@ -386,19 +428,46 @@ function Shuffle(array){
     return array;
 }
 
-function ResetQuestionsArray(){
-    for(x = 0; x < Questions.length; x++){
-        Questions[x].used = false;
+// Functions
+function GetCorrect(question){
+    for(var i = 0; i < Questions.length; i++){
+        if(Questions[i] == question){
+            return question.answer_a;
+        }
     }
 }
 
-//Start Game
-ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length))];
-FillQuiz(ChosenQuestion);
+function IsCorrect(question, answer){
+    if(question.answer_a == answer){
+        return true;
+    }
+    return false;
+}
 
-//Begin Title Animation
-$('.ribbon').removeClass('active');
-setTimeout(function() {
-    $('.ribbon').addClass('active');
-}, 10);
+// correct/incorrect answers
+function ResetQuestions(){
+    AnswerA.removeClass('is-danger');
+    AnswerA.removeClass('is-success');
 
+    AnswerB.removeClass('is-danger');
+    AnswerB.removeClass('is-success');
+
+    AnswerC.removeClass('is-danger');
+    AnswerC.removeClass('is-success');
+
+    AnswerD.removeClass('is-danger');
+    AnswerD.removeClass('is-success');
+}
+
+function GetAnswer(letter){
+    switch(letter){
+        case 'a':
+            return AnswerA;
+        case 'b':
+            return AnswerB;
+        case 'c':
+            return AnswerC;
+        case 'd':
+            return AnswerD;
+    }
+}
