@@ -306,6 +306,7 @@ var Correct = false;
 var QuestionsCompleted = 0;
 var ChosenQuestion = Questions[0];
 var UserAnswer = '';
+var IsResults = false;
 
 //Start Game
 ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length) + 1)];
@@ -313,6 +314,13 @@ FillQuiz(ChosenQuestion);
 
 //On Answer Click
 $(".quiz-answer").click(function(){
+
+    if(IsResults){
+        return;
+    }
+
+    // set game state
+    IsResults = true;
 
     // set user answer
     if($(this).html() == ChosenQuestion.answer_a){
@@ -367,6 +375,10 @@ $(".quiz-answer").click(function(){
 
 //On Start Game Click
 $(".quiz-start").click(function(){
+
+    // set game state
+    IsResults = false;
+
     NextButton.html("Next");
     $("#quiz-results").hide();
     $("#quiz-title").fadeOut(200, function(){
@@ -378,6 +390,9 @@ $(".quiz-start").click(function(){
 });
 
 NextButton.click(function(){
+
+    // set game state
+    IsResults = false;
 
     // create next question
     ChosenQuestion = Questions[Math.floor((Math.random() * Questions.length))];
