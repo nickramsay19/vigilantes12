@@ -4,7 +4,7 @@ var vis = require('vis');
 require('./script.js');
 
 //Timeline
-var container = document.getElementById('timeline'); // DOM element where the Timeline will be attached
+var container = $('#timeline'); // DOM element where the Timeline will be attached
 var groups = [
     {id: 1, content: 'Global'},
     {id: 2, content: 'Viper'},

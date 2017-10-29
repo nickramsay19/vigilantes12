@@ -2,6 +2,27 @@
 var $ = require('jquery');
 require('./script.js');
 
+// Methods
+function SearchLinkPressed(thisElement){
+    var ClassList = $(thisElement).attr('class').split(/\s+/);
+
+    //Loop through each class
+    for (var x = 0; x < ClassList.length; x++) {
+        //Class containing page is found
+        if (ClassList[x].substring(0, 10) === "link-page-") {
+
+            //Set page
+            SetPage(ClassList[x].split("link-page-")[1]);
+            break;
+        }
+    }
+
+    //Hide Search Bar
+
+    document.getElementById("search-input").value = "";
+    Search();
+}
+
 //Global Variables
 var SearchOptions = [
     {name: 'Home', tags: ' ! vigilantes Home', element: '<li class="search-list-item"><a onclick="SearchLinkPressed(this)" class="link-page link-page-home"><i class="fa fa-home"></i>&nbsp;Home</a></li>', matches: 0},
@@ -152,24 +173,6 @@ SearchBar.keyup(function(){
     Search();
 });
 
-function SearchLinkPressed(thisElement){
-    var ClassList = $(thisElement).attr('class').split(/\s+/);
 
-    //Loop through each class
-    for (var x = 0; x < ClassList.length; x++) {
-        //Class containing page is found
-        if (ClassList[x].substring(0, 10) === "link-page-") {
-
-            //Set page
-            SetPage(ClassList[x].split("link-page-")[1]);
-            break;
-        }
-    }
-
-    //Hide Search Bar
-
-    document.getElementById("search-input").value = "";
-    Search();
-}
 
 
