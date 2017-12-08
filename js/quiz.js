@@ -314,6 +314,26 @@ var Questions = [
     
     {question: 'Where is Charcoalville?', answer_a: 'Belmore Park', answer_b: 'Wentworth Park', answer_c: 'Centennial Park', answer_d: 'Hyde Park'},
     
+    {question: 'What did Hannah Kroeger study at university?', answer_a: 'Psychology', answer_b: 'Firefighting', answer_c: 'Law', answer_d: 'Art'},
+    
+    {question: 'Which of the following firefighting skills is Hannah Kroeger not adept at?', answer_a: 'Tactical Leadership', answer_b: 'Crowd Control', answer_c: 'First Aid', answer_d: 'Emergency Response'},
+    
+    {question: 'How long was Hannah Kroeger/s firefighter training course?', answer_a: '13 Days', answer_b: '5 Days', answer_c: '3 Weeks', answer_d: '2 Months'},
+    
+    {question: 'Which town was Hannah Kroeger/s firefighting team forced to defend?', answer_a: 'Lithgow', answer_b: 'Katoomba', answer_c: 'Nowra', answer_d: 'Ilford'},
+    
+    {question: 'How many casualties had the Black February bushfires caused by February 19?', answer_a: '200', answer_b: '50', answer_c: '150', answer_d: '100'},
+    
+    {question: 'In what year was Ruby Keeler-Milne born?', answer_a: '1897', answer_b: '1901', answer_c: '2000', answer_d: '1935'},
+    
+    {question: 'On what day did the Black February bushfires break out?', answer_a: 'January 24th', answer_b: 'February 19th', answer_c: 'February 2nd', answer_d: 'February 7th'},
+    
+    {question: 'Who was once Hannah Kroeger/s romantic partner?', answer_a: 'Max Davison', answer_b: 'Tongyi Shen', answer_c: 'Siena Mitchell', answer_d: 'Dylan Jenkin'},
+    
+    {question: 'Why did Hannah Kroeger think she couldn/t be a firefighter?', answer_a: 'She was too short', answer_b: 'She was scared of fire', answer_c: 'She was a woman', answer_d: 'She had poor vision'},
+    
+    {question: 'Where did Hannah Kroeger find the missing child during the Lithgow fire?', answer_a: 'The supermarket', answer_b: 'The bowling alley', answer_c: 'The swimming pool', answer_d: 'The school'},
+    
 ];
 
 //Variables
