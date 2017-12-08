@@ -334,6 +334,8 @@ var Questions = [
     
     {question: 'Where did Hannah Kroeger find the missing child during the Lithgow fire?', answer_a: 'The supermarket', answer_b: 'The bowling alley', answer_c: 'The swimming pool', answer_d: 'The school'},
     
+    {question: 'Why does Charcoalville exist?', answer_a: 'Refugees fleeing the bushfires needed somewhere to live', answer_b: 'Developers set it up as a racially segregated suburb', answer_c: 'People made homeless by Sydney/s urban consolidation live there', answer_d: 'It was built as a charity tax dodge for mafia bosses'},
+    
 ];
 
 //Variables
