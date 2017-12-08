@@ -294,10 +294,26 @@ var Questions = [
 
     {question: 'Who did Ruby Keeler-Milne befriend in a POW camp?', answer_a: 'Nurse Roth', answer_b: 'Father Scott-Mitchell', answer_c: 'Will Salkeld', answer_d: 'Jack Kitchin'},
 
-    {question: 'Who revealed the identity of the Sydney Slasher?', answer_a: 'Mrs Weingarten', answer_b: 'Sergeant Riley', answer_c: 'Rolf Harris', answer_d: 'Superintendent Wade'},
+    {question: 'Who revealed the identity of the Sydney Slasher?', answer_a: 'Mrs Whenigah', answer_b: 'Sergeant Riley', answer_c: 'Rolf Harris', answer_d: 'Superintendent Wade'},
 
     {question: 'Why did Superintendent Wade allow the Sydney Slasher to continue killing?', answer_a: 'To lower the value of local properties', answer_b: 'To ruin the reputation of the police department', answer_c: 'He was sadistic', answer_d: 'To create a symbol for the media'},
+    
+    {question: 'What does Hannah Kroeger work as?', answer_a: 'A firefighter', answer_b: 'A psychologist', answer_c: 'A postwoman', answer_d: 'A masseuse'},
+    
+    {question: 'In what year did Black February occur?', answer_a: '2027', answer_b: '2018', answer_c: '2034', answer_d: '2023'},
+    
+    {question: 'Which instrument does Jimena Armstrong play?', answer_a: 'Ukelele', answer_b: 'Kazoo', answer_c: 'Guitar', answer_d: 'Tamborine'},
+    
+    {question: 'On which topic is Jimena Armstrong not knowledgable?', answer_a: 'Tie Dying', answer_b: 'Fermentation', answer_c: 'Astrology', answer_d: 'Crystal Healing'},
+    
+    {question: 'What is the name of Jiemna Armstrong/s son?', answer_a: 'Ray', answer_b: 'Simon', answer_c: 'Opal', answer_d: 'Hope'},
 
+    {question: 'Why does Jiemna Armstrong take such good care of her son?', answer_a: 'Her own parents left her', answer_b: 'It/s what a mother should do', answer_c: 'Charcoalville is very dangerous', answer_d: 'He has an intellectual disability'},
+    
+    {question: 'In which country did Jimena Armstrong become pregnant?', answer_a: 'Iceland', answer_b: 'Argentina', answer_c: 'Canada', answer_d: 'Vietnam'},
+    
+    {question: 'Where is Charcoalville?', answer_a: 'Belmore Park', answer_b: 'Wentworth Park', answer_c: 'Centennial Park', answer_d: 'Hyde Park'},
+    
 ];
 
 //Variables
