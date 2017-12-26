@@ -113,7 +113,45 @@
                             Also be sure to make sure you haven't missed anything by checking out the UPDATE LOG to keep up to date.
                             And if that wasn't enough, go to <a class="link-page link-page-discover"><span class="tag is-light">Discover More</span></a> for links to keep exploring, and even contributing to, the world of vigilantes.<br><br>
                             And above all, thanks for coming!<br><br>
-                
+                            
+                            
+                            <template>
+    <div id="timeline" class="content">
+        <div class="notification is-primary" id="timeline-details">
+            <h6 class="subtitle">Hover over or select an event to see extra details about it!</h6>
+        </div>
+
+        <div class="content">
+            <div id="timeline"></div>
+        </div>
+    </div>
+</template>
+
+    <script>
+    export default {
+        data () {
+            return {
+            }
+        },
+        methods: {
+
+        },
+
+        components: {
+        }
+    }
+</script>
+
+<style scoped>
+    .tabs ul{
+        margin-left: 0;
+        }
+    .tabs {
+        margin-top: 0;
+    }
+</style>
+                            
+
                         </div><!-- Home -->
 
                         <div class="page page-podcasts" style="display: none">
@@ -552,7 +590,6 @@
 
                         </div><!-- Update Log -->
 
-                        
                         <!-- Vigilantes -->
                         <div class="page page-history" style="display: none">
                             <!-- Title & Breadcrumbs -->
