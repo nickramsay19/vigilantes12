@@ -40,7 +40,7 @@ var Questions = [
 
     {question: 'Where is the Lucky Moon Yum Cha?', answer_a: 'Elizabeth Street', answer_b: 'Paddy\'s Market', answer_c: 'George Street', answer_d: 'Tumbalong Park'},
 
-    {question: 'What weapon does the Three Eyed Warrior use?', answer_a: 'Monk\'s Spade', answer_b: 'Katana', answer_c: 'Rope Darts', answer_d: 'His Fists'},
+    {question: 'What weapon does the Three Eyed Warrior use?', answer_a: 'Monk\'s Spade', answer_b: 'Katana', answer_c: 'Rope Darts', answer_d: 'Her Fists'},
 
     {question: 'Where did the Mariner\'s hook come from?', answer_a: 'Taiwanese Pirates', answer_b: 'A car accident', answer_c: 'It was caught in a winch', answer_d: 'Gangrene'},
 
@@ -242,15 +242,15 @@ var Questions = [
 
     {question: 'Which dimension can the Comsologist manipulate?', answer_a: 'Time', answer_b: 'Space', answer_c: 'Probability', answer_d: 'All of them'},
 
-    {question: 'What was the name of Cole\s lover?', answer_a: 'Raphael', answer_b: 'Susan', answer_c: 'Ruby', answer_d: 'Piérre'},
+    {question: 'What was the name of the Cosmologist\s lover?', answer_a: 'Raphael', answer_b: 'Susan', answer_c: 'Ruby', answer_d: 'Piérre'},
 
     {question: 'Who commands the Les Apaches?', answer_a: 'Ruby Keeler-Milne', answer_b: 'Jack Kitchin', answer_c: 'The Cosmologist', answer_d: 'Burning Hand'},
 
     {question: 'How old was Father Hargreaves when he died?', answer_a: 'Over 200', answer_b: 'Almost 400', answer_c: '98', answer_d: '173'},
 
-    {question: 'What is a central theme of Cole\s story?', answer_a: 'Faith', answer_b: 'Jealousy', answer_c: 'Racism', answer_d: 'Technology'},
+    {question: 'What is a central theme of the Cosmologist\s story?', answer_a: 'Faith', answer_b: 'Jealousy', answer_c: 'Racism', answer_d: 'Technology'},
 
-    {question: 'Where did Cole meet Father Hargreaves?', answer_a: 'Outside Paris', answer_b: 'Athens', answer_c: 'Melbourne', answer_d: 'Nazi Germany'},
+    {question: 'Where did the Cosmologist meet Father Hargreaves?', answer_a: 'Outside Paris', answer_b: 'Athens', answer_c: 'Melbourne', answer_d: 'Nazi Germany'},
 
     {question: 'Why did the Cosmologist settle in Sydney?', answer_a: 'He didn\t know anyone there', answer_b: 'There was lots of crime', answer_c: 'It was an interdimensional waypoint', answer_d: 'His father had lived there'},
 
